@@ -134,7 +134,17 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#gmsh-geometry-and-mesh">GMSH geometry and mesh</a></li>
+                <li class="toctree-l3"><a href="#gmsh-geometry-and-mesh-files">GMSH geometry and mesh files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#scuff-em-geometry-files">SCUFF-EM geometry files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#run-calculation-in-scuff-scatter">Run calculation in SCUFF-SCATTER</a></li>
+                
+                    <li><a class="toctree-l4" href="#field-amplification-vs-incident-field-polarization-without-discs">Field amplification vs. incident-field polarization without discs</a></li>
+                
+                    <li><a class="toctree-l4" href="#field-amplification-vs-incident-field-polarization-with-discs">Field amplification vs. incident-field polarization with discs</a></li>
                 
             
             </ul>
@@ -236,15 +246,196 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="polarization-sensitive-bowtie-antennas">Polarization-sensitive bowtie antennas</h1>
-<p>For our next trick, we'll investigate the local density of states (LDOS)
-and field enhancement</p>
-<p>The files</p>
+                <h1 id="polarization-dependent-field-amplification-by-bowtie-antennas">Polarization-dependent field amplification by bowtie antennas</h1>
+<p>For our next trick, we'll surround the 4-triangle bowtie
+antennas of the previous exercise</p>
+<p>take a page from the following paper 
+of Trevino <em>et. al</em>:</p>
+<p>The files for this example are in the <code>PolarizationSensitiveAntennas</code>
+subfolder of the
+<a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial</code> archive</a>.</p>
 <pre class="codehilite"><code class="language-bash linenums">% export SCUFF_MESH_PATH=${HOME}/SCUFFTutorial/Nanoparticles/mshFiles
 % export SCUFF_GEO_PATH=${HOME}/SCUFFTutorial/Nanoparticles/scuffgeoFiles</code></pre>
 
 
-<h2 id="gmsh-geometry-and-mesh">GMSH geometry and mesh</h2>
+<h2 id="gmsh-geometry-and-mesh-files">GMSH geometry and mesh files</h2>
+<p>We use the same thin triangle mesh as in the previous exercise,
+but now augment this with a new 
+<span class=SC>gmsh</span> geometry file
+named <a href="../Disc.geo"><code>Disc.geo</code></a>, 
+which describes a cylinder of user-tweakable height and radius.
+Using this core geometry file, I produce meshes for 
+cylinders of thickness 30 nm and diameter {160, 185} nm
+at medium and fine resolutions:</p>
+<pre class="codehilite"><code class="language-bash linenums">#!/bin/bash
+
+GEOFILE=Disc.geo
+BASE=D160Cylinder
+ARGS=&quot;-2 -setnumber R 0.080 -setnumber T 0.03 ${GEOFILE}&quot;
+gmsh ${ARGS} -setnumber MeshScale 1.0  -o ${BASE}_Coarse.msh
+gmsh ${ARGS} -setnumber MeshScale 0.75 -o ${BASE}_Medium.msh
+gmsh ${ARGS} -setnumber MeshScale 0.5  -o ${BASE}_Fine.msh
+
+GEOFILE=Disc.geo
+BASE=D185Cylinder
+ARGS=&quot;-2 -setnumber R 0.0925 -setnumber T 0.03 ${GEOFILE}&quot;
+gmsh ${ARGS} -setnumber MeshScale 1.0  -o ${BASE}_Coarse.msh
+gmsh ${ARGS} -setnumber MeshScale 0.75 -o ${BASE}_Medium.msh
+gmsh ${ARGS} -setnumber MeshScale 0.5  -o ${BASE}_Fine.msh</code></pre>
+
+
+<p><img alt="Cylinder160Mesh" src="../Images/Cylinder160Mesh.png" /></p>
+<h2 id="scuff-em-geometry-files">SCUFF-EM geometry files</h2>
+<p><center><strong><code>BowtieDiscs5_Fine.scuffgeo</code></strong></center></p>
+<pre class="codehilite"><code class="language-pre linenums">OBJECT NorthTriangle
+  MESHFILE Triangle_Fine.msh
+  DISPLACED 0.00 0.030 0.000
+ENDOBJECT
+
+OBJECT SouthTriangle
+  MESHFILE Triangle_Fine.msh
+  ROTATED 180 ABOUT 0 0 1
+  DISPLACED 0.00 -0.030 0.000
+ENDOBJECT
+
+OBJECT WestTriangle
+  MESHFILE Triangle_Fine.msh
+  ROTATED 90 ABOUT 0 0 1
+  DISPLACED -0.030 0.000 0.000
+ENDOBJECT
+
+OBJECT EastTriangle
+  MESHFILE Triangle_Fine.msh
+  ROTATED 270 ABOUT 0 0 1
+  DISPLACED 0.030 0.000 0.000
+ENDOBJECT
+
+OBJECT XM1Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED -0.540 0.0 0.0
+ENDOBJECT
+
+OBJECT XP1Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED  0.540 0.0 0.0
+ENDOBJECT
+
+OBJECT XM2Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED -1.080 0.0 0.0
+ENDOBJECT
+
+OBJECT XP2Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED  1.080 0.0 0.0
+ENDOBJECT
+
+OBJECT XM3Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED -1.620 0.0 0.0
+ENDOBJECT
+
+OBJECT XP3Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED  1.620 0.0 0.0
+ENDOBJECT
+
+OBJECT XM4Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED -2.160 0.0 0.0
+ENDOBJECT
+
+OBJECT XP4Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED  2.160 0.0 0.0
+ENDOBJECT
+
+OBJECT XM5Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED -2.700 0.0 0.0
+ENDOBJECT
+
+OBJECT XP5Cylinder
+  MESHFILE D160Cylinder_Fine.msh
+  DISPLACED  2.700 0.0 0.0
+ENDOBJECT
+
+OBJECT YM1Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 -0.600 0.0
+ENDOBJECT
+
+OBJECT YP1Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 0.600 0.0
+ENDOBJECT
+
+OBJECT YM2Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 -1.200 0.0
+ENDOBJECT
+
+OBJECT YP2Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 1.200 0.0
+ENDOBJECT
+
+OBJECT YM3Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 -1.800 0.0
+ENDOBJECT
+
+OBJECT YP3Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 1.800 0.0
+ENDOBJECT
+
+OBJECT YM4Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 -2.400 0.0
+ENDOBJECT
+
+OBJECT YP4Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 2.400 0.0
+ENDOBJECT
+
+OBJECT YM5Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 -3.000 0.0
+ENDOBJECT
+
+OBJECT YP5Cylinder
+  MESHFILE D185Cylinder_Fine.msh
+  DISPLACED 0.0 3.000 0.0
+ENDOBJECT</code></pre>
+
+
+<p><img alt="BowtieDiscs.png" src="../Images/BowtieDiscs.png" /></p>
+<h2 id="run-calculation-in-scuff-scatter">Run calculation in SCUFF-SCATTER</h2>
+<p><center><strong><code>RunScript.EXEY</code></strong></center></p>
+<pre class="codehilite"><code class="language-pre linenums">#!/bin/bash
+
+BASEDIR=${HOME}/SCUFFTutorial/PolarizationSensitiveAntenna
+
+export SCUFF_MESH_PATH=${BASEDIR}/mshFiles
+export SCUFF_GEO_PATH=${BASEDIR}/scuffgeoFiles
+
+for GEOM in Bowtie_Fine BowtieDiscs5_Fine
+do
+  ARGS=&quot;&quot;
+  ARGS=&quot;${ARGS} --geometry ${GEOM}.scuffgeo&quot;
+  ARGS=&quot;${ARGS} --LambdaFile ${BASEDIR}/LambdaFile&quot;
+  ARGS=&quot;${ARGS} --EPFile ${BASEDIR}/EPFiles/HotSpot&quot;
+  ARGS=&quot;${ARGS} --IFFile ${BASEDIR}/IFFile&quot;
+  scuff-scatter ${ARGS}
+done</code></pre>
+
+
+<h3 id="field-amplification-vs-incident-field-polarization-without-discs">Field amplification vs. incident-field polarization without discs</h3>
+<p><img alt="BowtieAloneData" src="../Images/BowtieAloneData.png" /></p>
+<h3 id="field-amplification-vs-incident-field-polarization-with-discs">Field amplification vs. incident-field polarization with discs</h3>
+<p><img alt="BowtieDiscsData" src="../Images/BowtieDiscsData.png" /></p>
               
             </div>
           </div>
