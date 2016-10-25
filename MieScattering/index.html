@@ -508,10 +508,10 @@ produces the following output files:</p>
 <p><code>E10Sphere_501.moments</code> (induced dipole moments)</p>
 </li>
 <li>
-<p><code>E10Sphere_501.EPFile.total</code> (components of total fields)</p>
+<p><code>E10Sphere_501.EPFile.XAxis.total</code> (components of total fields)</p>
 </li>
 <li>
-<p><code>E10Sphere_501.EPFile.scattered</code> (components of scattered fields)</p>
+<p><code>E10Sphere_501.EPFile.XAxis.scattered</code> (components of scattered fields)</p>
 </li>
 </ul>
 <p>These are text files containing lines of numbers
@@ -534,8 +534,8 @@ this:</p>
 
 <p>Next, let's use <a href="http://gnuplot.sourceforge.net"><span class=SC>gnuplot</span></a>
 to plot the <em>x</em> component of the total field as
-reported in the file <code>E10Sphere_501.EPFile.total</code>:</p>
-<pre class="codehilite"><code class="language-gnuplot linenums"> gnuplot&gt; plot 'E10SPhere_501.EPFile.total' u 1:5 w lp pt 7 ps 1, 0.25</code></pre>
+reported in the file <code>E10Sphere_501.EPFile.XAxis.total</code>:</p>
+<pre class="codehilite"><code class="language-gnuplot linenums"> gnuplot&gt; plot 'E10SPhere_501.EPFile.XAxis.total' u 1:5 w lp pt 7 ps 1, 0.25</code></pre>
 
 
 <p><img alt="Mie scattering results 1" src="../Images/MieScatteringFields.png" /></p>

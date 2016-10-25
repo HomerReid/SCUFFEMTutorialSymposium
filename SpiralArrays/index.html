@@ -156,6 +156,15 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#gmsh-geometry-and-mesh-files-for-small-thin-disc">GMSH geometry and mesh files for small thin disc</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#julia-code-to-produce-vogel-spirals">JULIA code to produce Vogel spirals</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#imaging-diffraction-patterns-with-scuff-scatter">Imaging diffraction patterns with scuff-scatter</a></li>
+                
+            
             </ul>
         
     </li>
@@ -234,6 +243,86 @@
             <div class="section">
               
                 <h1 id="diffraction-patterns-of-aperiodic-particle-arrays-vogel-spirals">Diffraction patterns of aperiodic particle arrays: Vogel spirals</h1>
+<p>In this tutorial we reproduce experimental and theoretical results
+of Trevino, Cao, and Dal Negro on diffraction patterns produced by
+light shining on aperiodic spiral arrays of scatterers. Our
+reference is this paper:</p>
+<ul>
+<li>Jacob Trevino, Hui Cao, and Luca Dal Negro, ``Circularly Symmetric Light Scattering from Nanoplasmonic Spirals,''
+<em>Nano Letters</em> <strong>11</strong> 2008 (2011). <a href="../dx.doi.org/10.1021/nl2003736">DOI: dx.doi.org/10.1021/nl2003736</a></li>
+</ul>
+<p>The files for this tutorial are in the <code>SpiralArrays</code>
+subdirectory of the <a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial</code> archive</a>.</p>
+<h2 id="gmsh-geometry-and-mesh-files-for-small-thin-disc">GMSH geometry and mesh files for small thin disc</h2>
+<ul>
+<li>
+<p><a href="../Disc.geo"><code>Disc.geo</code></a></p>
+</li>
+<li>
+<p><a href="../Disc8.msh"><code>Disc8.msh</code></a></p>
+</li>
+</ul>
+<p><img alt="Disc8Mesh" src="../Images/Disc8Mesh.png" /></p>
+<h2 id="julia-code-to-produce-vogel-spirals">JULIA code to produce Vogel spirals</h2>
+<p>Here's a <a href="../JuliaLang.org"><span class=SC>julia</span></a> code
+that inputs a <code>.msh</code> file name and some geometrical parameters
+and produces a <code>.scuffgeo</code> file describing 
+<a href="https://en.wikipedia.org/wiki/Fermat%27s_spiral">Vogel spiral</a>
+consisting of the mesh replicated many (hundreds or thousands)
+times in an aperiodic spiral pattern:</p>
+<ul>
+<li><a href="../MakeSpiralArray.jl"><code>MakeSpiralArray.jl</code></a></li>
+</ul>
+<p>Usage examples:</p>
+<pre class="codehilite"><code class="language-julia linenums"> MakeSpiralArray(1000,&quot;Disc8&quot;,SpiralType=&quot;GSpiral&quot;)
+ MakeSpiralArray(1000,&quot;Disc8&quot;,SpiralType=&quot;A1Spiral&quot;)</code></pre>
+
+
+<p>These produce files named <code>Disc8_GSpiral1000.pp</code>
+and <code>Disc8_A1Spiral1000.pp</code></p>
+<p><center><strong><code>Disc8_GSpiral1000.pp</code></strong></center>
+<img alt="Disc8_GSpiral1000" src="../Images/Disc8_GSpiral1000.png" /></p>
+<p><center><strong><code>Disc8_A1Spiral1000.pp</code></strong></center>
+<img alt="Disc8_A1Spiral1000" src="../Images/Disc8_A1Spiral1000.png" /></p>
+<h2 id="imaging-diffraction-patterns-with-scuff-scatter">Imaging diffraction patterns with scuff-scatter</h2>
+<p>The <a href="http://homerreid.github.io/scuff-em-documentation/Applications/scuffScatterOptions.md"><code>--FVMesh</code> option to <span class=SC>scuff-scatter</span></a>
+allows you to specify an arbitrary surface mesh on which you
+wish to visualize field data.
+For each <code>--FVMesh</code> you input,
+<span class=SC>scuff-scatter</span> will produce a <code>.pp</code> file
+plotting the fields at the centroid of each panel in the mesh.
+Thus, plotting the <strong>E</strong>-field magnitude at some distance
+behind the Vogel spiral yields plots of diffraction patterns.</p>
+<p><center><strong><code>RunScript</code></strong></center></p>
+<pre class="codehilite"><code class="language-bash linenums">#!/bin/bash
+
+BASEDIR=${HOME}/SCUFFTutorial/SpiralArrays
+
+export SCUFF_MESH_PATH=${BASEDIR}/mshFiles
+export SCUFF_GEO_PATH=${BASEDIR}/scuffgeoFiles
+
+for N in 100 500 1000
+do
+  for TYPE in G A1 A2
+  do
+
+    GEOM=Disc8_${TYPE}Spiral${N}
+    ARGS=&quot;&quot;
+    ARGS=&quot;${ARGS} --geometry ${GEOM}.scuffgeo&quot;
+    ARGS=&quot;${ARGS} --Lambda 0.633&quot;
+    ARGS=&quot;${ARGS} --PWDirection     0 0 1&quot;
+    ARGS=&quot;${ARGS} --PWPolarization  1 0 0&quot;
+    ARGS=&quot;${ARGS} --FVMesh          L5Screen_7400.msh&quot;
+    ARGS=&quot;${ARGS} --FVMeshTransFile L5ScreenTransformations&quot;
+    ARGS=&quot;${ARGS} --FVFuncs         |E|&quot;
+    scuff-scatter ${ARGS}
+
+  done
+done</code></pre>
+
+
+<p><img alt="Disc8_GSpiral1000" src="../Images/GSpiral.png" />
+<img alt="Disc8_GSpiral1000" src="../Images/A1Spiral.png" /></p>
               
             </div>
           </div>

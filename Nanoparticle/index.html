@@ -488,12 +488,12 @@ for RES in Medium Fine
 do
   for GEOM in GoldTriangle TwoGoldTriangles GoldCoatedSiO2Triangle
   do
-    ARGS=&quot;
+    ARGS=&quot;&quot;
     ARGS=&quot;${ARGS} --geometry ${GEOM}_${RES}.scuffgeo&quot;
     ARGS=&quot;${ARGS} --OmegaFile ${BASEDIR}/OmegaFile&quot;
     ARGS=&quot;${ARGS} --PWDirection 0 0 1&quot;
     ARGS=&quot;${ARGS} --PWPolarization 1 0 0&quot;
-    ARGS=&quot;${ARGS} --PFTFile ${GEOM}_${RES}.PFT
+    ARGS=&quot;${ARGS} --PFTFile ${GEOM}_${RES}.PFT&quot;
     scuff-scatter ${ARGS}
   done
 done</code></pre>
