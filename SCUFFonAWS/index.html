@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SCUFF-EM computations in the cloud - BU Symposium on Open-Source CAD Tools, 10/25/2016</title>
+  
+
+  <link rel="shortcut icon" href="../scuffEM.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SCUFFonAWS"
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="../mathjaxhelper.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+
+      <p align="center"
+      <a href="..">
+         <img align="center" height="auto" width="100%"  
+              src="../img/HeaderMedium.png"
+      </a>
+
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> BU Symposium on Open-Source CAD Tools, 10/25/2016</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Outline and Agenda</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ImageGallery/">Image gallery</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview of Integral-Equation Methods and Introduction to SCUFF-EM</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../IntegralEquations/">Integral-equation approaches to electromagnetic scattering</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../IntroToSCUFF/">Introduction to SCUFF-EM</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">SCUFF-EM computations in the cloud</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#launch-an-aws-instance-with-the-simpetus-platform">Launch an AWS instance with the Simpetus Platform</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#upload-and-run-initialization-script-on-cloud-server">Upload and run initialization script on cloud server</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorial walkthrough 1 Plasmonics and nanoantennas</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Nanoparticle/">Scattering and absorption by plasmonic nanoparticles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../BowtieAntennas/">Field concentration at the hotspot of a bowtie antenna</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PolarizationSwitchedAntennas/">Polarization-switched antennas</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorial walkthrough 2 Diffraction and transmission</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PeriodicDiffraction/">Diffraction patterns of periodic screens and particle arrays</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SpiralArrays/">Diffraction patterns of periodic screens and particle arrays</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PolarizationRotator/">Polarization-rotated transmission through chiral metasurfaces</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorial walkthrough 3 Energy transfer, forces, and torques due to deterministic or stochastic (thermal and quantum-mechanical) sources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OpticalForceTorque/">Optical force and torque on asymmetric and chiral nanoparticles</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">BU Symposium on Open-Source CAD Tools, 10/25/2016</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".."><span class="SmallCaps">scuff-em</span> for photonics</a> &raquo;</li>
+    
+      
+        
+          <li>Overview of Integral-Equation Methods and Introduction to SCUFF-EM &raquo;</li>
+        
+      
+    
+    <li>SCUFF-EM computations in the cloud</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/homerreid/scuff-em/" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="scuff-em-in-the-cloud-running-scuff-em-calculations-on-amazon-aws-nodes"><span class=SC>scuff-em</span> in the cloud: Running <span class=SC>scuff-em</span> calculations on Amazon AWS Nodes</h1>
+<p>Although many nontrivial <span class=SC>scuff-em</span>
+calculations---including all of the
+<a href="http://homerreid.github.io/scuff-em-documentation/#tutorial-examples">tutorial examples in the <span class=SC>scuff-em</span> documentation</a>---can
+be run quickly (few minutes or less) on a typical laptop or desktop workstation,
+eventually you may want to run some larger-scale calculations.
+For example, </p>
+<ul>
+<li>
+<p>you may want to <a href="http://homerreid.github.io/scuff-em-documentation/#tutorial-examples">crank up the resolution of the surface meshes in a scattering problem</a>
+  to get high numerical precision, or </p>
+</li>
+<li>
+<p>you may want to [run large-scale parameter sweeps][ParameterSweep]
+  involving thousands of <span class=SC>scuff-em</span>
+  calculations at various values of geometrical or other parameters, or</p>
+</li>
+<li>
+<p>you may be computing quantities that require both
+  [frequency and Brillouin-zone integration][HeatTransferProblem],
+  thus involving thousands of <span class=SC>scuff-em</span>
+  calculations at various frequencies and Bloch vectors.</p>
+</li>
+</ul>
+<p>A very convenient way to run large-scale calculations
+without building your own supercomputer
+is to use an on-demand cloud-computing resource offering
+pay-as-you-go access to remote compute nodes.
+One example of such a resource is
+<a href="https://aws.amazon.com">Amazon Web Services</a> (AWS),
+where you can buy a few hour's worth of access to a
+quite powerful server at inexpensive prices. For example,
+as discussed below,
+the cost of a machine with 16 <a href="https://en.wikipedia.org/wiki/Haswell_(microarchitecture)">Haswell</a> cores
+and 30 GB memory can be as low as $0.10/hour
+(10 cents per hour).
+(This is using AWS <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html">spot instances</a>, for which
+current pricing information is available <a href="https://aws.amazon.com/ec2/spot/pricing/">here</a>.)</p>
+<h2 id="launch-an-aws-instance-with-the-simpetus-platform">Launch an AWS instance with the <a href="http://SimpetusCloud.com">Simpetus</a> Platform</h2>
+<p>The very first time you ever do this you will need to spend
+about 10 minutes going through a totally straightforward procedure
+to set up an AWS account and "launch an EC2 instance running
+the <a href="https://aws.amazon.com/marketplace/pp/B01KHWH0AS?qid=1476230986915&amp;sr=0-1&amp;ref_=srh_res_product_title">Simpetus Electromagnetic Simulation Platform</a>."
+I put this in quotes for the benefit of cloud-computing neophytes
+(like me!) to communicate that you don't have to understand all 
+the jargon here, or to follow precisely what is happening---all
+you need to know is that, at the end of this process,
+a server will have been magically created somewhere in the
+cloud for you (and only for you, with no other users) with
+pre-installed versions of
+<span class=SC>scuff-em</span> and other modeling tools
+like 
+<a href="http://ab-initio.mit.edu/wiki/index.php/Meep"><span class=SC>meep</span></a>
+and 
+<a href="http://ab-initio.mit.edu/wiki/index.php/MPB"><span class=SC>mpb</span></a>.
+You will have an IP address that you can use to log in to
+this server, upload files to this server, run calculations
+on this server, and download the results.
+Once you're finished, you will "terminate the EC2 instance",
+whereupon, poof! The server instantly disintegrates back into
+the primordial soup of the cloud, taking with it all files
+you uploaded or that were produced by your calculations.
+You will be charged for only the time elapsed between
+launch and termination.</p>
+<p>The entire procedure for launching your AWS instance
+is carefully explained in
+<a href="https://www.youtube.com/channel/UCgYdMSoCb4ytVBTlwA1FRZg">this series of follow-along tutorial walkthrough videos</a>
+on the Simpetus youtube channel.
+If you are already familiar with things like SSH keypairs
+you can probably start with
+<a href="https://www.youtube.com/watch?v=T9ZcLGxt8Kg">this video</a>,
+which will get you up and running with an EC2 instance.</p>
+<p>In what follows I will refer to the EC2 instance created 
+in this way as your "cloud server."</p>
+<h2 id="upload-and-run-initialization-script-on-cloud-server">Upload and run initialization script on cloud server</h2>
+<p>Once your cloud server is running, the next step is to
+upload and run the following <span class=SC>bash</span> script:</p>
+<ul>
+<li><a href="../InitializeSCUFFOnAWS.sh"><code>InitializeSCUFFOnAWS.sh</code></a></li>
+</ul>
+<p>This script fetches the latest version of
+<span class=SC>scuff-em</span> from the
+<a href="http://github.com/homerreid/scuff-em"><span class=SC>scuff-em</span> GitHub page</a>
+and builds it on the EC2 instance with 
+appropriate compilation options. (As a bonus, the script
+also fetches and installs the awesome
+<a href="https://github.com/xianyi/OpenBLAS"><span class=SC>openblas</span></a>
+package for automatically architecture-optimized linear algebra,
+significantly accelerating large-scale
+<span class=SC>scuff-em</span> calculations.)</p>
+<p>Assuming you are logging in to your EC2 instance from a terminal
+on your Linux or Mac laptop, the process of uploading and 
+running the script looks like this. </p>
+<p>+1. Copy script from your local machine to the cloud server:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span> mylaptop% scp -i keypair.pem InitializeSCUFFonAWS.sh ubuntu@123.45.67.89:
+</pre></div>
+</td></tr></table>
+
+<p>Here <code>123.45.67.89</code> is the IP address of the server you launched,
+and <code>keypair.pem</code> is the SSH key-pair file you will have created
+in the launching process. 
+Note the colon (<code>:</code>) at the far right end of the command line!</p>
+<p>Of course, you could also use a GUI-based file-transfer tool like
+<a href="https://winscp.net/eng/index.php"><span class=SC>winscp</span></a>
+to upload the script from Windows without using a terminal.</p>
+<p>+2. Login to cloud server</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="hll">mylaptop % ssh -i keypair.pem ubuntu@123.45.67.89
+</span>
+<span class="hll">Welcome to Ubuntu 14.04.4 LTS <span class="o">(</span>GNU/Linux 3.13.0-91-generic x86_64<span class="o">)</span>
+</span>
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Wed Oct <span class="m">12</span> 01:30:34 UTC 2016
+
+...
+...
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+ubuntu@ip-172-31-0-191:~$ 
+</pre></div>
+</td></tr></table>
+
+<p>+3. Run initialization script on server:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ubuntu@ip-172-31-0-191:~$ . InitializeSCUFFOnAWS.sh
+
+*
+* Building OpenBLAS...
+*
+...
+...
+...
+make[1]: Leaving directory `/home/ubuntu/scuff-em&#39;
+
+*
+* SUCCESS building SCUFF-EM 
+*
+26 ip-172-31-0-191 /home/ubuntu/scuff-em &lt;&gt; 
+</pre></div>
+</td></tr></table>
+
+<p>This script takes about 10 minutes to run (on a node with 16 CPU cores).
+Once it is finished, the <span class=SC>scuff-em</span> installation
+will be present starting at your root filesystem, i.e.</p>
+<ul>
+<li>
+<p>the binary executable programs will be in <code>${HOME}/bin</code></p>
+</li>
+<li>
+<p>the examples will be in <code>${HOME}/share/scuff-em</code>,</p>
+</li>
+</ul>
+<p>etc.</p>
+<p>Also, the script adds <code>${HOME}/bin</code> to your path, so that you
+can run <span class=SC>scuff-em</span> commands from any directory
+without needing to specify the <code>${HOME}/bin</code> prefix.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Nanoparticle/" class="btn btn-neutral float-right" title="Scattering and absorption by plasmonic nanoparticles"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../MieScattering/" class="btn btn-neutral" title="First calculation: Mie scattering"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  <a href="http://homerreid.github.io/scuff-em-documentation"> 
+    <span class="SmallCaps">scuff-em</span>
+  </a> /
+  <a href="http://homerreid.github.io/buff-em-documentation"> 
+    <span class="SmallCaps">buff-em</span>
+  </a>:
+  Open-source tools for photonics CAD,
+  by
+  <a href="http://homerreid.com">Homer Reid</a>
+
+  <p>
+  <font size=-1>
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> 
+  using a customized theme modeled 
+  after the 
+  <a href="https://github.com/snide/sphinx_rtd_theme">theme</a>
+  provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  </font>
+
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../MieScattering/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Nanoparticle/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

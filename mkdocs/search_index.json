@@ -1,0 +1,119 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Download an archive of all input files used in the tutorials: \n\n\n\n\nSCUFFTutorial.tar.bz2\n\n\n\n\n\n\n\n\nImage gallery\n\n\n\n\n\n\n\n\n\n\n\n \n 9-10:15 AM \n\n \n \nOverview of integral-equation methods\n\n         and\n      \n introduction to \n         \n\n         \nscuff-em\n\n         and \n         \n\n         \nbuff-em\n.\n \n\n\n\n\n\n\n \n 10:15 - 10:30 AM \n\n \n Coffee break\n \n\n\n\n\n\n\n \n 10:30 - 11:15 AM \n\n \n \nTutorial walkthrough, part 1:\n         Plasmonics and nanoantennas.\n      \n\n \n\n\n\n\n\n\n \n 11:15 AM - 12:00 PM \n\n \n \nTutorial walkthrough, part 2:\n         Transmission and diffraction.\n      \n\n \n\n\n\n\n\n\n \n 12:00 - 1:30 PM \n\n \n Lunch\n \n\n\n\n\n\n\n \n 1:30 - 3:00 PM \n\n \n \nTutorial walkthrough, part 3:\n         Forces, torques, and energy transfers\n         due to deterministic and stochastic\n         (thermal, quantum-mechanical) sources\n      \n\n \n\n\n\n\n\n\n \n 3:00 - 3:15 PM \n\n \n Coffee break \n \n\n\n\n\n\n\n \n 3:15 - 5:00 PM \n\n \n \nOpen-ended Q\nA session: one-on-one consultations,\n         installation assistance, technical support.", 
+            "title": "Outline and Agenda"
+        }, 
+        {
+            "location": "/ImageGallery/", 
+            "text": "Image gallery", 
+            "title": "Image gallery"
+        }, 
+        {
+            "location": "/IntegralEquations/", 
+            "text": "Integral-equation approaches to electromagnetic scattering", 
+            "title": "Integral-equation approaches to electromagnetic scattering"
+        }, 
+        {
+            "location": "/IntroToSCUFF/", 
+            "text": "Introduction to SCUFF-EM and BUFF-EM\n\n\n![scuff-em icon][Images/scuffEMLarge.png]", 
+            "title": "Introduction to SCUFF-EM"
+        }, 
+        {
+            "location": "/MieScattering/", 
+            "text": "First calculations with SCUFF-EM and BUFF-EM: Mie Scattering\n\n\nTo get an initial flavor of the typical flow of\ncalculations in \nscuff-em\n and \nbuff-em\n,\ncalculation, let's first use these tools to solve\nthe textbook problem of \nMie scattering,\n the scattering\nof a plane wave by a homogeneous dielectric sphere.\n\n\n![Mie Scattering image][../Images/MieScattering.png]\n\n\nAs shown in the figure, we will take the sphere\nto have radius 1 \n\\mu\nm and the incident field to be a\nlinearly-polarized plane wave traveling in the positive\n\nz\n direction with magnitude \nE_0\n \nand wavevector \nk=\\frac{\\omega}{c}.\n\n\n\n\nExact solution\n\n\nFor this problem, the full scattered fields may be expressed\nexactly as a sum of vector spherical waves;\nthe full treatment may be found in \nthis memo\n\nor any electromagnetism textbook.\nHere we will two aspects of this solution.\n\n\nField components in the electrostatic limit\n\n\nIn the low-frequency limit \n\\omega\\to 0\n, the problem\nreduces to the textbook electrostatics problem of a\ndielectric cylinder placed in a constant external\nfield (see, for example, \nJackson Chapter 4\n).\nThe total electric field inside and outside the sphere\nreads\n%====================================================================%\n\n \\vb E\\sups{tot}(\\vb x) = \n   \\begin{dcases}\n     \\frac{3}{2+\\epsilon\\supt{DC}}E_0\\vbhat{x}, \\quad &|\\vb x|<R \n     \\\\\n     \\vbhat E_0\\vbhat{x} \n     +\n     \\pf{\\epsilon\\supt{DC}-1}{\\epsilon\\supt{DC}+2}\\pf{R}{r}^3 E_0\n     \\big(3\\vbhat{r} - \\vbhat{x}\\big), \\qquad |\\vb x|>R.\n   \\end{dcases}\n\n\n%====================================================================%\nThe sphere acquires an electric dipole moment of strength\n%====================================================================%\n\n \\frac{\\vb p}{\\epsilon_0} = 4\\pi\\pf{\\epsilon - 1}{\\epsilon+2} R^3 E_0\n\n%====================================================================%\nand the scattered field outside the sphere is just the electrostatic\nfield of this dipole.\n\n\nPower, force, and torque (PFT) versus frequency\n\n\nMoving out of the low-frequency limit,\n\n\nSolution in SCUFF-EM\n\n\nMesh and geometry files\n\n\nThe first step\nHere is a \nscuff-em\n geometry file\n\n\nCalculating DC fields\n\n\nTo confirm that the total \n\\vb E\n field in the electrostatic\nlimit exhibits the expected pattern of spatial variation,\nwe'll first ask \nscuff-em\n to solve the problem at a\nlow frequency of \n\\omega=0.1\\frac{c}{R}\n \n(wavelength \n\\lambda=\\frac{2\\pi c}{\\omega}\\approx 60R\n,\nwell within the electrostatic regime)\nand to report \n\\vb E\n-field values at a list of evaluation\npoints on the \nx\n-axis, whose coordinates we specify in the\nform of a text file we'll call \nEPFile.XAxis\n, which looks like\nthis:\n\n\nContents of file \nEPFile.XAxis:\n\n\n1\n2\n3\n4\n-3.00 0.0 0.0\n-2.95 0.0 0.0\n...\n 3.00 0.0 0.0\n\n\n\n\n\n\nWe will use the\n\nscuff-scatter\n\napplication module to compute the scattered and total\nfields at these points. Because\n\nscuff-scatter\n takes a lot of command-line options\nwhich can be unwieldy to enter by hand at the command\nprompt, we'll put all the options into a little BASH script\ncalled \nRunScript.XAxis.\n\nHere's an annotated version of the contents of this \nscript:\n\n\nNow run the \n\n\n1\n2\n3\n% RunScript.Axis\n  Thank you \nfor\n your support.\n%\n\n\n\n\n\n\nThis calculation, which takes 9 seconds on my laptop,\nproduces output files named\n\nE10Sphere_501.EPFile.scattered\n\nand\n\nE10Sphere_501.EPFile.total.\n\nThese files report all cartesian components of\nthe \nE\n and \nH\n fields at each evaluation point\nwe requested (see the file header at the top\nof this and all \nscuff-em\n output files for \nguidance on how to interpret the contents of the file).\n\n\nLet's plot the \nx\n component of the total field in\n\ngnuplot\n:\n\n\n1\n \ngnu\nplot\n \nplot\n \nE10SPhere_501.EPFile.total\n \nu\n \n1\n:\n5\n \nw\n \nlp\n \npt\n \n7\n \nps\n \n1\n,\n \n0.25\n\n\n\n\n\n\n\n![Mie scattering results 1][../Images/MieScatteringFields.png]\n\n\nCalculating PFT vs. frequency\n\n\nCalculation in BUFF-EM", 
+            "title": "First calculation: Mie scattering"
+        }, 
+        {
+            "location": "/MieScattering/#exact-solution", 
+            "text": "For this problem, the full scattered fields may be expressed\nexactly as a sum of vector spherical waves;\nthe full treatment may be found in  this memo \nor any electromagnetism textbook.\nHere we will two aspects of this solution.", 
+            "title": "Exact solution"
+        }, 
+        {
+            "location": "/MieScattering/#field-components-in-the-electrostatic-limit", 
+            "text": "In the low-frequency limit  \\omega\\to 0 , the problem\nreduces to the textbook electrostatics problem of a\ndielectric cylinder placed in a constant external\nfield (see, for example,  Jackson Chapter 4 ).\nThe total electric field inside and outside the sphere\nreads\n%====================================================================%  \\vb E\\sups{tot}(\\vb x) = \n   \\begin{dcases}\n     \\frac{3}{2+\\epsilon\\supt{DC}}E_0\\vbhat{x}, \\quad &|\\vb x|<R \n     \\\\\n     \\vbhat E_0\\vbhat{x} \n     +\n     \\pf{\\epsilon\\supt{DC}-1}{\\epsilon\\supt{DC}+2}\\pf{R}{r}^3 E_0\n     \\big(3\\vbhat{r} - \\vbhat{x}\\big), \\qquad |\\vb x|>R.\n   \\end{dcases} \n%====================================================================%\nThe sphere acquires an electric dipole moment of strength\n%====================================================================%  \\frac{\\vb p}{\\epsilon_0} = 4\\pi\\pf{\\epsilon - 1}{\\epsilon+2} R^3 E_0 \n%====================================================================%\nand the scattered field outside the sphere is just the electrostatic\nfield of this dipole.", 
+            "title": "Field components in the electrostatic limit"
+        }, 
+        {
+            "location": "/MieScattering/#power-force-and-torque-pft-versus-frequency", 
+            "text": "Moving out of the low-frequency limit,", 
+            "title": "Power, force, and torque (PFT) versus frequency"
+        }, 
+        {
+            "location": "/MieScattering/#solution-in-scuff-em", 
+            "text": "", 
+            "title": "Solution in SCUFF-EM"
+        }, 
+        {
+            "location": "/MieScattering/#mesh-and-geometry-files", 
+            "text": "The first step\nHere is a  scuff-em  geometry file", 
+            "title": "Mesh and geometry files"
+        }, 
+        {
+            "location": "/MieScattering/#calculating-dc-fields", 
+            "text": "To confirm that the total  \\vb E  field in the electrostatic\nlimit exhibits the expected pattern of spatial variation,\nwe'll first ask  scuff-em  to solve the problem at a\nlow frequency of  \\omega=0.1\\frac{c}{R}  \n(wavelength  \\lambda=\\frac{2\\pi c}{\\omega}\\approx 60R ,\nwell within the electrostatic regime)\nand to report  \\vb E -field values at a list of evaluation\npoints on the  x -axis, whose coordinates we specify in the\nform of a text file we'll call  EPFile.XAxis , which looks like\nthis:  Contents of file  EPFile.XAxis:  1\n2\n3\n4 -3.00 0.0 0.0\n-2.95 0.0 0.0\n...\n 3.00 0.0 0.0   We will use the scuff-scatter \napplication module to compute the scattered and total\nfields at these points. Because scuff-scatter  takes a lot of command-line options\nwhich can be unwieldy to enter by hand at the command\nprompt, we'll put all the options into a little BASH script\ncalled  RunScript.XAxis. \nHere's an annotated version of the contents of this \nscript:  Now run the   1\n2\n3 % RunScript.Axis\n  Thank you  for  your support.\n%   This calculation, which takes 9 seconds on my laptop,\nproduces output files named E10Sphere_501.EPFile.scattered \nand E10Sphere_501.EPFile.total. \nThese files report all cartesian components of\nthe  E  and  H  fields at each evaluation point\nwe requested (see the file header at the top\nof this and all  scuff-em  output files for \nguidance on how to interpret the contents of the file).  Let's plot the  x  component of the total field in gnuplot :  1   gnu plot   plot   E10SPhere_501.EPFile.total   u   1 : 5   w   lp   pt   7   ps   1 ,   0.25    ![Mie scattering results 1][../Images/MieScatteringFields.png]", 
+            "title": "Calculating DC fields"
+        }, 
+        {
+            "location": "/MieScattering/#calculating-pft-vs-frequency", 
+            "text": "", 
+            "title": "Calculating PFT vs. frequency"
+        }, 
+        {
+            "location": "/MieScattering/#calculation-in-buff-em", 
+            "text": "", 
+            "title": "Calculation in BUFF-EM"
+        }, 
+        {
+            "location": "/SCUFFonAWS/", 
+            "text": "scuff-em\n in the cloud: Running \nscuff-em\n calculations on Amazon AWS Nodes\n\n\nAlthough many nontrivial \nscuff-em\n\ncalculations---including all of the\n\ntutorial examples in the \nscuff-em\n documentation\n---can\nbe run quickly (few minutes or less) on a typical laptop or desktop workstation,\neventually you may want to run some larger-scale calculations.\nFor example, \n\n\n\n\n\n\nyou may want to \ncrank up the resolution of the surface meshes in a scattering problem\n\n  to get high numerical precision, or \n\n\n\n\n\n\nyou may want to [run large-scale parameter sweeps][ParameterSweep]\n  involving thousands of \nscuff-em\n\n  calculations at various values of geometrical or other parameters, or\n\n\n\n\n\n\nyou may be computing quantities that require both\n  [frequency and Brillouin-zone integration][HeatTransferProblem],\n  thus involving thousands of \nscuff-em\n\n  calculations at various frequencies and Bloch vectors.\n\n\n\n\n\n\nA very convenient way to run large-scale calculations\nwithout building your own supercomputer\nis to use an on-demand cloud-computing resource offering\npay-as-you-go access to remote compute nodes.\nOne example of such a resource is\n\nAmazon Web Services\n (AWS),\nwhere you can buy a few hour's worth of access to a\nquite powerful server at inexpensive prices. For example,\nas discussed below,\nthe cost of a machine with 16 \nHaswell\n cores\nand 30 GB memory can be as low as $0.10/hour\n(10 cents per hour).\n(This is using AWS \nspot instances\n, for which\ncurrent pricing information is available \nhere\n.)\n\n\nLaunch an AWS instance with the \nSimpetus\n Platform\n\n\nThe very first time you ever do this you will need to spend\nabout 10 minutes going through a totally straightforward procedure\nto set up an AWS account and \"launch an EC2 instance running\nthe \nSimpetus Electromagnetic Simulation Platform\n.\"\nI put this in quotes for the benefit of cloud-computing neophytes\n(like me!) to communicate that you don't have to understand all \nthe jargon here, or to follow precisely what is happening---all\nyou need to know is that, at the end of this process,\na server will have been magically created somewhere in the\ncloud for you (and only for you, with no other users) with\npre-installed versions of\n\nscuff-em\n and other modeling tools\nlike \n\nmeep\n\nand \n\nmpb\n.\nYou will have an IP address that you can use to log in to\nthis server, upload files to this server, run calculations\non this server, and download the results.\nOnce you're finished, you will \"terminate the EC2 instance\",\nwhereupon, poof! The server instantly disintegrates back into\nthe primordial soup of the cloud, taking with it all files\nyou uploaded or that were produced by your calculations.\nYou will be charged for only the time elapsed between\nlaunch and termination.\n\n\nThe entire procedure for launching your AWS instance\nis carefully explained in\n\nthis series of follow-along tutorial walkthrough videos\n\non the Simpetus youtube channel.\nIf you are already familiar with things like SSH keypairs\nyou can probably start with\n\nthis video\n,\nwhich will get you up and running with an EC2 instance.\n\n\nIn what follows I will refer to the EC2 instance created \nin this way as your \"cloud server.\"\n\n\nUpload and run initialization script on cloud server\n\n\nOnce your cloud server is running, the next step is to\nupload and run the following \nbash\n script:\n\n\n\n\nInitializeSCUFFOnAWS.sh\n\n\n\n\nThis script fetches the latest version of\n\nscuff-em\n from the\n\nscuff-em\n GitHub page\n\nand builds it on the EC2 instance with \nappropriate compilation options. (As a bonus, the script\nalso fetches and installs the awesome\n\nopenblas\n\npackage for automatically architecture-optimized linear algebra,\nsignificantly accelerating large-scale\n\nscuff-em\n calculations.)\n\n\nAssuming you are logging in to your EC2 instance from a terminal\non your Linux or Mac laptop, the process of uploading and \nrunning the script looks like this. \n\n\n+1. Copy script from your local machine to the cloud server:\n\n\n1\n mylaptop% scp -i keypair.pem InitializeSCUFFonAWS.sh ubuntu@123.45.67.89:\n\n\n\n\n\n\nHere \n123.45.67.89\n is the IP address of the server you launched,\nand \nkeypair.pem\n is the SSH key-pair file you will have created\nin the launching process. \nNote the colon (\n:\n) at the far right end of the command line!\n\n\nOf course, you could also use a GUI-based file-transfer tool like\n\nwinscp\n\nto upload the script from Windows without using a terminal.\n\n\n+2. Login to cloud server\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\nmylaptop % ssh -i keypair.pem ubuntu@123.45.67.89\n\n\n\nWelcome to Ubuntu 14.04.4 LTS \n(\nGNU/Linux 3.13.0-91-generic x86_64\n)\n\n\n\n * Documentation:  https://help.ubuntu.com/\n\n  System information as of Wed Oct \n12\n 01:30:34 UTC 2016\n\n...\n...\nUbuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by\napplicable law.\n\nubuntu@ip-172-31-0-191:~$ \n\n\n\n\n\n\n+3. Run initialization script on server:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\nubuntu@ip-172-31-0-191:~$ . InitializeSCUFFOnAWS.sh\n\n*\n* Building OpenBLAS...\n*\n...\n...\n...\nmake[1]: Leaving directory `/home/ubuntu/scuff-em\n\n\n*\n* SUCCESS building SCUFF-EM \n*\n26 ip-172-31-0-191 /home/ubuntu/scuff-em \n \n\n\n\n\n\n\nThis script takes about 10 minutes to run (on a node with 16 CPU cores).\nOnce it is finished, the \nscuff-em\n installation\nwill be present starting at your root filesystem, i.e.\n\n\n\n\n\n\nthe binary executable programs will be in \n${HOME}/bin\n\n\n\n\n\n\nthe examples will be in \n${HOME}/share/scuff-em\n,\n\n\n\n\n\n\netc.\n\n\nAlso, the script adds \n${HOME}/bin\n to your path, so that you\ncan run \nscuff-em\n commands from any directory\nwithout needing to specify the \n${HOME}/bin\n prefix.", 
+            "title": "SCUFF-EM computations in the cloud"
+        }, 
+        {
+            "location": "/SCUFFonAWS/#launch-an-aws-instance-with-the-simpetus-platform", 
+            "text": "The very first time you ever do this you will need to spend\nabout 10 minutes going through a totally straightforward procedure\nto set up an AWS account and \"launch an EC2 instance running\nthe  Simpetus Electromagnetic Simulation Platform .\"\nI put this in quotes for the benefit of cloud-computing neophytes\n(like me!) to communicate that you don't have to understand all \nthe jargon here, or to follow precisely what is happening---all\nyou need to know is that, at the end of this process,\na server will have been magically created somewhere in the\ncloud for you (and only for you, with no other users) with\npre-installed versions of scuff-em  and other modeling tools\nlike  meep \nand  mpb .\nYou will have an IP address that you can use to log in to\nthis server, upload files to this server, run calculations\non this server, and download the results.\nOnce you're finished, you will \"terminate the EC2 instance\",\nwhereupon, poof! The server instantly disintegrates back into\nthe primordial soup of the cloud, taking with it all files\nyou uploaded or that were produced by your calculations.\nYou will be charged for only the time elapsed between\nlaunch and termination.  The entire procedure for launching your AWS instance\nis carefully explained in this series of follow-along tutorial walkthrough videos \non the Simpetus youtube channel.\nIf you are already familiar with things like SSH keypairs\nyou can probably start with this video ,\nwhich will get you up and running with an EC2 instance.  In what follows I will refer to the EC2 instance created \nin this way as your \"cloud server.\"", 
+            "title": "Launch an AWS instance with the Simpetus Platform"
+        }, 
+        {
+            "location": "/SCUFFonAWS/#upload-and-run-initialization-script-on-cloud-server", 
+            "text": "Once your cloud server is running, the next step is to\nupload and run the following  bash  script:   InitializeSCUFFOnAWS.sh   This script fetches the latest version of scuff-em  from the scuff-em  GitHub page \nand builds it on the EC2 instance with \nappropriate compilation options. (As a bonus, the script\nalso fetches and installs the awesome openblas \npackage for automatically architecture-optimized linear algebra,\nsignificantly accelerating large-scale scuff-em  calculations.)  Assuming you are logging in to your EC2 instance from a terminal\non your Linux or Mac laptop, the process of uploading and \nrunning the script looks like this.   +1. Copy script from your local machine to the cloud server:  1  mylaptop% scp -i keypair.pem InitializeSCUFFonAWS.sh ubuntu@123.45.67.89:   Here  123.45.67.89  is the IP address of the server you launched,\nand  keypair.pem  is the SSH key-pair file you will have created\nin the launching process. \nNote the colon ( : ) at the far right end of the command line!  Of course, you could also use a GUI-based file-transfer tool like winscp \nto upload the script from Windows without using a terminal.  +2. Login to cloud server   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14 mylaptop % ssh -i keypair.pem ubuntu@123.45.67.89  Welcome to Ubuntu 14.04.4 LTS  ( GNU/Linux 3.13.0-91-generic x86_64 )  \n * Documentation:  https://help.ubuntu.com/\n\n  System information as of Wed Oct  12  01:30:34 UTC 2016\n\n...\n...\nUbuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by\napplicable law.\n\nubuntu@ip-172-31-0-191:~$    +3. Run initialization script on server:   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14 ubuntu@ip-172-31-0-191:~$ . InitializeSCUFFOnAWS.sh\n\n*\n* Building OpenBLAS...\n*\n...\n...\n...\nmake[1]: Leaving directory `/home/ubuntu/scuff-em \n\n*\n* SUCCESS building SCUFF-EM \n*\n26 ip-172-31-0-191 /home/ubuntu/scuff-em      This script takes about 10 minutes to run (on a node with 16 CPU cores).\nOnce it is finished, the  scuff-em  installation\nwill be present starting at your root filesystem, i.e.    the binary executable programs will be in  ${HOME}/bin    the examples will be in  ${HOME}/share/scuff-em ,    etc.  Also, the script adds  ${HOME}/bin  to your path, so that you\ncan run  scuff-em  commands from any directory\nwithout needing to specify the  ${HOME}/bin  prefix.", 
+            "title": "Upload and run initialization script on cloud server"
+        }, 
+        {
+            "location": "/Nanoparticle/", 
+            "text": "Scattering and absorption by plasmonic nanoparticles", 
+            "title": "Scattering and absorption by plasmonic nanoparticles"
+        }, 
+        {
+            "location": "/BowtieAntennas/", 
+            "text": "Field concentration at the hotspot of a bowtie antenna", 
+            "title": "Field concentration at the hotspot of a bowtie antenna"
+        }, 
+        {
+            "location": "/PolarizationSwitchedAntennas/", 
+            "text": "Polarization-switched antennas", 
+            "title": "Polarization-switched antennas"
+        }, 
+        {
+            "location": "/PeriodicDiffraction/", 
+            "text": "Diffraction patterns of periodic screens and particle arrays", 
+            "title": "Diffraction patterns of periodic screens and particle arrays"
+        }, 
+        {
+            "location": "/SpiralArrays/", 
+            "text": "Diffraction patterns of aperiodic particle arrays: Vogel spirals", 
+            "title": "Diffraction patterns of periodic screens and particle arrays"
+        }, 
+        {
+            "location": "/PolarizationRotator/", 
+            "text": "'Polarization rotators: Polarization-dependent transmission through chiral metasurfaces': 'PolarizationRotator.md'", 
+            "title": "Polarization-rotated transmission through chiral metasurfaces"
+        }, 
+        {
+            "location": "/OpticalForceTorque/", 
+            "text": "Optical force and torque on asymmetric and chiral nanoparticles", 
+            "title": "Optical force and torque on asymmetric and chiral nanoparticles"
+        }
+    ]
+}
