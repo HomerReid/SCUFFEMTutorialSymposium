@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Field concentration at the hotspot of a bowtie antenna - BU Symposium on Open-Source CAD Tools, 10/25/2016</title>
+  <title>LDOS and field concentration at the hotspot of a bowtie antenna - BU Symposium on Open-Source CAD Tools, 10/25/2016</title>
   
 
   <link rel="shortcut icon" href="../scuffEM.ico">
@@ -94,14 +94,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
+        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
+        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
         
     </li>
 
@@ -123,9 +123,18 @@
         
             
     <li class="toctree-l1 current">
-        <a class="current" href="./">Field concentration at the hotspot of a bowtie antenna</a>
+        <a class="current" href="./">LDOS and field concentration at the hotspot of a bowtie antenna</a>
         
             <ul>
+            
+                <li class="toctree-l3"><a href="#gmsh-geometries-and-mesh-files">GMSH geometries and mesh files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#scuff-em-geometry-files">SCUFF-EM geometry files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#calculating-ldos-at-the-hotspot">Calculating LDOS at the hotspot</a></li>
+                
             
             </ul>
         
@@ -134,7 +143,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationSwitchedAntennas/">Polarization-switched antennas</a>
+        <a class="" href="../PolarizationSensitiveAntennas/">Polarization-sensitive antennas</a>
         
     </li>
 
@@ -156,14 +165,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SpiralArrays/">Diffraction patterns of periodic screens and particle arrays</a>
+        <a class="" href="../SpiralArrays/">Diffraction patterns of aperiodic particle arrays</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationRotator/">Polarization-rotated transmission through chiral metasurfaces</a>
+        <a class="" href="../ChiralMetasurface/">Polarization-rotated transmission through a chiral metasurface</a>
         
     </li>
 
@@ -179,6 +188,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../OpticalForceTorque/">Optical force and torque on asymmetric and chiral nanoparticles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SelfRotation/">Thermal self-rotation torque on warm chiral nanoparticle in cold background</a>
         
     </li>
 
@@ -212,7 +228,7 @@
         
       
     
-    <li>Field concentration at the hotspot of a bowtie antenna</li>
+    <li>LDOS and field concentration at the hotspot of a bowtie antenna</li>
     <li class="wy-breadcrumbs-aside">
       
         
@@ -226,7 +242,152 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="field-concentration-at-the-hotspot-of-a-bowtie-antenna">Field concentration at the hotspot of a bowtie antenna</h1>
+                <h1 id="polarization-sensitive-bowtie-antennas">Polarization-sensitive bowtie antennas</h1>
+<p>For our next trick, we'll investigate the local density of states (LDOS)
+and incident-field enhancement at the hotspot of bowtie antenna.</p>
+<p>The input files for this example are in the <code>PolarizationSensitiveAntenna</code>
+subdirectory of the 
+<a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial</code> archive</a>. To avoid typing
+folder prefixes at the command line, it's convenient to set up
+<span class=SC>scuff-em</span> search paths
+as follows:</p>
+<pre class="codehilite"><code class="language-bash linenums">% export SCUFF_MESH_PATH=${HOME}/SCUFFTutorial/PolarizationSensitiveAntenna/mshFiles
+% export SCUFF_GEO_PATH=${HOME}/SCUFFTutorial/PolarizationSensitiveAntenna/scuffgeoFiles</code></pre>
+
+
+<h2 id="gmsh-geometries-and-mesh-files">GMSH geometries and mesh files</h2>
+<p>The GMSH geometry file <code>Triangle.geo</code> in the <code>.geoFiles</code> folder
+is similar to
+the one we used in the previous exercise, but with different
+default dimensions:</p>
+<p><center><strong><code>Triangle_Fine.msh</code></strong></center>
+<img alt="ThinTriangleMesh" src="../Images/ThinTriangleMesh.png" /></p>
+<h2 id="scuff-em-geometry-files">SCUFF-EM geometry files</h2>
+<p>The <code>scuffgeoFiles</code> directory contains a series files named
+<code>Bowtie35_Medium.scuffgeo</code> ...  <code>Bowtie95_Medium.scuffgeo</code>
+describing 4-point bowtie antennas with various tip-tip
+separation distances:</p>
+<p><center><strong><code>Bowtie35_Fine.scuffgeo</code></strong></center></p>
+<pre class="codehilite"><code class="language-pre linenums">OBJECT NorthTriangle
+  MESHFILE Triangle_Medium.msh
+  DISPLACED 0.00 0.035 0.000
+ENDOBJECT
+
+OBJECT SouthTriangle
+  MESHFILE Triangle_Medium.msh
+  ROTATED 180 ABOUT 0 0 1
+  DISPLACED 0.00 -0.035 0.000
+ENDOBJECT
+
+OBJECT WestTriangle
+  MESHFILE Triangle_Medium.msh
+  ROTATED 90 ABOUT 0 0 1
+  DISPLACED -0.035 0.000 0.000
+ENDOBJECT
+
+OBJECT EastTriangle
+  MESHFILE Triangle_Medium.msh
+  ROTATED 270 ABOUT 0 0 1
+  DISPLACED 0.035 0.000 0.000
+ENDOBJECT</code></pre>
+
+
+<p><center><strong><code>Bowtie95_Fine.scuffgeo</code></strong></center></p>
+<pre class="codehilite"><code class="language-pre linenums">OBJECT NorthTriangle
+  MESHFILE Triangle_Medium.msh
+  DISPLACED 0.00 0.095 0.000
+ENDOBJECT
+
+OBJECT SouthTriangle
+  MESHFILE Triangle_Medium.msh
+  ROTATED 180 ABOUT 0 0 1
+  DISPLACED 0.00 -0.095 0.000
+ENDOBJECT
+
+OBJECT WestTriangle
+  MESHFILE Triangle_Medium.msh
+  ROTATED 90 ABOUT 0 0 1
+  DISPLACED -0.095 0.000 0.000
+ENDOBJECT
+
+OBJECT EastTriangle
+  MESHFILE Triangle_Medium.msh
+  ROTATED 270 ABOUT 0 0 1
+  DISPLACED 0.095 0.000 0.000
+ENDOBJECT</code></pre>
+
+
+<p>To visualize these files, we go like this:</p>
+<pre class="codehilite"><code class="language-pre linenums"> % scuff-analyze --WriteGMSHFiles Bowtie35_Fine.scuffgeo
+ % scuff-analyze --WriteGMSHFiles Bowtie65_Fine.scuffgeo
+ % scuff-analyze --WriteGMSHFiles Bowtie95_Fine.scuffgeo
+ % gmsh Bowtie35_Fine.scuffgeo Bowtie65_Fine.scuffgeo Bowtie95_Fine.scuffgeo</code></pre>
+
+
+<p><center><strong><code>Bowtie35_Fine.scuffgeo</code></strong></center>
+<img alt="Bowtie95FineMesh" src="../Images/Bowtie35.png" /></p>
+<p><center><strong><code>Bowtie65_Fine.scuffgeo</code></strong></center>
+<img alt="Bowtie95FineMesh" src="../Images/Bowtie65.png" /></p>
+<p><center><strong><code>Bowtie95_Fine.scuffgeo</code></strong></center>
+<img alt="Bowtie95FineMesh" src="../Images/Bowtie95.png" /></p>
+<h2 id="calculating-ldos-at-the-hotspot">Calculating LDOS at the hotspot</h2>
+<p>As explained in <a href="http://homerreid.github.io/scuff-em-documentation/tex/scuff-ldos.pdf">this memo</a>,
+the scattering dyadic Green's functions (DGFs)
+and local density of states (LDOS) at a given frequency <script type="math/tex">\omega</script>
+and point <strong>x</strong> can be computed by performing 6 separate
+scattering calculations, each involving incident fields
+radiated by a point source at <strong>x</strong>. Thus, one way to do
+LDOS calculations in <span class=SC>scuff-em</span>
+would be to do 6 separate
+<a href="http://homerreid.github.io/scuff-em-documentation/Applications/scuff-scatter.md"><span class=SC>scuff-scatter</span></a>
+calculations at each frequency,
+using the 
+<a href="http://homerreid.github.io/scuff-em-documentation/Applications/scuffScatterOptions.md"><code>--psDirection</code> and <code>--psStrength</code> options</a>
+to define point-source incident fields.</p>
+<p>However, as explained in the memo above, this calculation can be considerably
+streamlined by exploiting certain computational redundancies,
+and this accelerated algorithm for LDOS calculations is implemented
+by the
+<a href="http://homerreid.github.io/scuff-em-documentation/Applications/scuff-ldos.md"><span class=SC>scuff-ldos</span> application module</a>
+in the <span class=SC>scuff-em</span> suite.</p>
+<p>Here's a simple script that uses
+<span class=SC>scuff-ldos</span> to compute LDOS vs. frequency 
+and tip-tip separation at the hotspot (center point)
+of the bowtie antennas shown above.</p>
+<p><center><strong><code>RunScript.LDOS</code></strong></center></p>
+<pre class="codehilite"><code class="language-bash linenums">#!/bin/bash
+
+BASEDIR=${HOME}/SCUFFTutorial/PolarizationSensitiveAntenna
+
+export SCUFF_MESH_PATH=${BASEDIR}/mshFiles
+export SCUFF_GEO_PATH=${BASEDIR}/scuffgeoFiles
+
+for RES in Medium Fine
+do
+  for N in 35 65 95
+  do
+    ARGS=&quot;&quot;
+    ARGS=&quot;${ARGS} --geometry Bowtie${N}_${RES}.scuffgeo&quot;
+    ARGS=&quot;${ARGS} --LambdaFile ${BASEDIR}/LambdaFile&quot;
+    ARGS=&quot;${ARGS} --EPFile ${BASEDIR}/EPFile.HotSpot&quot;
+    scuff-ldos ${ARGS}
+  done
+done</code></pre>
+
+
+<p>Here <code>LambdaFile</code> is a list of wavelengths at which 
+to run the calculation and <code>EPFile.HotSpot</code> 
+specifies the coordinates of just a single evaluation
+point, the hotspot:</p>
+<p><center><strong><code>EPFile.HotSpot</code></strong></center></p>
+<pre class="codehilite"><code class="linenums">0.0 0.0 0.0</code></pre>
+
+
+<p><img alt="LDOSvsSeparation" src="../Images/LDOSvsSeparation.png" /></p>
+<p>Here's the 
+<span class=SC>gnuplot</span>
+script I used to produce this plot: 
+<a href="../LDOSPlotter.gp"><code>LDOSPlotter.gp</code></a></p>
               
             </div>
           </div>
@@ -234,7 +395,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../PolarizationSwitchedAntennas/" class="btn btn-neutral float-right" title="Polarization-switched antennas"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../PolarizationSensitiveAntennas/" class="btn btn-neutral float-right" title="Polarization-sensitive antennas"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../Nanoparticle/" class="btn btn-neutral" title="Scattering and absorption by plasmonic nanoparticles"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -287,7 +448,7 @@
         <span><a href="../Nanoparticle/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../PolarizationSwitchedAntennas/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../PolarizationSensitiveAntennas/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

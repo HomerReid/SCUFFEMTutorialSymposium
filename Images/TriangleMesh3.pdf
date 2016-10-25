@@ -1,0 +1,2199 @@
+%PDF-1.4
+1 0 obj
+<<
+/Title (TriangleMesh3)
+/Creator (GL2PS 1.3.9, (C) 1999-2015 C. Geuzaine)
+/Producer (Gmsh)
+/CreationDate (D:20161019201540)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Kids [6 0 R]
+/Count 1
+>>
+endobj
+4 0 obj
+<<
+/Length 5 0 R
+>>
+stream
+/GSa gs
+0 0 0 rg
+BT
+/F0 20 Tf
+461.622559 91.143433 Td
+(0) Tj
+ET
+8 w
+0 0 1 RG
+464.627350 123.062706 m
+462.245331 123.669830 l
+461.052429 124.007301 m
+462.245331 123.669830 l
+S
+1 w
+0 0 0 RG
+477.312592 132.145996 m
+478.329376 136.256439 l
+S
+/Sh0 sh
+8 w
+0 0 1 RG
+464.627350 123.062706 m
+466.307800 122.634399 l
+S
+/Sh1 sh
+1 w
+0 0 0 RG
+484.494354 119.016449 m
+488.134735 118.336594 l
+S
+8 w
+0 0 1 RG
+484.573608 119.337105 m
+487.040985 119.039185 l
+488.279327 118.921791 m
+487.040985 119.039185 l
+S
+/Sh2 sh
+1 w
+0 0 0 RG
+488.134735 118.336594 m
+501.739655 115.795815 l
+S
+8 w
+0 0 1 RG
+488.279327 118.921791 m
+491.251923 118.639984 l
+495.477600 118.348175 l
+499.006287 118.194832 m
+495.477600 118.348175 l
+S
+/Sh3 sh
+1 w
+0 0 0 RG
+501.739655 115.795815 m
+501.757629 115.792458 l
+S
+/Sh4 sh
+1 w
+0 0 0 RG
+501.757629 115.792458 m
+511.696136 113.936394 l
+S
+8 w
+0 0 1 RG
+499.006287 118.194832 m
+499.715118 118.164032 l
+503.961548 118.087677 l
+508.213989 118.119080 l
+512.469543 118.258270 l
+512.768372 118.275604 m
+512.469543 118.258270 l
+S
+/Sh5 sh
+1 w
+0 0 0 RG
+478.329376 136.256439 m
+484.908844 162.854752 l
+S
+/Sh6 sh
+8 w
+0 0 1 RG
+461.052429 124.007301 m
+458.217499 124.809296 l
+454.227051 126.051941 l
+450.276672 127.396881 l
+446.369141 128.843323 l
+442.507080 130.390137 l
+441.964447 130.624344 m
+442.507080 130.390137 l
+S
+/Sh7 sh
+0 0 0 rg
+BT
+/F1 20 Tf
+452.524231 123.119446 Td
+(0) Tj
+ET
+8 w
+0 0 1 RG
+441.964447 130.624344 m
+438.693176 132.036346 l
+438.422424 132.161865 m
+438.693176 132.036346 l
+S
+/Sh8 sh
+0 0 0 rg
+BT
+/F2 20 Tf
+758.655396 32.122894 Td
+(0.1) Tj
+ET
+1 w
+0 0 0 RG
+790.558105 61.857666 m
+788.235901 52.469849 l
+648.660278 88.357727 m
+948.574585 32.347382 l
+946.252319 22.959595 l
+S
+/Sh9 sh
+8 w
+0 0 1 RG
+623.163208 165.277420 m
+621.322815 163.552399 l
+619.369446 161.810638 m
+621.322815 163.552399 l
+619.369446 161.810638 m
+618.118225 160.695007 l
+614.841431 157.916229 m
+618.118225 160.695007 l
+611.494629 155.217957 m
+614.841431 157.916229 l
+608.974609 153.287338 m
+608.080139 152.602051 l
+604.600342 150.070312 m
+608.080139 152.602051 l
+604.110168 149.731903 m
+604.600342 150.070312 l
+S
+/Sh10 sh
+8 w
+0 0 1 RG
+637.559021 180.092163 m
+640.141479 182.834641 l
+S
+/Sh11 sh
+1 w
+0 0 0 RG
+523.570129 111.718872 m
+548.869934 106.994019 l
+520.178467 112.352280 m
+511.696136 113.936394 l
+S
+8 w
+0 0 1 RG
+512.768372 118.275604 m
+516.725342 118.505157 l
+520.978333 118.859589 l
+525.225708 119.321259 l
+529.464539 119.889923 l
+533.691895 120.565125 l
+537.904907 121.346436 l
+542.100708 122.233368 l
+554.555908 125.521027 m
+558.654053 126.823425 l
+550.429016 124.321350 m
+554.555908 125.521027 l
+546.276367 123.225220 m
+550.429016 124.321350 l
+542.100708 122.233368 m
+546.276367 123.225220 l
+604.110168 149.731903 m
+601.057556 147.624390 l
+597.454285 145.266083 m
+601.057556 147.624390 l
+593.792908 142.996948 m
+597.454285 145.266083 l
+590.075989 140.818542 m
+593.792908 142.996948 l
+589.662842 140.589920 m
+590.075989 140.818542 l
+589.363342 140.424179 m
+586.306091 138.732391 l
+582.485779 136.739868 m
+586.306091 138.732391 l
+S
+/Sh12 sh
+8 w
+0 0 1 RG
+589.363342 140.424179 m
+589.662842 140.589920 l
+S
+/Sh13 sh
+1 w
+0 0 0 RG
+520.178467 112.352280 m
+523.570129 111.718872 l
+S
+/Sh14 sh
+1 w
+0 0 0 RG
+563.235779 104.311134 m
+548.869934 106.994019 l
+S
+0 0 1 rg
+BT
+/F3 20 Tf
+564.872559 133.145355 Td
+(1) Tj
+ET
+/Sh15 sh
+0 0 0 rg
+BT
+/F4 20 Tf
+588.638977 61.633179 Td
+(0.05) Tj
+ET
+1 w
+0 0 0 RG
+632.541748 91.367920 m
+630.219543 81.980133 l
+563.235779 104.311134 m
+648.548889 88.378532 l
+S
+/Sh16 sh
+8 w
+0 0 1 RG
+640.141479 182.834641 m
+656.856079 200.584869 l
+S
+/Sh17 sh
+1 w
+0 0 0 RG
+648.548889 88.378532 m
+648.660278 88.357727 l
+S
+/Sh18 sh
+8 w
+0 0 1 RG
+656.856079 200.584869 m
+683.231873 228.594910 l
+S
+/Sh19 sh
+8 w
+0 0 1 RG
+438.422424 132.161865 m
+434.929993 133.780823 l
+431.220154 135.622314 l
+427.566223 137.559631 l
+423.970642 139.591400 l
+420.686462 141.565567 m
+423.970642 139.591400 l
+S
+/Sh20 sh
+8 w
+0 0 1 RG
+353.889862 233.072342 m
+352.832245 236.494858 l
+S
+/Sh21 sh
+8 w
+0 0 1 RG
+366.841827 199.258804 m
+365.890991 201.085510 l
+364.115723 204.740356 l
+362.442322 208.443634 l
+360.871948 212.192780 l
+360.008392 214.426285 m
+360.871948 212.192780 l
+S
+/Sh22 sh
+8 w
+0 0 1 RG
+370.038910 193.430908 m
+369.742188 193.931091 l
+367.766907 197.481628 l
+367.271881 198.432648 m
+367.766907 197.481628 l
+S
+/Sh23 sh
+8 w
+0 0 1 RG
+352.832245 236.494858 m
+348.877502 249.292725 l
+S
+/Sh24 sh
+8 w
+0 0 1 RG
+420.686462 141.565567 m
+420.435913 141.716187 l
+384.841431 172.413757 m
+383.599945 173.882690 l
+381.059235 177.063141 l
+379.084259 179.680817 m
+381.059235 177.063141 l
+S
+/Sh25 sh
+8 w
+0 0 1 RG
+420.435913 141.716187 m
+416.964417 143.932617 l
+413.558594 146.239166 l
+410.220764 148.634216 l
+406.953156 151.116119 l
+403.758057 153.683197 l
+400.637695 156.333710 l
+400.633179 156.337769 m
+400.637695 156.333710 l
+S
+/Sh26 sh
+8 w
+0 0 1 RG
+379.084259 179.680817 m
+378.608795 180.311005 l
+376.250275 183.624023 l
+373.985321 186.999908 l
+371.815460 190.436401 l
+370.038910 193.430908 m
+371.815460 190.436401 l
+S
+0 0 1 rg
+BT
+/F5 20 Tf
+406.856201 162.655640 Td
+(2) Tj
+ET
+/Sh27 sh
+8 w
+0 0 1 RG
+348.877502 249.292725 m
+345.985779 258.650665 l
+S
+/Sh28 sh
+8 w
+0 0 1 RG
+345.985779 258.650665 m
+335.182098 293.612457 l
+S
+/Sh29 sh
+8 w
+0 0 1 RG
+1071.550537 772.334473 m
+1072.016479 771.222229 l
+1072.875488 769.000488 m
+1072.016479 771.222229 l
+S
+/Sh30 sh
+8 w
+0 0 1 RG
+1079.461914 746.736877 m
+1079.220337 747.909790 l
+1078.671265 750.247437 m
+1079.220337 747.909790 l
+S
+/Sh31 sh
+8 w
+0 0 1 RG
+1067.293213 781.720398 m
+1068.772705 778.674622 l
+1070.446045 774.971313 m
+1068.772705 778.674622 l
+1071.550537 772.334473 m
+1070.446045 774.971313 l
+S
+/Sh32 sh
+8 w
+0 0 1 RG
+1062.841919 789.996704 m
+1063.146240 789.483887 l
+1065.121460 785.933411 m
+1063.146240 789.483887 l
+1066.997437 782.329346 m
+1065.121460 785.933411 l
+1067.293213 781.720398 m
+1066.997437 782.329346 l
+S
+/Sh33 sh
+8 w
+0 0 1 RG
+1082.274170 727.132141 m
+1082.236084 727.707397 l
+1081.853882 731.785889 m
+1082.236084 727.707397 l
+1081.360718 735.848267 m
+1081.853882 731.785889 l
+1080.757202 739.891541 m
+1081.360718 735.848267 l
+1080.043457 743.912903 m
+1080.757202 739.891541 l
+1079.461914 746.736877 m
+1080.043457 743.912903 l
+S
+/Sh34 sh
+8 w
+0 0 1 RG
+1082.518433 723.326843 m
+1082.507202 723.615234 l
+1082.274170 727.132141 m
+1082.507202 723.615234 l
+S
+/Sh35 sh
+8 w
+0 0 1 RG
+1060.914551 793.229309 m
+1061.072876 792.978577 l
+1062.841919 789.996704 m
+1061.072876 792.978577 l
+S
+/Sh36 sh
+8 w
+0 0 1 RG
+1082.213135 703.345276 m
+1082.478271 707.168213 l
+1082.652588 711.286133 m
+1082.478271 707.168213 l
+1082.715576 715.401855 m
+1082.652588 711.286133 l
+1082.666992 719.512451 m
+1082.715576 715.401855 l
+1082.518433 723.326843 m
+1082.666992 719.512451 l
+S
+/Sh37 sh
+8 w
+0 0 1 RG
+1030.804810 597.703369 m
+1028.222290 594.960876 l
+S
+/Sh38 sh
+8 w
+0 0 1 RG
+1044.711548 612.945190 m
+1046.311890 614.873596 l
+1047.924316 616.919189 m
+1046.311890 614.873596 l
+1047.924316 616.919189 m
+1048.952393 618.223572 l
+1051.504639 621.635071 m
+1048.952393 618.223572 l
+1053.966919 625.105713 m
+1051.504639 621.635071 l
+1055.169189 626.894775 m
+1053.966919 625.105713 l
+1058.614624 632.215149 m
+1056.337524 628.633301 l
+1058.923096 632.728760 m
+1058.614624 632.215149 l
+S
+/Sh39 sh
+8 w
+0 0 1 RG
+1028.222290 594.960876 m
+1018.572327 584.712952 l
+S
+/Sh40 sh
+8 w
+0 0 1 RG
+1018.572327 584.712952 m
+1011.505127 577.207886 l
+S
+/Sh41 sh
+8 w
+0 0 1 RG
+1058.923096 632.728760 m
+1060.796875 635.849060 l
+1062.882812 639.532471 m
+1060.796875 635.849060 l
+1064.870850 643.262817 m
+1062.882812 639.532471 l
+1066.759766 647.037476 m
+1064.870850 643.262817 l
+1066.960938 647.466858 m
+1066.759766 647.037476 l
+1078.160278 678.521851 m
+1079.105591 682.571655 l
+1079.942871 686.643799 m
+1079.105591 682.571655 l
+1080.670898 690.730591 m
+1079.942871 686.643799 l
+1081.288696 694.829285 m
+1080.670898 690.730591 l
+1081.796143 698.936951 m
+1081.288696 694.829285 l
+1082.192749 703.050781 m
+1081.796143 698.936951 l
+1067.104492 647.773193 m
+1068.548218 650.853943 l
+1070.234863 654.709656 m
+1068.548218 650.853943 l
+1070.977783 656.535400 m
+1070.234863 654.709656 l
+1082.213135 703.345276 m
+1082.192749 703.050781 l
+S
+/Sh42 sh
+8 w
+0 0 1 RG
+1067.104492 647.773193 m
+1066.960938 647.466858 l
+S
+/Sh43 sh
+0 0 1 rg
+BT
+/F6 20 Tf
+1084.377686 684.838867 Td
+(4) Tj
+ET
+/Sh44 sh
+8 w
+0 0 1 RG
+1011.505127 577.207886 m
+985.117859 549.185669 l
+S
+/Sh45 sh
+8 w
+0 0 1 RG
+985.117859 549.185669 m
+985.100952 549.167725 l
+S
+/Sh46 sh
+8 w
+0 0 1 RG
+1049.471680 809.302856 m
+1051.829102 806.351807 l
+1054.279663 803.103943 m
+1051.829102 806.351807 l
+1056.638184 799.790894 m
+1054.279663 803.103943 l
+1058.903076 796.415039 m
+1056.638184 799.790894 l
+1060.914551 793.229309 m
+1058.903076 796.415039 l
+S
+/Sh47 sh
+8 w
+0 0 1 RG
+948.385559 864.400085 m
+944.745239 865.079956 l
+S
+/Sh48 sh
+8 w
+0 0 1 RG
+948.385559 864.400085 m
+958.363098 862.536743 l
+S
+/Sh49 sh
+8 w
+0 0 1 RG
+985.488037 854.953369 m
+986.519226 854.571655 l
+990.381348 853.024902 m
+986.519226 854.571655 l
+990.936096 852.785400 m
+990.381348 853.024902 l
+S
+/Sh50 sh
+8 w
+0 0 1 RG
+968.252625 860.354370 m
+970.643005 859.745056 l
+974.670898 858.605713 m
+970.643005 859.745056 l
+978.661377 857.363098 m
+974.670898 858.605713 l
+982.611694 856.018005 m
+978.661377 857.363098 l
+984.600037 855.282043 m
+982.611694 856.018005 l
+S
+/Sh51 sh
+8 w
+0 0 1 RG
+944.745239 865.079956 m
+931.138306 867.621094 l
+S
+/Sh52 sh
+8 w
+0 0 1 RG
+931.138306 867.621094 m
+921.181885 869.480530 l
+S
+/Sh53 sh
+8 w
+0 0 1 RG
+1006.046814 845.445862 m
+1008.917725 843.823608 l
+1012.452515 841.698730 m
+1008.917725 843.823608 l
+1014.118591 840.635010 m
+1012.452515 841.698730 l
+S
+/Sh54 sh
+8 w
+0 0 1 RG
+1035.294312 824.349121 m
+1032.250732 827.081299 l
+1032.246094 827.085266 m
+1032.250732 827.081299 l
+1038.258911 821.537354 m
+1035.294312 824.349121 l
+1041.142578 818.647705 m
+1038.258911 821.537354 l
+1043.943359 815.682373 m
+1041.142578 818.647705 l
+1046.659302 812.643188 m
+1043.943359 815.682373 l
+1049.288452 809.532227 m
+1046.659302 812.643188 l
+1049.471680 809.302856 m
+1049.288452 809.532227 l
+S
+/Sh55 sh
+8 w
+0 0 1 RG
+990.936096 852.785400 m
+994.195251 851.378540 l
+997.958496 849.634155 m
+994.195251 851.378540 l
+1001.668213 847.792603 m
+997.958496 849.634155 l
+1005.322144 845.855347 m
+1001.668213 847.792603 l
+1006.046814 845.445862 m
+1005.322144 845.855347 l
+S
+/Sh56 sh
+0 0 1 rg
+BT
+/F7 20 Tf
+1038.469238 833.403259 Td
+(3) Tj
+ET
+/Sh57 sh
+8 w
+0 0 1 RG
+921.181885 869.480530 m
+884.022949 876.420105 l
+S
+/Sh58 sh
+8 w
+0 0 1 RG
+218.968185 907.433228 m
+219.746216 908.420288 l
+221.349396 910.352112 m
+219.746216 908.420288 l
+S
+/Sh59 sh
+8 w
+0 0 1 RG
+238.285446 927.946838 m
+237.338043 927.102051 l
+235.501083 925.380249 m
+237.338043 927.102051 l
+S
+/Sh60 sh
+8 w
+0 0 1 RG
+212.512573 898.782227 m
+214.553406 901.658936 l
+217.105682 905.070312 m
+214.553406 901.658936 l
+218.968185 907.433228 m
+217.105682 905.070312 l
+S
+/Sh61 sh
+8 w
+0 0 1 RG
+205.112991 887.183228 m
+205.261169 887.444885 l
+207.443451 891.078857 m
+205.261169 887.444885 l
+209.720612 894.660767 m
+207.443451 891.078857 l
+212.091156 898.188232 m
+209.720612 894.660767 l
+212.512573 898.782227 m
+212.091156 898.188232 l
+S
+/Sh62 sh
+8 w
+0 0 1 RG
+257.861511 943.199097 m
+257.603302 943.030090 l
+254.060577 940.584167 m
+257.603302 943.030090 l
+250.580719 938.052490 m
+254.060577 940.584167 l
+247.166260 935.436523 m
+250.580719 938.052490 l
+243.819458 932.738281 m
+247.166260 935.436523 l
+240.542633 929.959534 m
+243.819458 932.738281 l
+238.285446 927.946838 m
+240.542633 929.959534 l
+S
+/Sh63 sh
+8 w
+0 0 1 RG
+275.896912 953.769592 m
+272.354767 951.922180 l
+268.584839 949.835999 m
+272.354767 951.922180 l
+264.867981 947.657593 m
+268.584839 949.835999 l
+261.206635 945.388306 m
+264.867981 947.657593 l
+257.861511 943.199097 m
+261.206635 945.388306 l
+S
+/Sh64 sh
+8 w
+0 0 1 RG
+374.078613 971.318481 m
+371.619873 971.615356 l
+369.036652 971.860229 m
+371.619873 971.615356 l
+355.812103 972.546814 m
+354.699310 972.566833 l
+350.446838 972.535522 m
+354.699310 972.566833 l
+349.811981 972.514709 m
+350.446838 972.535522 l
+S
+/Sh65 sh
+8 w
+0 0 1 RG
+369.036652 971.860229 m
+367.408936 972.014526 l
+363.183258 972.306274 m
+367.408936 972.014526 l
+358.945740 972.490479 m
+363.183258 972.306274 l
+356.774567 972.529541 m
+358.945740 972.490479 l
+S
+/Sh66 sh
+8 w
+0 0 1 RG
+394.104431 967.914551 m
+397.743958 967.234863 l
+S
+/Sh67 sh
+8 w
+0 0 1 RG
+349.811981 972.514709 m
+346.191284 972.396179 l
+341.935516 972.149292 m
+346.191284 972.396179 l
+337.682526 971.794922 m
+341.935516 972.149292 l
+333.435120 971.333191 m
+337.682526 971.794922 l
+329.196289 970.764648 m
+333.435120 971.333191 l
+325.278656 970.138855 m
+329.196289 970.764648 l
+S
+/Sh68 sh
+8 w
+0 0 1 RG
+295.940033 962.426880 m
+300.006775 963.831055 l
+291.907562 960.921753 m
+295.940033 962.426880 l
+287.912109 959.316895 m
+291.907562 960.921753 l
+283.956421 957.613281 m
+287.912109 959.316895 l
+280.043121 955.812134 m
+283.956421 957.613281 l
+276.175049 953.914673 m
+280.043121 955.812134 l
+275.896912 953.769592 m
+276.175049 953.914673 l
+S
+/Sh69 sh
+8 w
+0 0 1 RG
+325.278656 970.138855 m
+324.968933 970.089355 l
+322.917755 969.708923 m
+324.968933 970.089355 l
+S
+/Sh70 sh
+0 0 1 rg
+BT
+/F8 20 Tf
+306.225281 970.153076 Td
+(6) Tj
+ET
+/Sh71 sh
+8 w
+0 0 1 RG
+397.743958 967.234863 m
+421.308746 962.834045 l
+S
+/Sh72 sh
+8 w
+0 0 1 RG
+421.308746 962.834045 m
+458.506042 955.887268 l
+S
+/Sh73 sh
+8 w
+0 0 1 RG
+671.244995 916.157349 m
+884.022949 876.420105 l
+S
+/Sh74 sh
+1 w
+0 0 0 RG
+664.919312 890.567078 m
+665.626526 893.425964 l
+656.025635 895.218994 l
+S
+0 0 0 rg
+BT
+/F9 20 Tf
+668.529297 905.160706 Td
+(Y) Tj
+ET
+/Sh75 sh
+0 0 1 rg
+BT
+/F10 20 Tf
+677.467773 922.478516 Td
+(11) Tj
+ET
+/Sh76 sh
+1 w
+0 0 0 RG
+589.186096 584.406860 m
+579.585205 586.199890 l
+S
+0 0 0 rg
+BT
+/F11 20 Tf
+586.405212 741.157654 Td
+(0.2) Tj
+ET
+1 w
+0 0 0 RG
+627.406311 738.916443 m
+617.805420 740.709473 l
+S
+0 0 0 rg
+BT
+/F12 20 Tf
+612.625427 895.667236 Td
+(0.25) Tj
+ET
+1 w
+0 0 0 RG
+664.919312 890.567078 m
+582.542664 557.550293 l
+S
+8 w
+0 0 1 RG
+942.807373 504.253662 m
+985.100952 549.167725 l
+S
+/Sh77 sh
+8 w
+0 0 1 RG
+575.315918 934.072510 m
+575.257141 934.083496 l
+S
+/Sh78 sh
+8 w
+0 0 1 RG
+575.257141 934.083496 m
+458.506042 955.887268 l
+902.352600 461.292358 m
+942.807373 504.253662 l
+902.309204 461.246277 m
+902.352600 461.292358 l
+S
+/Sh79 sh
+8 w
+0 0 1 RG
+834.181824 388.897705 m
+807.768250 360.847534 l
+S
+/Sh80 sh
+8 w
+0 0 1 RG
+902.242004 461.174896 m
+902.253906 461.187561 l
+S
+/Sh81 sh
+8 w
+0 0 1 RG
+902.253906 461.187561 m
+902.309204 461.246277 l
+S
+/Sh82 sh
+0 0 1 rg
+BT
+/F13 20 Tf
+840.398804 395.218018 Td
+(10) Tj
+ET
+/Sh83 sh
+8 w
+0 0 1 RG
+184.798218 786.769897 m
+185.300934 783.402466 l
+186.014496 779.381042 l
+186.837769 775.384155 l
+187.383865 773.058899 m
+186.837769 775.384155 l
+S
+/Sh84 sh
+8 w
+0 0 1 RG
+183.782028 796.190247 m
+183.822021 795.586609 l
+184.204254 791.508057 l
+S
+/Sh85 sh
+8 w
+0 0 1 RG
+184.445511 789.520386 m
+184.697327 787.445679 l
+184.798218 786.769897 m
+184.697327 787.445679 l
+S
+/Sh86 sh
+8 w
+0 0 1 RG
+192.854584 754.197876 m
+193.912048 750.775818 l
+S
+/Sh87 sh
+8 w
+0 0 1 RG
+187.900162 844.781982 m
+188.953522 848.811401 l
+190.115723 852.822998 m
+188.953522 848.811401 l
+191.384705 856.808716 m
+190.115723 852.822998 l
+192.759644 860.766052 m
+191.384705 856.808716 l
+194.239471 864.692139 m
+192.759644 860.766052 l
+195.823242 868.584290 m
+194.239471 864.692139 l
+197.509918 872.439941 m
+195.823242 868.584290 l
+199.298370 876.256470 m
+197.509918 872.439941 l
+201.187225 880.031128 m
+199.298370 876.256470 l
+203.175293 883.761475 m
+201.187225 880.031128 l
+205.112991 887.183228 m
+203.175293 883.761475 l
+S
+/Sh88 sh
+8 w
+0 0 1 RG
+184.056931 822.230225 m
+183.865387 820.243103 l
+183.579803 816.125732 l
+183.440811 812.842224 m
+183.579803 816.125732 l
+S
+/Sh89 sh
+8 w
+0 0 1 RG
+183.440811 812.842224 m
+183.405487 812.007812 l
+183.342499 807.892090 l
+183.391022 803.781494 l
+183.550934 799.678711 l
+183.782028 796.190247 m
+183.550934 799.678711 l
+S
+/Sh90 sh
+0 0 1 rg
+BT
+/F14 20 Tf
+194.117340 851.098999 Td
+(5) Tj
+ET
+/Sh91 sh
+8 w
+0 0 1 RG
+193.912048 750.775818 m
+197.867249 737.976379 l
+S
+/Sh92 sh
+8 w
+0 0 1 RG
+197.867249 737.976379 m
+200.756851 728.625366 l
+S
+/Sh93 sh
+8 w
+0 0 1 RG
+273.372192 493.635223 m
+200.756851 728.625366 l
+S
+/Sh94 sh
+0 0 1 rg
+BT
+/F15 20 Tf
+279.592560 499.951080 Td
+(12) Tj
+ET
+/Sh95 sh
+8 w
+0 0 1 RG
+301.242706 403.443512 m
+301.252960 403.410370 l
+S
+/Sh96 sh
+8 w
+0 0 1 RG
+301.252960 403.410370 m
+335.182098 293.612457 l
+S
+0 0 0 rg
+BT
+/F16 20 Tf
+459.744476 277.628998 Td
+(0.05) Tj
+ET
+1 w
+0 0 0 RG
+512.745605 275.387756 m
+503.144714 277.180786 l
+S
+0 0 0 rg
+BT
+/F17 20 Tf
+509.964722 432.138611 Td
+(0.1) Tj
+ET
+1 w
+0 0 0 RG
+550.965820 429.897308 m
+541.364929 431.690308 l
+S
+0 0 0 rg
+BT
+/F18 20 Tf
+536.184937 586.648132 Td
+(0.15) Tj
+ET
+1 w
+0 0 0 RG
+582.542664 557.550293 m
+484.908844 162.854752 l
+S
+8 w
+0 0 1 RG
+807.768250 360.847534 m
+683.231873 228.594910 l
+S
+0 0 0 rg
+BT
+/F19 20 Tf
+960.575562 30.106140 Td
+(X) Tj
+ET
+0 0 0 rg
+BT
+/F20 20 Tf
+904.671753 2.612610 Td
+(0.15) Tj
+ET
+endstream
+endobj
+5 0 obj
+16810
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 1202 1084]
+/Contents 4 0 R
+/Resources
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC]  %/ImageI
+/ExtGState
+<<
+/GSa 7 0 R
+>>
+/Shading
+<<
+/Sh0 8 0 R
+/Sh1 9 0 R
+/Sh2 10 0 R
+/Sh3 11 0 R
+/Sh4 12 0 R
+/Sh5 13 0 R
+/Sh6 14 0 R
+/Sh7 15 0 R
+/Sh8 16 0 R
+/Sh9 17 0 R
+/Sh10 18 0 R
+/Sh11 19 0 R
+/Sh12 20 0 R
+/Sh13 21 0 R
+/Sh14 22 0 R
+/Sh15 23 0 R
+/Sh16 24 0 R
+/Sh17 25 0 R
+/Sh18 26 0 R
+/Sh19 27 0 R
+/Sh20 28 0 R
+/Sh21 29 0 R
+/Sh22 30 0 R
+/Sh23 31 0 R
+/Sh24 32 0 R
+/Sh25 33 0 R
+/Sh26 34 0 R
+/Sh27 35 0 R
+/Sh28 36 0 R
+/Sh29 37 0 R
+/Sh30 38 0 R
+/Sh31 39 0 R
+/Sh32 40 0 R
+/Sh33 41 0 R
+/Sh34 42 0 R
+/Sh35 43 0 R
+/Sh36 44 0 R
+/Sh37 45 0 R
+/Sh38 46 0 R
+/Sh39 47 0 R
+/Sh40 48 0 R
+/Sh41 49 0 R
+/Sh42 50 0 R
+/Sh43 51 0 R
+/Sh44 52 0 R
+/Sh45 53 0 R
+/Sh46 54 0 R
+/Sh47 55 0 R
+/Sh48 56 0 R
+/Sh49 57 0 R
+/Sh50 58 0 R
+/Sh51 59 0 R
+/Sh52 60 0 R
+/Sh53 61 0 R
+/Sh54 62 0 R
+/Sh55 63 0 R
+/Sh56 64 0 R
+/Sh57 65 0 R
+/Sh58 66 0 R
+/Sh59 67 0 R
+/Sh60 68 0 R
+/Sh61 69 0 R
+/Sh62 70 0 R
+/Sh63 71 0 R
+/Sh64 72 0 R
+/Sh65 73 0 R
+/Sh66 74 0 R
+/Sh67 75 0 R
+/Sh68 76 0 R
+/Sh69 77 0 R
+/Sh70 78 0 R
+/Sh71 79 0 R
+/Sh72 80 0 R
+/Sh73 81 0 R
+/Sh74 82 0 R
+/Sh75 83 0 R
+/Sh76 84 0 R
+/Sh77 85 0 R
+/Sh78 86 0 R
+/Sh79 87 0 R
+/Sh80 88 0 R
+/Sh81 89 0 R
+/Sh82 90 0 R
+/Sh83 91 0 R
+/Sh84 92 0 R
+/Sh85 93 0 R
+/Sh86 94 0 R
+/Sh87 95 0 R
+/Sh88 96 0 R
+/Sh89 97 0 R
+/Sh90 98 0 R
+/Sh91 99 0 R
+/Sh92 100 0 R
+/Sh93 101 0 R
+/Sh94 102 0 R
+/Sh95 103 0 R
+/Sh96 104 0 R
+>>
+/XObject
+<<
+>>
+/Font
+<<
+/F0 105 0 R
+/F1 106 0 R
+/F2 107 0 R
+/F3 108 0 R
+/F4 109 0 R
+/F5 110 0 R
+/F6 111 0 R
+/F7 112 0 R
+/F8 113 0 R
+/F9 114 0 R
+/F10 115 0 R
+/F11 116 0 R
+/F12 117 0 R
+/F13 118 0 R
+/F14 119 0 R
+/F15 120 0 R
+/F16 121 0 R
+/F17 122 0 R
+/F18 123 0 R
+/F19 124 0 R
+/F20 125 0 R
+>>
+>>
+>>
+endobj
+7 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 0
+/BG2 /Default
+/UCR2 /Default
+/TR2 /Default
+>>
+endobj
+105 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F0
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+8 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [463.154480 477.312012 115.848785 132.399353 0 1 0 1 0 1] /Length 144 >>
+stream
+ 2cÁ½’ÿ333 6Ea¿Í‚(ÿ èUáÿÿÿÿÿ X–ç©ÿRRR ,uÉ?    ooo 2cÁ½’ÿ333 ,uÉ?    ooo     }­UUU 2cÁ½’ÿ333 X–ç©ÿRRR 2cÁ½’ÿ333 ÿÿÿÿü9ÿ
+endstream
+endobj
+9 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [481.024109 485.896210 113.382172 125.907623 0 1 0 1 0 1] /Length 72 >>
+stream
+ m“öÿ    333 ÿÿÿÿæ?ÿUUU     8™Û?RRR ÿÿÿÿæ?ÿUUU ~Îaÿÿÿÿÿooo     8™Û?RRR
+endstream
+endobj
+10 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [471.176636 485.896210 109.357056 132.399353 0 1 0 1 0 1] /Length 288 >>
+stream
+  ‰.     ËÌùÿ$D:ÿ 	Æaß×qß ËÌùÿ$D:ÿ Ïˆûÿ,¸¿333 	Æaß×qß 	Æaß×qß Ïˆûÿ,¸¿333     '8$ÿ    Ïˆûÿ,¸¿333 «CîÿK|ŒRRR     '8$ÿ    ÿÿÿÿ©à¡ÿUUU j´Œÿı(ÿ<<< Õ<Îÿ·àyÿooo j´Œÿı(ÿ<<< SñÀÿÿÿÿZZZ Õ<Îÿ·àyÿooo «CîÿK|ŒRRR Õ<Îÿ·àyÿooo hµğxS-ooo Õ<Îÿ·àyÿooo €ñƒÿ¶çtÿ£££ hµğxS-ooo
+endstream
+endobj
+11 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [463.154480 481.024109 109.612823 120.187378 0 1 0 1 0 1] /Length 144 >>
+stream
+     µxıÿ zú!     l‚ìm«ÿ zú!     rìŞOD¬ÿ    l‚ìm«ÿ rìŞOD¬ÿ    ÿÿÿÿK°ÿRRR wºpÿÒ_±ÿEEE ÿÿÿÿK°ÿRRR É-uÿÿÿÿÿooo wºpÿÒ_±ÿEEE
+endstream
+endobj
+12 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [474.298584 483.437439 125.820068 132.399353 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿh!›ooo /À¹ÿÿÿÿÿZZZ x; ÿ    £££ /À¹ÿÿÿÿÿZZZ     ‘ÕØÿggg x; ÿ    £££
+endstream
+endobj
+13 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [466.155823 476.003296 127.683411 132.399353 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿÿÿÿÿZZZ     NÌÙ''' Ó®ôÿfN¼ggg     NÌÙ''' ?áÖÿ    JJJ Ó®ôÿfN¼ggg
+endstream
+endobj
+14 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [463.742493 468.613159 119.378937 129.135040 0 1 0 1 0 1] /Length 72 >>
+stream
+ ~×ğÿÿÿÿÿ'''          ÿÿÿÿÙèÄÿJJJ          ¶ÃØÿFˆ999 ÿÿÿÿÙèÄÿJJJ
+endstream
+endobj
+15 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [463.742493 471.511902 112.887146 122.050720 0 1 0 1 0 1] /Length 72 >>
+stream
+     µ[óÿ ôóûÿ        r“qÿÿÿÿÿ999 ôóûÿ        ÿÿÿÿ—JôÿEEE r“qÿÿÿÿÿ999
+endstream
+endobj
+106 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+16 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [471.511902 478.590668 118.302704 129.568085 0 1 0 1 0 1] /Length 108 >>
+stream
+ )S>¿Š¿oÿbbb ÿÿÿÿªÔÿ£££ dÇiÿÿÿÿggg )S>¿Š¿oÿbbb         EEE ÍœJÿ*Ô?ooo )S>¿Š¿oÿbbb ÍœJÿ*Ô?ooo ÿÿÿÿªÔÿ£££
+endstream
+endobj
+107 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+17 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [614.922791 641.264526 133.267914 184.097504 0 1 0 1 0 1] /Length 576 >>
+stream
+     û_/vv  /    LL  §Qìÿ7¢¿ƒƒ  CÈbÿëºCÿ333 EŞ˜ï0ÿ ¥’Eÿÿÿÿÿ XÎÿİÇªÿRRR @˜¥ÿ¬¤Úÿooo CÈbÿëºCÿ333 @˜¥ÿ¬¤Úÿooo (³‚¿²ı‰ÿUUU CÈbÿëºCÿ333 XÎÿİÇªÿRRR CÈbÿëºCÿ333 ²Jÿş¶:ÿ ˆØ)ÿ‹òâÿ è‹Öÿœc±ÿ | 0<§ÿ è‹Öÿœc±ÿ ê¡åÿ 8ÿ333 | 0<§ÿ è‹Öÿœc±ÿ''' ÿÿÿÿÍ†‚ÿ ê¡åÿ 8ÿ | 0<§ÿ ê¡åÿ 8ÿ333 v©óÿº^ÿ    ê¡åÿ 8ÿ333 Ö] ÿ®+-ÿRRR v©óÿº^ÿ    EŞ˜ï0ÿ''' .jo¿¾l_ÿ ]Àè?ÿJJJ .jo¿¾l_ÿ P5¦Ëá-ÿ999 ]Àè?ÿJJJ .jo¿¾l_ÿ v©óÿº^ÿ    P5¦Ëá-ÿ999 v©óÿº^ÿ    yìÿ¹ ÂÿEEE P5¦Ëá-ÿ999 (³‚¿²ı‰ÿ | 0<§ÿ .jo¿¾l_ÿ | 0<§ÿ v©óÿº^ÿ    .jo¿¾l_ÿ
+endstream
+endobj
+18 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [631.959656 641.852539 176.345673 184.097504 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿ    UUU !İC?÷«ÿ<<< À_ìÿ)œ÷ooo !İC?÷«ÿ<<<     ÿÿÿÿZZZ À_ìÿ)œ÷ooo
+endstream
+endobj
+19 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [622.112183 641.852539 164.585297 184.097504 0 1 0 1 0 1] /Length 360 >>
+stream
+ ÛÜ~ÿ~¦Ç333 ÿÿÿÿšKÈÿUUU ÀÑ6ÿ*Ô?RRR ÿÿÿÿšKÈÿUUU à:ÿªÔÿooo ÀÑ6ÿ*Ô?RRR ´ÿÿÿÿÿZZZ     Õ+ıÿ''' i˜òÚÚvÿggg     Õ+ıÿ''' İè?Â `ÿJJJ i˜òÚÚvÿggg ÀÑ6ÿ*Ô?RRR à:ÿªÔÿooo 0®ÿ_ÇQooo à:ÿªÔÿooo ¡BUÿ©®	ÿ£££ 0®ÿ_ÇQooo TGK—(cÿbbb ÌAŸx9Áÿ999 Eu¤ÿG:EEE TGK—(cÿbbb İè?Â `ÿJJJ ÌAŸx9Áÿ999 A—ÿ        ÀÑ6ÿ*Ô?RRR Eu¤ÿG:EEE ÀÑ6ÿ*Ô?RRR 0®ÿ_ÇQooo Eu¤ÿG:EEE
+endstream
+endobj
+20 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [558.015076 611.406311 127.411774 146.271301 0 1 0 1 0 1] /Length 72 >>
+stream
+     :¶ÿºº  ‘£‘       şn[ÿÿÿÿÿºº  ‘£‘       ÿÿÿÿîÅcÿ   şn[ÿÿÿÿÿºº 
+endstream
+endobj
+21 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [558.342285 612.357117 124.965790 145.002045 0 1 0 1 0 1] /Length 144 >>
+stream
+     @?   W³„‚ç    û~cÿÿÿÿÿ   W³„‚ç    ş…»ÿèCéÿ    û~cÿÿÿÿÿ   W³„‚ç    ›ï    LL  ş…»ÿèCéÿ    ›ï    LL  ÿÿÿÿà¿€ÿLL  ş…»ÿèCéÿ   
+endstream
+endobj
+22 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [607.883972 653.411255 134.455643 176.106476 0 1 0 1 0 1] /Length 432 >>
+stream
+ Ş·uÍÿ   –MÿvÜƒÿ   ÿÿÿÿ’'7ÿââ  Ş·uÍÿ   ÿÿÿÿ’'7ÿââ      µüÿââ      µüÿââ  ÿÿÿÿ’'7ÿââ  ÿÿÿÿ’'7ÿLL  ‚z½ÿHÈÿ   ÿÿÿÿ’'7ÿ  0 –MhÿvÜƒÿ  0 –MÿvÜƒÿ  0 ÿÿÿÿ’'7ÿ  0 ÿÿÿÿ’'7ÿââ  –MÿvÜƒÿ  0 ÿÿÿÿ’'7ÿââ  –MhÿvÜƒÿ   '”L?    vv  ˆc­ÿ;îÜ¿ƒƒ  ÿÿÿÿ’'7ÿÉÉ  '”L?    vv  ÿÿÿÿ’'7ÿÉÉ  $#ÿÅ7ŸŸ  $#ÿÅ7ŸŸ  ÿÿÿÿ’'7ÿÉÉ  ‚z¦ÿH¼ÉÉ  ‚z½ÿHÈÿÉÉ  ÿÿÿÿ’'7ÿÉÉ  ÿÿÿÿ’'7ÿ  0 ‚z½ÿHÈÿÉÉ  ÿÿÿÿ’'7ÿ  0 ‚z¦ÿH¼   tŒCÿÿÿÿbbb n[ÿÚxüÿEEE vÿæsÿooo
+endstream
+endobj
+108 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+23 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [609.847351 634.613892 135.610275 153.794220 0 1 0 1 0 1] /Length 144 >>
+stream
+ '¡Èÿ¸¤ÿÉÉ  Ûqÿ”òrÿ   ÿÿÿÿÿÿÿÿ  0 '¡Èÿ¸¤ÿÉÉ  ÿÿÿÿÿÿÿÿ  0     ­¢Íÿ  0 .#Aÿ    ŸŸ  ÛHÿ”òVÿÉÉ  '¡Èÿ¸¤ÿÉÉ  Ûqÿ”òrÿÉÉ  ÛHÿ”òVÿ   '¡Èÿ¸¤ÿÉÉ 
+endstream
+endobj
+109 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F4
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+24 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [608.393921 639.393799 147.943817 184.097504 0 1 0 1 0 1] /Length 144 >>
+stream
+     'ët¿    ¨?      0 Ø‡ÿ)m?   Ø‡ÿ)m?  0 Ø†íÿ)m?    ¨?      0 ÿÿÿÿÒXÿooo Â›­ÿÿÿÿÿZZZ ×ùÿÑi°ÿ£££ Â›­ÿÿÿÿÿZZZ ´‡©ÿëó¯ÿggg ×ùÿÑi°ÿ£££
+endstream
+endobj
+25 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [628.610962 634.546997 171.885498 177.518219 0 1 0 1 0 1] /Length 36 >>
+stream
+     ¿Ö‹ÿbbb ÃéVÿ    ooo ÿÿÿÿÿÿÿÿ£££
+endstream
+endobj
+26 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [628.610962 634.546997 176.106476 181.266205 0 1 0 1 0 1] /Length 36 >>
+stream
+         bbb ÿÿÿÿF,£££ Få|ÿÿÿÿÿggg
+endstream
+endobj
+27 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [467.219788 472.654602 122.050720 127.683411 0 1 0 1 0 1] /Length 36 >>
+stream
+ ÿÿÿÿk&ğÿbbb A¢ÿÿÿÿJJJ         999
+endstream
+endobj
+28 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [343.335449 630.254883 118.302704 231.185669 0 1 0 1 0 1] /Length 432 >>
+stream
+ sbÿØ»¯bbb nˆ¼ÿøo999 r]    EEE sbÿØ»¯bbb tÙŸŒK¿ggg oÇ F_JJJ şˆÿƒåÿbbb ÿÿÿÿÊuÿggg úí`ÿŠ„HÿJJJ Mê_™ÀYÿ’’  	ç1O‡ÿ’’  	Wp“8ıÿ’’  	ç1O‡ÿ’’   &›’ÿ’’  ÒŸ¢ "ÿ’’  	ç1O‡ÿ’’  ÒŸ¢ "ÿ’’  º“ÿ’’  Mì/™ÀYÿ’’   &›ÿ’’  	ç1O‡ÿ’’  l?­(,ÿ’’  º“ÿ’’  Åt¿£˜ÿ’’      µRÿLL  	ç1O‡ÿLL  	Wp“8ıÿLL      µPÿLL      µRÿLL  	ç1O‡ÿLL  4œ÷ù¸5ÿRRR `×ã˜%ÿooo XE7ÿÿÿÿ333 `×ã˜%ÿooo ÛÅkæs³ÿUUU XE7ÿÿÿÿ333
+endstream
+endobj
+29 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [345.418396 368.160095 212.168488 235.210785 0 1 0 1 0 1] /Length 540 >>
+stream
+ ^[¿ÓGëÿ333 !É"?Û»Äÿ £"ÿÿÿÿÿ 6Ø¿´ƒsÿRRR ^[¿ÓGëÿ333 Ÿ^ˆÿı(ÿ o\Üÿ     Ş6İÿ$D:ÿ `¡×qß Ş6İÿ$D:ÿ à¡£ÿ,¸¿333 `¡×qß Ş6İÿ$D:ÿ''' ùa}ÿ¨'ÿ à¡£ÿ,¸¿     V]ÿ `¡×qß ‚'oW× `¡×qß ZMâ'8$ÿ    ‚'oW× à¡£ÿ,¸¿333 ÿÿÿÿ©à‹ÿUUU É'âÿK|ŒRRR ÿÿÿÿ©à‹ÿUUU äR‚ÿ·àyÿooo É'âÿK|ŒRRR ZMâ'8$ÿ    É'âÿK|ŒRRR ^
+cbÜÿEEE É'âÿK|ŒRRR 	ÿxS-ooo ^
+cbÜÿEEE É'âÿK|ŒRRR äR‚ÿ·àyÿooo 	ÿxS-ooo äR‚ÿ·àyÿooo ­ÃNÿ¶çtÿ£££ 	ÿxS-ooo `¡×qß à¡£ÿ,¸¿333 ZMâ'8$ÿ    à¡£ÿ,¸¿333 É'âÿK|ŒRRR ZMâ'8$ÿ   
+endstream
+endobj
+30 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [363.323181 368.592163 191.471771 199.694901 0 1 0 1 0 1] /Length 180 >>
+stream
+ ¼Z
+ÿÿÿÿÿ’’  ÿÿÿÿ®4gÿ’’  M4ÿilCÿ’’  >Ë—?UXÛÿ’’  M4ÿilCÿ’’  ÿÿÿÿ®4gÿ’’          ’’  +yÿ:t`?’’  ²uİÿc",’’  +¿:tA?’’  >Ë—?UXÛÿ’’  ÿÿÿÿ®4gÿ’’  +¿:tA?’’  ÿÿÿÿ®4gÿ’’  ²uİÿc",’’ 
+endstream
+endobj
+31 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [348.419739 368.160095 227.458954 235.210785 0 1 0 1 0 1] /Length 144 >>
+stream
+ ÿÿÿÿ    UUU ­lÿ÷«ÿ<<< à:ÿ)9ooo ­lÿ÷«ÿ<<< ´ÿÿÿÿÿZZZ à:ÿ)9ooo ´ÿÿÿÿÿZZZ     ”2¥ÿ''' i™ÿ¢·ÿggg     ”2¥ÿ''' Ş?dB1JJJ i™ÿ¢·ÿggg
+endstream
+endobj
+32 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [346.006409 367.199829 183.220383 231.946472 0 1 0 1 0 1] /Length 972 >>
+stream
+ &±ÿÿÿÿ'''     Ì¾(ÿ :Õ_?ø_’ÿJJJ     Ì¾(ÿ * ÅÚÇ¬ÿ999 :Õ_?ø_’ÿJJJ k¦½ÿç*ªÿbbb ¢†ÿĞı€ÿooo ³Z¸ÿî•fÿ£££ k¦½ÿç*ªÿbbb ]Ù0ÿÇ£ÿEEE ¢†ÿĞı€ÿooo     Ì¾(ÿ YÌtª¢Æÿ    * ÅÚÇ¬ÿ999 YÌtª¢Æÿ    ]Ù0ÿÇ£ÿEEE * ÅÚÇ¬ÿ999 ÿÿÿÿVÿ’’  ätØÿ=$ÿ’’  ¼a¸ÿ2¨/¿’’  ÿÿÿÿVÿ’’  ¼a¸ÿ2¨/¿’’  ú8«ÿ[L.’’  àÈîÿ9ÁH?’’  À%ãÿ/İ?’’  ¼a¸ÿ2¨/¿’’  àÈîÿ9ÁH?’’  ¼a¸ÿ2¨/¿’’  ätØÿ=$ÿ’’  áÿSr¹’’  ú8«ÿ[L.’’  ¬?aÿ-Æ?’’  áÿSr¹’’  ¬?aÿ-Æ?’’  ¦Ceÿ2ˆ0ÿ’’  ú8«ÿ[L.’’  ¼a¸ÿ2¨/¿’’  ¬?aÿ-Æ?’’  ¡_ÿ-³f?’’  Ÿá5ÿ%}ÿÿ’’  yÙÿŒ@ÿ’’  ¦Ceÿ2ˆ0ÿ’’  ¬?aÿ-Æ?’’  Ÿá5ÿ%}ÿÿ’’  ¦Ceÿ2ˆ0ÿ’’  Ÿá5ÿ%}ÿÿ’’  ¡_ÿ-³k’’  VÏøÿ&Ç’’  rm¶ÿ…Ñÿ’’  £¥`ÿ"f­¿’’  £¥`ÿ"f­¿’’  †P¡ÿ ’’  ^4Aÿ    ’’  £¥`ÿ"f­¿’’  ^4Aÿ    ’’  VÏøÿ&Ç’’  yñÿŒF?’’  Ÿá5ÿ%}ÿÿ’’  £¥`ÿ"f­¿’’  yñÿŒF?’’  £¥`ÿ"f­¿’’  rm¶ÿ…Ñÿ’’  ‘nÌÿQ'_’’  ³Ç·ÿ'pÿ’’  ¹Ãûÿ"†}?’’  †P¹ÿ ’’  £¥`ÿ"f­¿’’  ³Ç·ÿ'pÿ’’  †P¹ÿ ’’  ³Ç·ÿ'pÿ’’  ‘nÌÿQ"’’  Ñ,Pÿ+Z’’  ÂÊ
+ÿ%í…’’  À%ãÿ/İ?’’  Ñ,Pÿ+Z’’  À%ãÿ/İ?’’  Ûİ¬ÿ57p¿’’  Ûİ”ÿ57k’’  À%ãÿ/İ?’’  àÈîÿ9ÁH?’’ 
+endstream
+endobj
+33 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [399.302002 401.973389 154.786652 157.880768 0 1 0 1 0 1] /Length 216 >>
+stream
+ ÿÿÿÿÿÿ’’  ÿÿÿÿÏQ¢ÿ’’  àuÿORH’’  ÿÿÿÿÿÿ’’  àuÿORH’’  àv?    ’’  ÿÿÿÿÿÿ’’  àv?    ’’      0­·’’  ÿÿÿÿÿÿ’’      0­·’’  bÉÿ°­·ÿ’’  ÿÿÿÿÿÿ’’  bÉÿ°­·ÿ’’  â	ÿÿÿÿÿ’’  ÿÿÿÿÿÿ’’  â	ÿÿÿÿÿ’’  ÿÿÿÿÏQ¢ÿ’’ 
+endstream
+endobj
+34 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [360.266296 401.661560 156.922058 192.862305 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÷½hÿ       ÿÿÿÿÔ-ï        ù+Ãÿ   ÿÿÿÿÔ-ï    B–ÿÿÿÿÿ        ù+Ãÿ  
+endstream
+endobj
+110 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F5
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+35 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [329.102631 400.325897 154.786652 235.210785 0 1 0 1 0 1] /Length 1116 >>
+stream
+ ıp¼ÿ    LL  üQÜÿßnåLL  msñÿoY¸ÿLL  üQÜÿßnåLL  lUq9'ÿLL  msñÿoY¸ÿLL  üQÜÿßnåLL  ÿÿÿÿÌ   lUq9'ÿLL  ÿÿÿÿÌ   p5v%Ò   lUq9'ÿLL  V—^/ÿLL  /`õ?R^ÿLL      ËÃ¾ÿLL      ËÃ¾ÿLL  3(OŠäÿLL  XÊZ‚LL      ËÃ¾ÿLL  XÊZ‚LL  V—^/ÿLL  3(OŠàÿLL      ËÃ¾ÿLL      ËÃ¾ÿLL  3(OŠàÿLL      ËÃ¾ÿLL  3(OŠäÿLL  -é`¿ªİ?ÿ••      ËÃ¾ÿLL  /`õ?R^ÿLL  /`õ?R^ÿLL      ËÃ¾ÿLL      ËÃ¾ÿLL  /`õ?R^ÿLL      ËÃ¾ÿLL  /`õ?R^ÿLL  »˜úÿ    ‡6äÿ‘Òoÿ        ËÃ¾ÿõõ  »˜úÿ        ËÃ¾ÿõõ  -é`¿ªİBÿõõ  -é`¿ªİ?ÿõõ      ËÃ¾ÿõõ      ËÃ¾ÿLL  -é`¿ªİ?ÿõõ      ËÃ¾ÿLL  -é`¿ªİBÿ••  \ÊtÿæKÿbbb IAßÿ999 X¯ Ó ìÿEEE »˜úÿ’’  n;Iÿy¤ÿ’’  jh´ƒÿ’’  jh´ƒÿ’’  k©ªÿv2Q’’  `ò“iü“’’  jh´ƒÿ’’  `ò“iü“’’  TSÜaöğ’’  n;Iÿy¤ÿ’’  k©ªÿv2T’’  jh´ƒÿ’’  V—^/ÿ’’  TSÜaöğ’’  ^Î¸gŒF’’  `òšiü–ÿ’’  ^Î¸gŒF’’  TSÜaöğ’’  V—^/ÿLL  TSÜaöğLL  /`õ?R^ÿLL  jh´ƒÿõõ  -é`¿ªİ?ÿ••  /`õ?R^ÿLL  jh´ƒÿõõ  /`õ?R^ÿLL  TSÜaöğLL  /`õ?R^ÿLL  /`õ?R^ÿLL  TSÜaöğLL  »˜úÿ    -é`¿ªİBÿõõ  jh´ƒÿõõ  -é`¿ªİ?ÿõõ  -é`¿ªİBÿ••  jh´ƒÿõõ  ƒŒDÿëVÿooo hÓÀÿÿÿÿÿZZZ r „ÿë¬ÿ£££ hÓÀÿÿÿÿÿZZZ b³"ÿöüÚÿggg r „ÿë¬ÿ£££
+endstream
+endobj
+36 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [350.877045 356.562469 227.219788 232.379517 0 1 0 1 0 1] /Length 36 >>
+stream
+ µú#ÿ    bbb ÿÿÿÿÿÿÿÿggg     ¢}ëÿJJJ
+endstream
+endobj
+37 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [349.483704 1069.600342 224.862152 767.221375 0 1 0 1 0 1] /Length 144 >>
+stream
+ î›×âbbb  ~Íğ¨ WJJJ         999 î›×âbbb 
+ÕÇÇx%£££ „8{Œ\kggg ÿÿÿÿş±[ÿRRR ÿ$`ÿúzÿooo ÿB7ÿÿÿÿÿ333 ÿ$`ÿúzÿooo şDšÿú®¾ÿUUU ÿB7ÿÿÿÿÿ333
+endstream
+endobj
+38 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1067.515015 1084.683350 748.204163 771.246521 0 1 0 1 0 1] /Length 216 >>
+stream
+     ÓGİÿ333 3¦Û»´ÿ –	Çÿÿÿÿÿ <´ƒiÿRRR     ÓGİÿ333 ©}ÿı(wÿ iö7ÿ     üÌĞÿ$DJÿ Vr‚×‡› üÌĞÿ$DJÿ ÿÿÿÿ,¸"?333 Vr‚×‡› Vr‚×‡› ÿÿÿÿ,¸"?333 N)ÿ'8J¿    ÿÿÿÿ,¸"?333 àçKÿK|•RRR N)ÿ'8J¿   
+endstream
+endobj
+39 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1067.729736 1087.469971 751.468506 771.246521 0 1 0 1 0 1] /Length 180 >>
+stream
+ Ù/ÿ    ''' ø`?ÿ~Gœ ÛÜ£ÿ	Øû ÿÿÿÿ›©³ÿUUU ­sÿü°cÿ<<< à-ÿ«ù
+ÿooo ­sÿü°cÿ<<< ´ÿÿÿÿÿZZZ à-ÿ«ù
+ÿooo ´ÿÿÿÿÿZZZ     Õ¿Wÿ''' i™ÿÛZDÿggg     Õ¿Wÿ''' İõ?Âõ&ÿJJJ i™ÿÛZDÿggg
+endstream
+endobj
+40 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1065.316406 1070.187012 758.226074 767.982178 0 1 0 1 0 1] /Length 72 >>
+stream
+ ~ØYÿÿÿÿ'''          ÿÿÿÿÙèÿJJJ          ¶ÄnÿF¼ÿ999 ÿÿÿÿÙèÿJJJ
+endstream
+endobj
+41 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1064.728271 1087.469971 748.459961 764.754761 0 1 0 1 0 1] /Length 288 >>
+stream
+     uÄƒ `¡£ÿ     Ü/™nKÿ `¡£ÿ     ZN3qÿ    Ü/™nKÿ à¡£ÿ;7í¿333 ÿÿÿÿì4ÿUUU É'âÿf¹õÿRRR ÿÿÿÿì4ÿUUU äR‚ÿÿÿÿÿooo É'âÿf¹õÿRRR Ü/™nKÿ ZN3qÿ    -Ã’?Ãhÿ999 ZN3qÿ    ^dˆ…ÌÿEEE -Ã’?Ãhÿ999 ZN3qÿ    É'âÿf¹õÿRRR ^dˆ…ÌÿEEE É'âÿf¹õÿRRR cÿ¦!âÿooo ^dˆ…ÌÿEEE
+endstream
+endobj
+42 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1078.771240 1085.011230 754.998657 764.754761 0 1 0 1 0 1] /Length 72 >>
+stream
+ œıÍÿ    RRR ÿÿÿÿÿÿÿÿooo     iæÒÿooo ÿÿÿÿÿÿÿÿooo 9)[?ı´ÿ£££     iæÒÿooo
+endstream
+endobj
+43 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1075.872437 1085.011230 764.667236 771.246521 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿgÓËooo /ÀÎ¿ÿÿÿÿZZZ x;ÿ    £££ /ÀÎ¿ÿÿÿÿZZZ     ‘ÕŠÿggg x;ÿ    £££
+endstream
+endobj
+44 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1073.085815 1078.771240 757.149841 763.255493 0 1 0 1 0 1] /Length 36 >>
+stream
+ 3sí?ÿÿÿÿbbb         EEE ÿÿÿÿOÇÿooo
+endstream
+endobj
+45 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1026.508057 1080.164551 593.950378 764.667236 0 1 0 1 0 1] /Length 360 >>
+stream
+ ã­ºÿıâÿbbb ùZ5ÿ÷®ÿooo ÿÿÿÿÿÿÿÿ£££ ã­ºÿıâÿbbb É¿¦ÿúXşÿ999 Ş:	ÿôº*ÿEEE ÀG
+ÿÇ‰_LL  ìt*ÿ*‰~?LL  és ÿ,Q—¿‰‰  ÀG
+ÿÇ•_LL  ÀG
+ÿÇ‰_LL  ìt*ÿ*‰~?LL  K“¯"C¿333 QÖoFS¿ =M›¿"+w >¾û%¿RRR »	Yç¿ooo K“¯"C¿333 »	Yç¿ooo     =¡_UUU K“¯"C¿333 >¾û%¿RRR K“¯"C¿333 C‹ì!ÉD¿     =¡_ (ôÄÿ     Î2¿¥¿ (ôÄÿ     &FT?èû_    Î2¿¥¿
+endstream
+endobj
+46 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1029.509399 1049.249756 593.694580 616.736938 0 1 0 1 0 1] /Length 468 >>
+stream
+ Y_l     Ù×ÿ$DJÿ Hf×‡› Ù×ÿ$DJÿ ÛÜ²ÿ,¸"?333 Hf×‡› Ù×ÿ$DJÿ''' ø_Úÿ¨%ÿ ÛÜ²ÿ,¸"? Hf×‡› ÛÜ²ÿ,¸"?333 AËÿ'8J¿    ÛÜ²ÿ,¸"?333 ÀÑ6ÿK|•RRR AËÿ'8J¿    ÛÜ²ÿ,¸"?333 ÿÿÿÿ©àšÿUUU ÀÑ6ÿK|•RRR ÿÿÿÿ©àšÿUUU à:ÿ·àoÿooo ÀÑ6ÿK|•RRR ´ÒÿÿÿÿÿZZZ     Û»´ÿ''' i˜òà‹Yÿggg     Û»´ÿ''' ŞOÿË›"ÿJJJ i˜òà‹Yÿggg à:ÿ·àoÿooo ´ÒÿÿÿÿÿZZZ ¡B¼ÿ¶çTÿ£££ ´ÒÿÿÿÿÿZZZ i˜òà‹Yÿggg ¡B¼ÿ¶çTÿ£££ ÿÿÿÿ©àšÿUUU ­8ÿı(wÿ<<< à:ÿ·àoÿooo ­8ÿı(wÿ<<< ´ÒÿÿÿÿÿZZZ à:ÿ·àoÿooo
+endstream
+endobj
+47 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1027.096069 1034.865479 597.224731 606.388306 0 1 0 1 0 1] /Length 72 >>
+stream
+     µ[»ÿ ôôÿ        r“qÿÿÿÿÿ999 ôôÿ        ÿÿÿÿ—J¼ÿEEE r“qÿÿÿÿÿ999
+endstream
+endobj
+48 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1027.096069 1044.377686 597.224731 613.472595 0 1 0 1 0 1] /Length 144 >>
+stream
+ #¿ëÿÿÿÿÿ'''     fHœ H&ôÿé óÿJJJ     fHœ 3‚º¿aiÿ999 H&ôÿé óÿJJJ n E        ÿÿÿÿ3nÆÿRRR srUS›ÿEEE ÿÿÿÿ3nÆÿRRR ÇOíÿsXÿooo srUS›ÿEEE
+endstream
+endobj
+49 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1031.966797 1046.791016 600.489075 613.905640 0 1 0 1 0 1] /Length 144 >>
+stream
+ EÊpŒ:ÿbbb ¬Mpÿ¸{âÿ£££ b.ÿÿÿÿggg EÊpŒ:ÿbbb b.ÿÿÿÿggg     Ü
+ÿJJJ ÖRøÿ    RRR ÿÿÿÿº'¶ÿooo ”=?ÿMÖÿooo ÿÿÿÿº'¶ÿooo ¬Mpÿ¸{âÿ£££ ”=?ÿMÖÿooo
+endstream
+endobj
+50 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1063.336060 1077.847412 626.533569 679.121704 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿÿëœÿ   åjJÿÿÿÿÿLL  •´¿       åjJÿÿÿÿÿLL       bƒLL  •´¿      
+endstream
+endobj
+51 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1036.008179 1079.978027 584.638855 679.105347 0 1 0 1 0 1] /Length 612 >>
+stream
+ ÿÿÿÿüÄFÿ``  ş/Pÿş\vÿ    ´IBÿnL¸``  ş/Pÿş\vÿ    ²x”ÿoäİ    ´IBÿnL¸``  ş/Pÿş\vÿ    ó˜^ÿÿÿÿÿ   ²x”ÿoäİ    ó˜^ÿÿÿÿÿ   §á¡ÿqˆf   ²x”ÿoäİ    wÓÿy³¹vv  j(üyÅlLL  n4÷ÿ    ïï  wÓÿy³¹vv  n4÷ÿ    ïï  ƒ,¥ÿ4lJÿïï  âÿls¿ÿÅÅ  ­43ÿ>¼¢ÿ²²  n4÷ÿ    LL  n4÷ÿ    LL  ³SFÿ9]?¿LL  å‘\ÿiS@ÿ‰‰  n4÷ÿ    LL  å‘\ÿiS@ÿ‰‰  âÿls¿ÿÅÅ  ³SFÿ9]ULL  n4÷ÿ    LL  n4÷ÿ    LL  ³SFÿ9]ULL  n4÷ÿ    LL  ³SFÿ9]?¿LL  ƒ,Óÿ4lU¿úú  n4÷ÿ        ­43ÿ>¼˜?    ƒ,Óÿ4lU¿ïï  n4÷ÿ    ïï  n4÷ÿ        ƒ,Óÿ4lU¿ïï  n4÷ÿ        ƒ,¥ÿ4lJÿúú  ­43ÿ>¼¢ÿ    n4÷ÿ        n4÷ÿ    LL  ­43ÿ>¼¢ÿ    n4÷ÿ    LL  ­43ÿ>¼˜?²²      AT<bbb rÒ_5ãêÿooo "²ÿE'–ÿ£££
+endstream
+endobj
+111 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F6
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+52 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1030.573364 1074.826660 602.640259 629.548096 0 1 0 1 0 1] /Length 288 >>
+stream
+ –¨ÿÿÿÿÿvv  ¡Æ"ÿÇvŸïï  ½:fÿÿNÌÿïï  ÿÿÿÿÑ{¥ÿÅÅ  ü[ŒÿÜÉ†ÿ    ËˆÅÿ0ı¿²²  ½:fÿÿNÌÿïï  ¡ÆPÿÇœŸúú  ËˆÅÿ0üá¿    ½:fÿÿNÌÿïï  ËˆÅÿ0üá¿    ü[ŒÿÜÉ†ÿ    ¡ÆPÿÇœŸïï  ¡Æ"ÿÇvŸúú  ½:fÿÿNÌÿïï  ËˆÅÿ0ı¿    ËˆÅÿ0üá¿²²  ü[ŒÿÜÉ†ÿ    p“_:Â¿bbb ÔQ?    EEE 9¸î/ßooo p“_:Â¿bbb     #¨¤?999 ÔQ?    EEE
+endstream
+endobj
+53 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1030.573364 1036.008179 606.388306 612.020996 0 1 0 1 0 1] /Length 36 >>
+stream
+ ÿÿÿÿk&•ÿbbb A¢ÇÿÿÿÿÿJJJ         999
+endstream
+endobj
+54 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1070.187012 1075.872437 763.255493 768.415222 0 1 0 1 0 1] /Length 36 >>
+stream
+ µú}ÿ    bbb ÿÿÿÿÿÿÿÿggg     ¢}ˆÿJJJ
+endstream
+endobj
+55 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [988.131592 1080.164551 760.897888 869.001709 0 1 0 1 0 1] /Length 252 >>
+stream
+ ï|ıÿ•Awbbb ÿÿÿÿí£££ ôÿÍ?Ÿggg ï|ıÿ•Awbbb ä?ÿV®/JJJ à^æÿ    999 ÕÆŸÿÿÿÿ’’  !•‡?ı0§ÿ’’  {ßù
+1ÿ’’  Ów÷:(ÿ’’  {ßù
+1ÿ’’  !•‡?ı0§ÿ’’      İ éÿ’’  ‰ãëõiÿ’’  ~Õ¿ç5[ÿ’’  ~Õ¿ç5[ÿ’’  †“î"ÿ’’  Ów÷:(ÿ’’  ~Õ¿ç5[ÿ’’  Ów÷:(ÿ’’  !•‡?ı0§ÿ’’ 
+endstream
+endobj
+56 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [946.992188 951.864258 857.507385 870.793640 0 1 0 1 0 1] /Length 144 >>
+stream
+ ’l­ÿñW?ÿ     Gr ´(ÿÿÿÿÿ'''     Gr å’ßDáÿ ´(ÿÿÿÿÿ''' ÿÿÿÿ»ûÿRRR 2;ÿ    ooo ’l­ÿñW?ÿ333 2;ÿ    ooo     GrUUU ’l­ÿñW?ÿ333
+endstream
+endobj
+57 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [946.992188 991.317566 851.015625 874.057983 0 1 0 1 0 1] /Length 720 >>
+stream
+ 9"ìÿ     r‡ÿ$Dw? 1“ö?×‡› r‡ÿ$Dw? s?ÿÿ,¸"?333 1“ö?×‡› r‡ÿ$Dw?''' ò°¨Qÿ s?ÿÿ,¸"?     Ve 1“ö?×‡› ec›oWÚ 1“ö?×‡› .Uÿ'8J¿    ec›oWÚ 1“ö?×‡› s?ÿÿ,¸"?333 .Uÿ'8J¿    s?ÿÿ,¸"?333 g4ÿK|•RRR .Uÿ'8J¿    ƒXÿ©àšÿUUU QÄ4ÿı(¤ÿ<<< u$Ç·àoÿooo QÄ4ÿı(¤ÿ<<< J5UÿÿÿÿZZZ u$Ç·àoÿooo .Uÿ'8J¿    g4ÿK|•RRR 0DŸcbáEEE g4ÿK|•RRR Q¤xSÿooo 0DŸcbáEEE g4ÿK|•RRR u$Ç·àoÿooo Q¤xSÿooo u$Ç·àoÿooo Y&Å¶çTÿ£££ Q¤xSÿooo s?ÿÿ,¸"?333 ƒXÿ©àšÿUUU g4ÿK|•RRR ƒXÿ©àšÿUUU u$Ç·àoÿooo g4ÿK|•RRR Ù†3ÿ0Êè¿’’  ó*‘ÿFÄ¸ÿ’’  áoÿ›G’’  áoÿ›G’’  ö^ôÿIƒ™ÿ’’  ú{åÿM	ğ’’  áoÿ›G’’  ú{åÿM	ğ’’  í™wÿ$9‡¿’’  ú{åÿM	ğ’’  ÿÿÿÿQÄgÿ’’  í™wÿ$9‡¿’’  ó*yÿFÄŒ’’  ö^İÿIƒm’’  áoÿ›G’’ 
+endstream
+endobj
+58 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [973.479797 986.047729 852.780396 871.021973 0 1 0 1 0 1] /Length 72 >>
+stream
+ ã¤ãÿ$İÿÿLL      ÿÿÿÿLL  ÿÿÿÿ    LL    QzÿÿÿÿLL      ÿÿÿÿLL  ÿÿÿÿ    LL 
+endstream
+endobj
+59 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [947.580200 952.450867 861.037537 870.793640 0 1 0 1 0 1] /Length 72 >>
+stream
+ ~×ğÿÿÿÿÿ'''          ÿÿÿÿÙèùÿJJJ          ¶ÃØÿF¼ÿ999 ÿÿÿÿÙèùÿJJJ
+endstream
+endobj
+60 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [947.580200 959.841064 854.545776 874.057983 0 1 0 1 0 1] /Length 144 >>
+stream
+ ÿÿÿÿÿÿÿÿZZZ 2c”Õ+ıÿ''' ÜhÿÚÚvÿggg 2c”Õ+ıÿ''' e²aÂ zÿJJJ ÜhÿÚÚvÿggg     U+ıÿ ›8Öÿ        Hšÿx9Ü999 ›8Öÿ        ¢8ÿG:EEE Hšÿx9Ü999
+endstream
+endobj
+61 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [955.349609 1031.226807 825.534302 874.057983 0 1 0 1 0 1] /Length 972 >>
+stream
+ Úö“Õ×Tÿbbb .ÿ¿’qÿooo â	İIñÿ£££ Úö“Õ×Tÿbbb     µ¡ÿEEE .ÿ¿’qÿooo (<8ÿİÀ<ÿooo 'R/ÿÿÿÿZZZ â	İIñÿ£££ 'R/ÿÿÿÿZZZ 	fññÿggg â	İIñÿ£££ •71ÿåS ÿ’’  ‚ÿÕÑdÿ’’  À½ÈàÉÿ’’  •71ÿåS ÿ’’  À½ÈàÉÿ’’  “&Wÿëkzÿ’’  “&Wÿëkzÿ’’  À½ÈàÉÿ’’  ‡ñ;ÿÜ:>ÿ’’  ‹€UÿÑÇ—ÿ’’  €ÎÿÅÆÿ’’  À½ÈàÉÿ’’  ‹€UÿÑÇ—ÿ’’  À½ÈàÉÿ’’  ‚ÿÕÑdÿ’’  „ÕÉÿØÂÿ’’  {?ÿÃÑşÿ’’  y“WÈÀ9ÿ’’  ‡ñ;ÿÜ:)ÿ’’  À½ÈàÉÿ’’  {?ÿÃÑşÿ’’  ‡ñ;ÿÜ:)ÿ’’  {?ÿÃÑşÿ’’  „ÕÉÿØÂÿ’’  f¤gÿ¯Òÿ’’  wîÅU„ÿ’’  wÊÂÿ»¨Šÿ’’  f¤gÿ¯Òÿ’’  wÊÂÿ»¨Šÿ’’  aB‹ÿ¢^Wÿ’’  y“WÈÀ9ÿ’’  {?ÿÃÑşÿ’’  wÊÂÿ»¨Šÿ’’  y“WÈÀ9ÿ’’  wÊÂÿ»¨Šÿ’’  wîÅU„ÿ’’  bßóÿšÿ’’  aB‹ÿ¢^Wÿ’’  xØ	ÿ¸àÿ’’  bßóÿšÿ’’  xØ	ÿ¸àÿ’’  qÚ¬ÿ¨
+ÿ’’  aB‹ÿ¢^Wÿ’’  wÊÂÿ»¨Šÿ’’  xØ	ÿ¸àÿ’’  s¹ì©WÜÿ’’  }Y±½œÀÿ’’  v!«Zÿ’’  v!«Zÿ’’  }Y±½œÀÿ’’  ¸¬Êÿ’’  v!«Zÿ’’  ¸¬Êÿ’’  yYîÿ­C*ÿ’’  qÚŸ¨
+ ÿ’’  xØ	ÿ¸àÿ’’  }Y±½œÀÿ’’  qÚŸ¨
+ ÿ’’  }Y±½œÀÿ’’  s¹Şÿ©WÇÿ’’  oÿ½†)ÿ’’  €ÎÿÅÆÿ’’  ‹€UÿÑÇ—ÿ’’  ÿÿÿÿ    LL  şò¸ÿ©ÛLL  xØ¸õÿLL  şò¸ÿ©ÛLL  wÊÂÿ»¨ŠÿLL  xØ¸õÿLL 
+endstream
+endobj
+62 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [1030.915039 1033.586426 825.534302 828.628418 0 1 0 1 0 1] /Length 216 >>
+stream
+ ÿÿÿÿÿÿ’’  ÿÿÿÿÏQ¢ÿ’’  àuÿORíÿ’’  ÿÿÿÿÿÿ’’  àuÿORíÿ’’  àv?    ’’  ÿÿÿÿÿÿ’’  àv?    ’’      0®\ÿ’’  ÿÿÿÿÿÿ’’      0®\ÿ’’  b‰°­ÿ’’  ÿÿÿÿÿÿ’’  b‰°­ÿ’’  â‰ÿÿÿÿÿ’’  ÿÿÿÿÿÿ’’  â‰ÿÿÿÿÿ’’  ÿÿÿÿÏQ¢ÿ’’ 
+endstream
+endobj
+63 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [990.855408 1031.938965 826.122681 862.651245 0 1 0 1 0 1] /Length 72 >>
+stream
+ ù¤ÿ    LL  ÿÿÿÿ
+×x¿       õ(NÿLL  ÿÿÿÿ
+×x¿   aZ§ÿÿÿÿ       õ(NÿLL 
+endstream
+endobj
+64 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [956.492310 1033.274658 827.669678 889.548340 0 1 0 1 0 1] /Length 684 >>
+stream
+ û‹ñÿ       ÿÿÿÿ÷h    uûŞ¹&ÿ   ÿÿÿÿ÷h    zoŞÿ”°ÿ    uûŞ¹&ÿ   ]æ;rÁ+LL  \M³v}¯ÿLL  ÉoÿÿÿÿLL  ]æ;rÁ+LL  ÉoÿÿÿÿLL  8£R³Z¡ÿLL  8£_¿³Z¡ÿLL  ÉoÿÿÿÿLL  ÉoÿÿÿÿLL  8£_¿³Z¡ÿLL  ÉoÿÿÿÿLL  8£R³Z¡ÿLL  aŸPÿ€vÿxx  8©'ÿÕ?Iÿ••  ÉoÿÿÿÿLL  aŸPÿ€vÿxx  ÉoÿÿÿÿLL  \M³v}¯ÿLL  \M³v}¯ÿLL  ÉoÿÿÿÿLL  ÉoÿÿÿÿLL  Tˆ™Õ²Íÿ    Éoÿÿÿÿõõ  8©'ÿÕ?Iÿõõ  8©'ÿÕ?Iÿõõ  Éoÿÿÿÿõõ  ÉoÿÿÿÿLL  8©'ÿÕ?Iÿõõ  ÉoÿÿÿÿLL  8©'ÿÕ?Iÿ••      Ú¿ÿbbb Ê¢¤±İÿ£££ {=7´3qÿggg šïÿ¯Æ¤ÿ’’  ‚‡¥ÿ£ÜÍÿ’’  ‹„ÿ´°úÿ’’  ‹„ÿ´°úÿ’’  u”ÿ ÿ’’  tU”–äÿ’’  ‹„ÿ´°úÿ’’  tU”–äÿ’’  pÉ?ÿœä»ÿ’’  ‚‡¥ÿ£Ü½ÿ’’  u”ÿ ÿ’’  ‹„ÿ´°úÿ’’  aŸPÿ€vÿ’’  pÉ?ÿœä»ÿ’’  q×Oÿ‘èøÿ’’  tU”–äÿ’’  q×Oÿ‘èøÿ’’  pÉ?ÿœä»ÿ’’ 
+endstream
+endobj
+112 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F7
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+65 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [951.057495 998.334473 858.720947 879.323486 0 1 0 1 0 1] /Length 180 >>
+stream
+ »úÿ    xx  Ôš¾ÿUc¢ÿõõ  ys”ÿş¥ÿ••  ÿÿÿÿœİ`ÿ    ¦¸8ÿÿÿÿÿ    ys”ÿş¥ÿõõ  ÿÿÿÿœİ`ÿ    ys”ÿş¥ÿõõ  Ôš¾ÿUc¢ÿõõ  ys”ÿş¥ÿõõ  ys”ÿş¥ÿ••  Ôš¾ÿUc¢ÿõõ  mĞŸ[Ghÿbbb ‹‚ÏƒùYÿJJJ     =ûò999
+endstream
+endobj
+66 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [216.808289 958.136353 859.961304 916.578857 0 1 0 1 0 1] /Length 144 >>
+stream
+ ÿn¨ÿ›k_bbb ÿÿÿÿ2ïé¿ggg ş	aÿ*jf?JJJ ÿn¨ÿ›k_bbb ı3ÿòq?999 ÿ	£ÿ    EEE     õ¼gÿ öß‹Ó×„ÿ  3û}ÿÿÿÿ öß‹Ó×„ÿ Å0{â¥¸ÿ     3û}ÿÿÿÿ
+endstream
+endobj
+67 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [229.657104 239.549988 921.847534 929.599304 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿ    UUU !İvÿ÷eÿ<<< À_¹ÿ)œˆÿooo !İvÿ÷eÿ<<<     ÿÿÿÿZZZ À_¹ÿ)œˆÿooo
+endstream
+endobj
+68 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [216.808289 236.763336 906.557007 926.334961 0 1 0 1 0 1] /Length 288 >>
+stream
+ ~ê     ı>éÿ*@|ÿ n Oh ı>éÿ*@|ÿ ÿÿÿÿ4­¿333 n Oh #¿Ş¿ö'6ÿ     dV` &€ôÿÿÿÿ'''     dV` ‹#÷¸Iÿ &€ôÿÿÿÿ''' n Oh ÿÿÿÿ4­¿333 fêPÿ-±wÿ    ÿÿÿÿ4­¿333 å?ÿWñôÿRRR fêPÿ-±wÿ    ‹#÷¸Iÿ fêPÿ-±wÿ    4'5?¤M“ÿ999 fêPÿ-±wÿ    k7JsÊKÿEEE 4'5?¤M“ÿ999
+endstream
+endobj
+69 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [217.396301 234.677917 910.087158 926.334961 0 1 0 1 0 1] /Length 144 >>
+stream
+ #¿ëÿÿÿÿÿ'''     fHv H&œé íÿJJJ     fHv 3‚º¿aMÿ999 H&œé íÿJJJ n '        ÿÿÿÿ3n”RRR srUS°ÿEEE ÿÿÿÿ3n”RRR ÇOíÿsuooo srUS°ÿEEE
+endstream
+endobj
+70 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [219.809631 239.549988 910.582153 929.599304 0 1 0 1 0 1] /Length 288 >>
+stream
+ ÛÜ˜ÿ    333 ÿÿÿÿ—¦7ÿUUU ÀÑ6ÿ%Gb¿RRR ÿÿÿÿ—¦7ÿUUU à ÿ¨œgÿooo ÀÑ6ÿ%Gb¿RRR ´ÿÿÿÿÿZZZ     Ô’ÿ''' i™%ÿÙãÿggg     Ô’ÿ''' Ş?À„$ÿJJJ i™%ÿÙãÿggg ÀÑ6ÿ%Gb¿RRR à ÿ¨œgÿooo 0®ÿ[›«ÿooo à ÿ¨œgÿooo ¡Boÿ§nÇÿ£££ 0®ÿ[›«ÿooo à ÿ¨œgÿooo ´ÿÿÿÿÿZZZ ¡Boÿ§nÇÿ£££ ´ÿÿÿÿÿZZZ i™%ÿÙãÿggg ¡Boÿ§nÇÿ£££
+endstream
+endobj
+71 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [226.308411 232.244476 921.608276 926.768066 0 1 0 1 0 1] /Length 36 >>
+stream
+         bbb ÿÿÿÿF
+ö£££ Fæÿÿÿÿggg
+endstream
+endobj
+72 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [222.266937 392.719727 915.502686 978.033203 0 1 0 1 0 1] /Length 468 >>
+stream
+ ßÿbbb Z†    EEE äwÏ·:?ooo ßÿbbb ‰ôO.×¿ggg     &g?JJJ ßÿbbb äwÏ·:?ooo ü.¯Æ¦£££ ğãGÿ¯^ÿ ÿ­tÿ¼d›ÿ îìÿ°uÿ ÿ­tÿ¼d›ÿ ÿÿÿÿ¿úÿ333 îìÿ°uÿ â¢ÿÎÃÈÿ îìÿ°uÿ âé¹ÿØùÿ îìÿ°uÿ îÿ½{!ÿ    âé¹ÿØùÿ æ‰›ÿÿÿÿÿ''' âé¹ÿØùÿ ê:eÿúÿJJJ âé¹ÿØùÿ è"®ÿâÿ$ÿ999 ê:eÿúÿJJJ âé¹ÿØùÿ îÿ½{!ÿ    è"®ÿâÿ$ÿ999 îÿ½{!ÿ    î”èÿÓ¦óÿEEE è"®ÿâÿ$ÿ999 æ7ÿüâÿ â¢ÿÎÃÈÿ æ‰›ÿÿÿÿÿ''' â¢ÿÎÃÈÿ âé¹ÿØùÿ æ‰›ÿÿÿÿÿ'''
+endstream
+endobj
+73 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [355.512756 375.687134 970.275635 982.661804 0 1 0 1 0 1] /Length 36 >>
+stream
+     6LW¿©©  ª‘    LL  ÿÿÿÿÿÿÿÿŠŠ 
+endstream
+endobj
+74 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [390.634277 395.506409 962.280334 974.805786 0 1 0 1 0 1] /Length 72 >>
+stream
+ m“Éÿ    333 ÿÿÿÿæ>³ÿUUU     8™Û?RRR ÿÿÿÿæ>³ÿUUU ~Î-ÿÿÿÿÿooo     8™Û?RRR
+endstream
+endobj
+75 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [318.679230 395.506409 958.510986 983.279053 0 1 0 1 0 1] /Length 684 >>
+stream
+ ĞÓ-ÿ     ö¶Şÿ&õ¦?333 ÎóÃÿ!×¼    ö¶Şÿ&õ¦?333 ïÃêÿC•ORRR ÎóÃÿ!×¼    ÿÿÿÿ›e‹ÿUUU ãeaÿèàÿ<<< ÷Îÿ¨kÖÿooo ãeaÿèàÿ<<< ß	ÿë„ËÿZZZ ÷Îÿ¨kÖÿooo ÷Îÿ¨kÖÿooo ß	ÿë„ËÿZZZ ç¨$ÿ§„?ÿ£££ ß	ÿë„ËÿZZZ ÙZÕÿÎA_ÿggg ç¨$ÿ§„?ÿ£££ Óàvÿ˜ìËÿbbb ÆhüÿºÆxÿJJJ ÁÄlÿ€pÿ999 ß	ÿë„ËÿZZZ ¾8ÓÿÉÇ‹ÿ''' ÙZÕÿÎA_ÿggg ¾8ÓÿÉÇ‹ÿ''' ÆhüÿºÆxÿJJJ ÙZÕÿÎA_ÿggg     …4…ÿ    qñÿùë'ÿ    s£	ÿæ·Ëÿ   ô_¤“Xÿãã pwøÿÿÿÿÿºº  ˆ£…Íÿºº  &!¥Ä@ÿ   qòázÿ   pwøÿÿÿÿÿºº  &!¥Ä@ÿ   pwøÿÿÿÿÿºº  æÿ¤“.ÿãã #©ÿ™?{ÿßß qòázÿ   &ÿ¥Ä@ÿ    æÿ‰±Aÿ    s°5ÿß®ÿ    qòázÿ    æÿ‰±Aÿ    qòázÿ   #ª¿™?¤ÿßß Å¥_y'krr  s°5ÿß®ÿ     æÿ‰±Aÿ    	‰ò¿kb<LL  tº/Ù™FÿLL  s°5ÿß®ÿ    	‰ò¿kb<LL  s°5ÿß®ÿ    Å˜y'krr 
+endstream
+endobj
+76 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [354.373199 394.763977 967.200806 995.242310 0 1 0 1 0 1] /Length 468 >>
+stream
+ ˆÛ_ÿ×vÿ   ÿÿÿÿÿÿÿÿââ  ]Û¶òFëÿââ  ]Û]òFÆÿââ  ÿÿÿÿÿÿÿÿââ  ÿÿÿÿÿÿÿÿLL  ]Û]òFÆÿââ  ÿÿÿÿÿÿÿÿLL  ]Û¶òFëÿ        M×uÿää 0…§<L‹ÿÉÉ  ÿÿÿÿÿÿÿÿ  0     M×uÿää ÿÿÿÿÿÿÿÿ  0 ±7{YÜæóó ±P×Yİ
+ÿóó ÿÿÿÿÿÿÿÿ  0 ˆÛ,ÿ×uóÿ  0 ±P×Yİ
+ÿóó ˆÛ,ÿ×uóÿ  0 ‹“[ÿõõ ˆÛ_ÿ×vÿ  0 ÿÿÿÿÿÿÿÿ  0 ÿÿÿÿÿÿÿÿââ  ˆÛ_ÿ×vÿ  0 ÿÿÿÿÿÿÿÿââ  ˆÛ,ÿ×uóÿ   8ü‡4¿©©  ‡äÿ&ÿŠŠ  ÿÿÿÿÿÿÿÿÉÉ  8ü‡4¿©©  ÿÿÿÿÿÿÿÿÉÉ  0…§<L‹ÿÉÉ  0…§<L‹ÿÉÉ  ÿÿÿÿÿÿÿÿÉÉ  ÿÿÿÿÿÿÿÿ  0 °Çmÿ7½´bbb U:ÿ"7–?999 ©‰Wÿ    EEE
+endstream
+endobj
+77 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [300.333984 328.301270 961.973511 971.832764 0 1 0 1 0 1] /Length 108 >>
+stream
+ Ú£¯    LL  Ş=ÿÖsåÿrr  ÿÿÿÿÿÿÿÿ    Ú£¯    LL  ÿÿÿÿÿÿÿÿ        Gÿ    Â ´ÿ³ÜÿLL  Ş<øÿÖsåÿrr  Ú£¯    LL 
+endstream
+endobj
+78 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [299.367737 383.908752 962.561890 978.466248 0 1 0 1 0 1] /Length 324 >>
+stream
+  ı¬ùæ   UÉ>ÿ¿kÿãã Nóüÿ½s©ÿºº   ı¬ùæ   Nóüÿ½s©ÿºº      2TÅ?ºº  ]…•ÿÀòBÿ   UÉ2¿+ÿãã  ı¬ùæ   ík        Zã*ÿ­slÿßß ]…ÿÀòBÿ   ík        ]…ÿÀòBÿ    ı¬ùæ   W4ÿ•9Úÿ    Zã6ÿ­s­ÿßß ík        ¦ÿÓêÿää §Ùcÿéøÿóó ¥ÿãŒ5ÿññ §Ùoÿé8ÿóó ¨tÿì§ÿõõ ¥ÿãŒ5ÿññ û–ÿ¬ò§ÿbbb ÿÿÿÿÿÿÿÿggg îÈ«ÿá©ÓÿJJJ
+endstream
+endobj
+113 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F8
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+79 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [349.236664 393.047607 961.785278 993.739136 0 1 0 1 0 1] /Length 324 >>
+stream
+ y_¹™ÿ  0 œ/ïÿèw¯ÿ   t‹šÿÿÿÿÿââ  y_¹™ÿ  0 t‹šÿÿÿÿÿââ      öœHÿââ  t‹Hÿÿÿßÿââ  t‹šÿÿÿÿÿ        öœHÿââ  İÿwzšÿññ œ/Àÿèwÿ  0 y_¹™ÿ  0 œ/ïÿèw¯ÿ  0 œ/Àÿèwÿ   y_¹™ÿ  0 ¸[`ÿ        ñåğÿ''RRR ºPÍÿ+cÿEEE ñåğÿ''RRR Û‰’ÿ:|–ÿooo ºPÍÿ+cÿEEE ñåğÿ''RRR ÿÿÿÿhPooo Û‰’ÿ:|–ÿooo ÿÿÿÿhPooo ã­Øÿgœÿ£££ Û‰’ÿ:|–ÿooo
+endstream
+endobj
+80 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [382.264771 388.200867 969.085571 978.466248 0 1 0 1 0 1] /Length 72 >>
+stream
+     s0´bbb ÿÿÿÿ™·ˆÿ£££ Fåùÿÿÿÿggg     s0´bbb Ãé)ÿ    ooo ÿÿÿÿ™·ˆÿ£££
+endstream
+endobj
+81 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [381.122070 671.751526 914.278931 973.306519 0 1 0 1 0 1] /Length 684 >>
+stream
+ ¬Ùÿÿÿÿbbb     å…ÿEEE ?í±¥ÿooo ÏÿÉÿY`°ÿÔÔ  Ò§NÿdŒ*ÿÔÔ  Ğ*eÿ9ø§ÔÔ  Ò§NÿdŒ*ÿÔÔ  Ğ›§ÿ;Õ>ÔÔ  Ğ*eÿ9ø§ÔÔ  Í‹iÿ(….ÿÔÔ  ÏÿÉÿY`°ÿÔÔ  ÏÁ¬ÿ1Ô¿ÔÔ  ÏÿÉÿY`°ÿÔÔ  Ğ*eÿ9ø§ÔÔ  ÏÁ¬ÿ1Ô¿ÔÔ  Í¾‹ÿÕ«ÔÔ  Í‹iÿ(….ÿÔÔ  ÏÊ1ÿ+ŒÿÔÔ  Í‹iÿ(….ÿÔÔ  ÏÁ¬ÿ1Ô¿ÔÔ  ÏÊ1ÿ+ŒÿÔÔ  Ğfÿ  ÿÔÔ  Í¾‹ÿÕ«ÔÔ  Ğ;sÿ-hªÔÔ  Í¾‹ÿÕ«ÔÔ  ÏÊ1ÿ+ŒÿÔÔ  Ğ;sÿ-hªÔÔ  ÒÚsÿ>Ü"ÿÔÔ  Ğfÿ  ÿÔÔ  Ğ¤,ÿ5@?ÔÔ  Ğfÿ  ÿÔÔ  Ğ;sÿ-hªÔÔ  Ğ¤,ÿ5@?ÔÔ  Ò§NÿdŒ*ÿÔÔ  ÒÚsÿ>Ü"ÿÔÔ  Ğ›§ÿ;Õ>ÔÔ  ÒÚsÿ>Ü"ÿÔÔ  Ğ¤,ÿ5@?ÔÔ  Ğ›§ÿ;Õ>ÔÔ  ÿÁÿ$¦ÿÔÔ  ÿ÷zÿI<ŸÔÔ  ÿÿÿÿ
+>?ÔÔ  ÿÁÿ$¦ÿÔÔ  ÿÿÿÿ
+>?ÔÔ  ÿ—FÿÜ¨‘ÔÔ  ÿÁÿ$¦ÿÔÔ  ÿ—FÿÜ¨‘ÔÔ  ÿ&ÿ    ÔÔ  ÿÁÿ$¦ÿÔÔ  ÿ&ÿ    ÔÔ  ÿÿHÇÔÔ  ÿÁÿ$¦ÿÔÔ  ÿÿHÇÔÔ  ÿ†8ÿl¥oÔÔ  ÿÁÿ$¦ÿÔÔ  ÿ†8ÿl¥oÔÔ  ÿ÷zÿI<ŸÔÔ 
+endstream
+endobj
+82 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [616.982117 670.784851 914.278931 925.768188 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿ    LL  ÿÑúÿ E¡?ÅÅ   .ßº^ÿLL  ÿÑúÿ E¡?ÅÅ      ÿÿÿÿÅÅ   .ßº^ÿLL 
+endstream
+endobj
+114 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F9
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+83 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [616.982117 671.713745 915.727295 928.074951 0 1 0 1 0 1] /Length 144 >>
+stream
+ ûz~ÿ    ÅÅ  ı¦—ÿ&íJ¿        Ğ,³ÿÅÅ  ı¦—ÿ&íJ¿    ,c÷şÿ        Ğ,³ÿÅÅ  ı¦—ÿ&íJ¿    ÿÿÿÿ/Ó««  ,c÷şÿ    ÿÿÿÿ/Ó««  …€§ÿÿÿÿ««  ,c÷şÿ   
+endstream
+endobj
+115 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F10
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+84 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [575.240479 614.697693 914.932007 934.086670 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿ    LL  ş‡cÿt#ß      ÿÿÿÿLL  ÿÿÿÿ    LL      ÿÿÿÿLL      ÿÿÿÿLL 
+endstream
+endobj
+116 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F11
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+117 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F12
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+85 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [575.240479 617.257568 923.621948 934.887329 0 1 0 1 0 1] /Length 72 >>
+stream
+ ï“ÿ      ÿÿÿÿÿÿÿÿùù      íÎ0ÿ  ï“ÿ          íÎ0ÿ      íÎ0ÿLL 
+endstream
+endobj
+86 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [575.240479 620.270996 934.086670 937.462830 0 1 0 1 0 1] /Length 108 >>
+stream
+ îŞYÿ<µë?ùù  ÿÿÿÿÿÿÿÿ„„          ùù  ÿÿÿÿÿÿÿÿ„„          „„          ùù  îŞYÿ<µë?ùù          ùù           
+endstream
+endobj
+87 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [832.749634 880.909180 387.646729 436.900177 0 1 0 1 0 1] /Length 648 >>
+stream
+ ñËêÿµªôÿLL  Ä*iÿÜ¡ÿLL  ×›^ÿÓ$½ÿLL  Ä*iÿÜ¡ÿLL  Ğ ÿÙ£ÿLL  ×›^ÿÓ$½ÿLL  ÿÿÿÿ²µÿLL  ñËêÿµªôÿLL  ÙùpÿÒ‹~ÿLL  ñËêÿµªôÿLL  ×›^ÿÓ$½ÿLL  ÙùpÿÒ‹~ÿLL  à’’ÿÕr«ÿLL  ÿÿÿÿ²µÿLL  Ô¼zÿØpªÿLL  ÿÿÿÿ²µÿLL  ÙùpÿÒ‹~ÿLL  Ô¼zÿØpªÿLL  ²ñ&ÿühËÿLL  à’’ÿÕr«ÿLL  Í!ÿŞïÿLL  à’’ÿÕr«ÿLL  Ô¼zÿØpªÿLL  Í!ÿŞïÿLL  ¤¼üÿÿÿÿÿLL  ²ñ&ÿühËÿLL  ÊÃ¡ÿßˆ6ÿLL  ²ñ&ÿühËÿLL  Í!ÿŞïÿLL  ÊÃ¡ÿßˆ6ÿLL  Ä*iÿÜ¡ÿLL  ¤¼üÿÿÿÿÿLL  Ğ ÿÙ£ÿLL  ¤¼üÿÿÿÿÿLL  ÊÃ¡ÿßˆ6ÿLL  Ğ ÿÙ£ÿLL  šñÿ~W'LL  <à_ŒGLL      ü®OLL  šñÿ~W'LL      ü®OLL  ]ü[cƒLL  šñÿ~W'LL  ]ü[cƒLL  	øî_å,gLL  šñÿ~W'LL  	øî_å,gLL  5Î¯    LL  šñÿ~W'LL  5Î¯    LL  ×Ò_ ™*¼LL  šñÿ~W'LL  ×Ò_ ™*¼LL  <à_ŒGLL 
+endstream
+endobj
+88 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [832.749634 902.295776 387.646729 461.231903 0 1 0 1 0 1] /Length 252 >>
+stream
+     ±VïLL  £¢“JÑŸÑÑ  Œi+ÿ•cÿLL  £¢“JÑŸÑÑ  Íÿ•7İÿÑÑ  Œi+ÿ•cÿLL  £¢“JÑŸÑÑ  çÜ¿ò&+   Íÿ•7İÿÑÑ  çÜ¿ò&+   “Pùÿß2ÿ   Íÿ•7İÿÑÑ  çÜ¿ò&+   
+ˆeŸ    ’’  “Pùÿß2ÿ   
+ˆeŸ    ’’  –ñÿŒíÿ’’  “Pùÿß2ÿ   {ê¨òÿôô  ›ƒCÿŞ|ÿ  3 ÿÿÿÿÿÿÿÿôô 
+endstream
+endobj
+89 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [863.740723 902.295776 421.908081 461.231903 0 1 0 1 0 1] /Length 108 >>
+stream
+     a™iÿLL  ½øÿ]ÿôô  ÿÿÿÿÿÿÿÿLL  ½øÿ]ÿôô  ÿÿÿÿÿÿÿÿôô  ÿÿÿÿÿÿÿÿLL  J½]ÿ,Mk¿  3 qşşÿ    ··  ÿÿÿÿÿÿÿÿ  3
+endstream
+endobj
+90 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [874.996948 902.295776 428.713318 461.231903 0 1 0 1 0 1] /Length 36 >>
+stream
+           3 ÿÿÿÿÿÿÿÿ  3 ÿÿÿÿÿÿÿÿôô 
+endstream
+endobj
+118 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F13
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+91 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [175.323639 226.308411 769.883423 924.883362 0 1 0 1 0 1] /Length 180 >>
+stream
+ ÿÿÿÿú—?ÿbbb ëµÿÿÿÿÿJJJ ä¶ÿö²lÿ999 ÿÿÿÿú—?ÿbbb ä¶ÿö²lÿ999 úC*ÿğ¹ÿEEE $™;¹¹          LL  4£É¿ßÒLL  $™;¹¹  4£É¿ßÒLL  2l… ?ìÿww    
+
+  ›LL          LL  4£É¿ßÒLL 
+endstream
+endobj
+92 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [178.588104 201.329803 752.047485 775.089844 0 1 0 1 0 1] /Length 360 >>
+stream
+ o\Üÿ     Ş6İÿ$DJÿ `¡vÿ×[' Ş6İÿ$DJÿ à¡vÿ,·õ¿333 `¡vÿ×[' ^r_ÓGİÿ     Ve !É"?Û»ˆÿ'''     Ve ‚'oW­ÿ !É"?Û»ˆÿ''' ÿÿÿÿ©àmÿUUU Ÿ^qÿı(Kÿ<<< äRUÿ·àCÿooo Ÿ^qÿı(Kÿ<<< £ÿÿÿÿÿZZZ äRUÿ·àCÿooo £ÿÿÿÿÿZZZ !É"?Û»ˆÿ''' }r|à‹Yÿggg !É"?Û»ˆÿ''' =r|¿ËšöÿJJJ }r|à‹Yÿggg äRUÿ·àCÿooo £ÿÿÿÿÿZZZ ­ÃNÿ¶çTÿ£££ £ÿÿÿÿÿZZZ }r|à‹Yÿggg ­ÃNÿ¶çTÿ£££
+endstream
+endobj
+93 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [182.612442 185.366028 786.976318 791.203918 0 1 0 1 0 1] /Length 36 >>
+stream
+         ¹¹  ÿÿÿÿ“X°ÿww  §™ÿÿÿÿÿÔÔ 
+endstream
+endobj
+94 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [178.588104 198.543121 752.303223 762.069336 0 1 0 1 0 1] /Length 144 >>
+stream
+     Ä~êÿ n ÿ     ‹$·ÿÿÿÿ n ÿ     fêAUÕ    ‹$·ÿÿÿÿ n ÿ     ÿÿÿÿbÎfÿ333 fêAUÕ    ÿÿÿÿbÎfÿ333 å?1ÿ«f@ÿRRR fêAUÕ   
+endstream
+endobj
+95 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [179.176117 201.329803 755.577637 772.258545 0 1 0 1 0 1] /Length 288 >>
+stream
+ ßÌPÿ˜—333 ÿÿÿÿ´{õÿUUU Ç³:ÿ2¸¿RRR ÿÿÿÿ´{õÿUUU ã–CÿÇÒ†ÿooo Ç³:ÿ2¸¿RRR     c › Uè        (.˜?Œ¡¢ÿ999 Uè        YÇÍÿSLEEE (.˜?Œ¡¢ÿ999 fü0°Ğ3ÿbbb «”„ÿÆz©ÿ£££ yûeÿÿÿÿÿggg fü0°Ğ3ÿbbb yûeÿÿÿÿÿggg 8H†ÿã]ÿJJJ ã7ßùZiÿ'''     c › 8H†ÿã]ÿJJJ     c › (.˜?Œ¡¢ÿ999 8H†ÿã]ÿJJJ
+endstream
+endobj
+96 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [176.401489 189.717682 791.600586 844.760681 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿı*·ÿ``  úyÿÿÿÿÿ    ş…Ï    ``  úyÿÿÿÿÿ        Õ[+    ş…Ï    `` 
+endstream
+endobj
+97 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [174.582672 189.405884 792.188965 845.365417 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿı´ÿ    à–°ÿÿÿÿÿ   iNŸ        à–°ÿÿÿÿÿ       é7   iNŸ       
+endstream
+endobj
+98 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [173.075623 187.587067 792.793640 845.381836 0 1 0 1 0 1] /Length 72 >>
+stream
+ ÿÿÿÿÿë‰ÿ   åjÿÿÿÿÿLL  –Ÿ       åjÿÿÿÿÿLL       uûLL  –Ÿ      
+endstream
+endobj
+119 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F14
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+99 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [163.981537 196.457733 750.898865 795.833679 0 1 0 1 0 1] /Length 612 >>
+stream
+ f’»×ÿ““  zÀ    ïï  !ŞÏÿn8Vÿïï  ¡yÿåŸ£ÿÔÔ  LÀÿêÄ¿ÿ    zÀ    LL  ¡yÿåŸ£ÿÔÔ  zÀ    LL  Yhl(_ÿLL  Yhÿl(vÿLL  zÀ    LL  zÀ    LL  Yhÿl(vÿLL  zÀ    LL  Yhl(_ÿLL  †ô)ÿğ#sÿıı  !ŞÏÿn8?ÿúú  zÀ        †ô)ÿğ#sÿıı  zÀ        LÀÿêÄ¿ÿ    !ŞÏÿn8?ÿïï  zÀ    ïï  zÀ        !ŞÏÿn8?ÿïï  zÀ        !ŞÏÿn8Vÿúú  LÀÿêÄ¿ÿ    zÀ        zÀ    LL  ¾”ÿ\Kbbb +ÿnó¡ÿJJJ “/9ÿNÜˆ999     ÿÿÿÿLL  f’»×ÿ““  !ŞÏÿn8Vÿïï      ÿÿÿÿLL  !ŞÏÿn8Vÿïï  GF×ÿp­ÿïï  †ô)ÿğ#sÿıı  GF×ÿp­ÿïï  !ŞÏÿn8?ÿúú  !ŞÏÿn8?ÿïï  !ŞÏÿn8Vÿúú  GF×ÿp­ÿïï  ²`ÿ§×    ÿÿÿÿ-@±?RRR µ¥ÿ9‚ ?EEE ÿÿÿÿ-@±?RRR áÕšÿD>èooo µ¥ÿ9‚ ?EEE
+endstream
+endobj
+100 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [192.630920 198.871002 758.841919 768.598022 0 1 0 1 0 1] /Length 72 >>
+stream
+ œşÑÿ    RRR ÿÿÿÿÿÿÿÿooo     iæÒÿooo ÿÿÿÿÿÿÿÿooo 9)È?ı´ÿ£££     iæÒÿooo
+endstream
+endobj
+101 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [182.653381 194.024292 760.993103 768.510498 0 1 0 1 0 1] /Length 108 >>
+stream
+ z[œÿÏì‹ÿbbb à¡Tÿ@.°ÿooo ÿÿÿÿÿÿÿÿ£££ z[œÿÏì‹ÿbbb     £%ÿ999 `¡®ÿ    EEE z[œÿÏì‹ÿbbb `¡®ÿ    EEE à¡Tÿ@.°ÿooo
+endstream
+endobj
+102 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [271.478943 290.889557 442.451996 494.452789 0 1 0 1 0 1] /Length 216 >>
+stream
+ !î,ÿÿÿÿÿ  / ïOüè=ÿ¢¢  ïñ'ÿ%ÇŸ  / ïOüè=ÿ¢¢  Öò—ÿÇ¢¢  ïñ'ÿ%ÇŸ  / ïOüè=ÿ¢¢      øÚ7ÿLL  Öò—ÿÇ¢¢      øÚ7ÿLL  Îúÿ    LL  Öò—ÿÇ¢¢  1ı9¿ÿ	±ÿññ  !î,ÿÿÿÿÿ  / ÿÿÿÿ/ƒ§ññ  !î,ÿÿÿÿÿ  / ïñ'ÿ%ÇŸ  / ÿÿÿÿ/ƒ§ññ 
+endstream
+endobj
+120 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F15
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+103 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [281.688873 301.267517 403.363220 448.022064 0 1 0 1 0 1] /Length 36 >>
+stream
+ ”­ûÿÿÿÿÿ  6     êd˜ÿ››  ÿÿÿÿ      6
+endstream
+endobj
+104 0 obj
+<< /ShadingType 4 /ColorSpace /DeviceRGB /BitsPerCoordinate 32 /BitsPerComponent 8 /BitsPerFlag 8 /Decode [277.623566 301.267517 403.363220 448.022064 0 1 0 1 0 1] /Length 180 >>
+stream
+ ,*¿êd˜ÿ››      ÎÿLL  ÿÿÿÿ    ››  ,*¿êd˜ÿ››  ÿÿÿÿ    ››  ÿÿÿÿ      6 ö;%ÿùGZÿèè  §!Óÿÿÿÿÿ  6 ÿÿÿÿ    èè  §!Óÿÿÿÿÿ  6 ÿÿÿÿ      6 ÿÿÿÿ    èè  ö;%ÿùGZÿèè  ÿÿÿÿ    èè  ÿÿÿÿ    LL 
+endstream
+endobj
+121 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F16
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+122 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F17
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+123 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F18
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+124 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F19
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+125 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F20
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+endobj
+xref
+0 126
+0000000000 65535 f 
+0000000009 00000 n 
+0000000153 00000 n 
+0000000202 00000 n 
+0000000259 00000 n 
+0000017121 00000 n 
+0000017142 00000 n 
+0000018883 00000 n 
+0000019120 00000 n 
+0000019476 00000 n 
+0000019759 00000 n 
+0000020260 00000 n 
+0000020617 00000 n 
+0000020901 00000 n 
+0000021185 00000 n 
+0000021469 00000 n 
+0000021863 00000 n 
+0000022294 00000 n 
+0000023083 00000 n 
+0000023367 00000 n 
+0000023940 00000 n 
+0000024224 00000 n 
+0000024581 00000 n 
+0000025336 00000 n 
+0000025803 00000 n 
+0000026160 00000 n 
+0000026408 00000 n 
+0000026656 00000 n 
+0000026904 00000 n 
+0000027549 00000 n 
+0000028302 00000 n 
+0000028695 00000 n 
+0000029052 00000 n 
+0000030237 00000 n 
+0000030666 00000 n 
+0000031060 00000 n 
+0000032390 00000 n 
+0000032638 00000 n 
+0000032996 00000 n 
+0000033427 00000 n 
+0000033822 00000 n 
+0000034108 00000 n 
+0000034611 00000 n 
+0000034897 00000 n 
+0000035183 00000 n 
+0000035433 00000 n 
+0000036008 00000 n 
+0000036691 00000 n 
+0000036977 00000 n 
+0000037336 00000 n 
+0000037695 00000 n 
+0000037981 00000 n 
+0000038918 00000 n 
+0000039421 00000 n 
+0000039671 00000 n 
+0000039921 00000 n 
+0000040387 00000 n 
+0000040744 00000 n 
+0000041677 00000 n 
+0000041961 00000 n 
+0000042245 00000 n 
+0000042602 00000 n 
+0000043788 00000 n 
+0000044219 00000 n 
+0000044504 00000 n 
+0000045512 00000 n 
+0000045905 00000 n 
+0000046262 00000 n 
+0000046546 00000 n 
+0000047047 00000 n 
+0000047404 00000 n 
+0000047905 00000 n 
+0000048153 00000 n 
+0000048834 00000 n 
+0000049082 00000 n 
+0000049366 00000 n 
+0000050263 00000 n 
+0000050944 00000 n 
+0000051265 00000 n 
+0000051912 00000 n 
+0000052449 00000 n 
+0000052733 00000 n 
+0000053630 00000 n 
+0000054024 00000 n 
+0000054492 00000 n 
+0000054998 00000 n 
+0000055282 00000 n 
+0000055603 00000 n 
+0000056464 00000 n 
+0000056929 00000 n 
+0000057250 00000 n 
+0000057609 00000 n 
+0000058002 00000 n 
+0000058575 00000 n 
+0000058823 00000 n 
+0000059180 00000 n 
+0000059681 00000 n 
+0000059965 00000 n 
+0000060249 00000 n 
+0000060644 00000 n 
+0000061469 00000 n 
+0000061754 00000 n 
+0000062076 00000 n 
+0000062617 00000 n 
+0000062866 00000 n 
+0000019010 00000 n 
+0000021753 00000 n 
+0000022184 00000 n 
+0000025226 00000 n 
+0000025693 00000 n 
+0000030950 00000 n 
+0000038808 00000 n 
+0000045402 00000 n 
+0000051802 00000 n 
+0000053914 00000 n 
+0000054381 00000 n 
+0000054776 00000 n 
+0000054887 00000 n 
+0000057498 00000 n 
+0000060533 00000 n 
+0000062506 00000 n 
+0000063260 00000 n 
+0000063371 00000 n 
+0000063482 00000 n 
+0000063593 00000 n 
+0000063704 00000 n 
+trailer
+<<
+/Size 126
+/Info 1 0 R
+/Root 2 0 R
+>>
+startxref
+63815
+%%EOF

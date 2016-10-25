@@ -94,14 +94,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
+        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
+        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
         
     </li>
 
@@ -120,6 +120,27 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#gmsh-geometry-file">GMSH geometry file</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#gmsh-mesh-files">GMSH mesh files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#scuff-em-geometry-files">SCUFF-EM geometry files</a></li>
+                
+                    <li><a class="toctree-l4" href="#single-gold-triangle-medium-resolution">Single gold triangle, medium resolution</a></li>
+                
+                    <li><a class="toctree-l4" href="#two-gold-triangles-medium-resolution-tip-tip-separation-50-nm">Two gold triangles, medium resolution, tip-tip separation 50 nm</a></li>
+                
+                    <li><a class="toctree-l4" href="#gold-coated-sio2-triangle">Gold-coated SiO2 triangle</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#calculating-absorbedscattered-power-force-and-torque-pft-vs-frequency">Calculating absorbed/scattered power, force, and torque (PFT) vs. frequency</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#advanced-running-the-calculation-for-multiple-incident-field-polarizations-and-tip-tip-separations-at-the-same-time">Advanced: Running the calculation for multiple incident-field polarizations and tip-tip separations at the same time</a></li>
+                
+            
             </ul>
         
     </li>
@@ -127,14 +148,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../BowtieAntennas/">Field concentration at the hotspot of a bowtie antenna</a>
+        <a class="" href="../BowtieAntennas/">LDOS and field concentration at the hotspot of a bowtie antenna</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationSwitchedAntennas/">Polarization-switched antennas</a>
+        <a class="" href="../PolarizationSensitiveAntennas/">Polarization-sensitive antennas</a>
         
     </li>
 
@@ -156,14 +177,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SpiralArrays/">Diffraction patterns of periodic screens and particle arrays</a>
+        <a class="" href="../SpiralArrays/">Diffraction patterns of aperiodic particle arrays</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationRotator/">Polarization-rotated transmission through chiral metasurfaces</a>
+        <a class="" href="../ChiralMetasurface/">Polarization-rotated transmission through a chiral metasurface</a>
         
     </li>
 
@@ -179,6 +200,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../OpticalForceTorque/">Optical force and torque on asymmetric and chiral nanoparticles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SelfRotation/">Thermal self-rotation torque on warm chiral nanoparticle in cold background</a>
         
     </li>
 
@@ -227,6 +255,262 @@
             <div class="section">
               
                 <h1 id="scattering-and-absorption-by-plasmonic-nanoparticles">Scattering and absorption by plasmonic nanoparticles</h1>
+<p>In this tutorial we will compute frequency-dependent
+scattering and absorption profiles
+for the following varieties of plasmonic nanoparticle
+configuration:</p>
+<ol>
+<li>Single triangular gold nanoparticle:</li>
+</ol>
+<p><img alt="TwoTrianglesMesh" src="../Images/TriangleMediumMesh.png" /></p>
+<ol>
+<li>Two facing triangular gold nanoparticles:</li>
+</ol>
+<p><img alt="TwoTrianglesMesh" src="../Images/TwoTrianglesMesh.png" /></p>
+<ol>
+<li>Gold-coated SiO2 nanoparticle:</li>
+</ol>
+<p><img alt="TwoTrianglesMesh" src="../Images/GoldCoatedSiO2Triangle.png" /></p>
+<p>The input files for this example are in the 
+<code>Nanoparticles</code> subdirectory of the 
+<a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial</code> archive</a>.</p>
+<p>To avoid having to enter lengthy subdirectory prefixes when
+specifying <span class=SC>scuff-em</span> input files, 
+it's convenient to set the following environment variables
+to tell <span class=SC>scuff-em</span>
+where to look for <code>.msh</code> and <code>.scuffgeo</code> files:</p>
+<pre class="codehilite"><code class="language-bash linenums">% export SCUFF_MESH_PATH=${HOME}/SCUFFTutorial/Nanoparticles/mshFiles
+% export SCUFF_GEO_PATH=${HOME}/SCUFFTutorial/Nanoparticles/scuffgeoFiles</code></pre>
+
+
+<h2 id="gmsh-geometry-file">GMSH geometry file</h2>
+<p>The file
+<a href="../Triangle.geo"><code>Triangle.geo</code></a>
+ lives in the subdirectory 
+<code>Nanoparticles/geoFiles.</code> This file contains
+the following user-tweakable parameters: </p>
+<ul>
+<li>
+<p><code>L:</code> Triangle edge length (default 300 nm)</p>
+</li>
+<li>
+<p><code>R:</code> Corner rounding radius (default 25 nm)</p>
+</li>
+<li>
+<p><code>T:</code> Thickness (default 150 nm)</p>
+</li>
+</ul>
+<p>Here's the sequence of geometrical primitives
+I use to build up the geometry shown above.</p>
+<p><hr>
+<strong>Step 1</strong></p>
+<pre class="codehilite"><code class="language-gmsh linenums">// define first point of triangle to lie at the origin
+Point(1) = {0, 0, -T/2, LS};</code></pre>
+
+
+<p><img width="355" height="510" src="/Images/TriangleMesh0.png"></p>
+<p><hr>
+<strong>Step 2</strong></p>
+<pre class="codehilite"><code class="language-gmsh linenums">// extrude through circular arcs to define a rounded corner
+Extrude { {0,0,1}, {0, 2*R, 0}, +Pi/3 } { Point{1}; }
+Extrude { {0,0,1}, {0, 2*R, 0}, -Pi/3 } { Point{1}; }</code></pre>
+
+
+<p><img width="355" height="510" src="/Images/TriangleMesh1.png"></p>
+<p><hr>
+<strong>Step 3</strong></p>
+<pre class="codehilite"><code class="language-gmsh linenums">// replicate the lines (really &quot;arcs&quot;) just created
+// to define the other two triangle corners
+Rotate { {0,0,1}, {0,R+L*Sqrt[3]/4, 0}, +2*Pi/3  } { Duplicata{Line{1,2}; }}
+Rotate { {0,0,1}, {0,R+L*Sqrt[3]/4, 0}, -2*Pi/3  } { Duplicata{Line{1,2}; }}</code></pre>
+
+
+<p><img width="355" height="510" src="/Images/TriangleMesh2.png"></p>
+<p><hr>
+<strong>Step 4</strong></p>
+<pre class="codehilite"><code class="language-gmsh linenums">// connect endpoints to define a closed loop bounding a surface
+Line(10) = {2,12};
+Line(11) = {7,20};
+Line(12) = {15,4};
+Line Loop(1) = {1, 10, -4, 3, 11, -6, 5, 12, -2};
+Plane Surface(1) = {1};</code></pre>
+
+
+<p><img width="355" height="510" src="/Images/TriangleMesh3.png"></p>
+<p><hr>
+<strong>Step 5</strong></p>
+<pre class="codehilite"><code class="language-gmsh linenums">// for the finite-thickness case, extrude in the z direction
+If (T!=0)
+  Extrude {0,0,T} { Surface{1}; }
+EndIf</code></pre>
+
+
+<p><img width="355" height="510" src="/Images/TriangleMesh5.png"></p>
+<hr>
+
+<h2 id="gmsh-mesh-files">GMSH mesh files</h2>
+<p>We convert the <code>.geo</code> file into a <code>.msh</code> file by running
+<span class=SC>gmsh</span> like this:</p>
+<pre class="codehilite"><code class="linenums">mylaptop % gmsh -clscale 1.0  -2 Triangle.geo -o Triangle_Medium.msh
+mylaptop % gmsh -clscale 0.75 -2 Triangle.geo -o Triangle_Fine.msh</code></pre>
+
+
+<p>Note that we have used the
+<span class=SC>scuff-em</span> command-line option
+<code>-clscale</code> (which stands for "characteristic length scale")
+to create medium-resolution and finer-resolution meshes:</p>
+<p><center><strong><code>Triangle_Medium.msh</code></strong></center>
+<img alt="TriangleMediumMesh" src="../Images/TriangleMediumMesh.png" /></p>
+<p><center><strong><code>Triangle_Fine.msh</code></strong></center>
+<img alt="TriangleFineMesh" src="../Images/TriangleFineMesh.png" /></p>
+<p>I will also make smaller versions of this geometry in which
+all linear dimensions are reduced by 20% from their default values:</p>
+<pre class="codehilite"><code class="linenums">mylaptop % gmsh -clscale 1.0  -setnumber L 0.240 -setnumber R 0.20 -setnumber T 0.120 -2 Triangle.geo -o SmallTriangle_Medium.msh
+mylaptop % gmsh -clscale 1.0  -setnumber L 0.240 -setnumber R 0.20 -setnumber T 0.120 -2 Triangle.geo -o SmallTriangle_Fine.msh</code></pre>
+
+
+<p><center><em><code>SmallTriangle_Fine.msh</code></em></center>
+<img alt="SmallTriangleFineMesh" src="../Images/SmallTriangleMesh.png" /></p>
+<hr>
+
+<h2 id="scuff-em-geometry-files">SCUFF-EM geometry files</h2>
+<h3 id="single-gold-triangle-medium-resolution">Single gold triangle, medium resolution</h3>
+<p><center> <em><code>GoldTriangle_Medium.scuffgeo</code></em></center></p>
+<pre class="codehilite"><code class="language-pre linenums">MATERIAL GOLD
+    wp = 1.37e16; 
+    gamma = 5.32e13;
+    Eps(w) = 1 - wp^2 / (w * (w + i*gamma));
+ENDMATERIAL
+
+OBJECT Triangle
+    MESHFILE Triangle_Medium.msh
+    MATERIAL Gold
+ENDOBJECT</code></pre>
+
+
+<h3 id="two-gold-triangles-medium-resolution-tip-tip-separation-50-nm">Two gold triangles, medium resolution, tip-tip separation 50 nm</h3>
+<p><center> <em><code>TwoGoldTriangles_Medium.scuffgeo</code></em></center></p>
+<pre class="codehilite"><code class="language-pre linenums">MATERIAL GOLD
+    wp = 1.37e16; 
+    gamma = 5.32e13;
+    Eps(w) = 1 - wp^2 / (w * (w + i*gamma));
+ENDMATERIAL
+
+OBJECT NorthTriangle
+    MESHFILE Triangle_Medium.msh
+    MATERIAL Gold
+    DISPLACED 0 0.025 0
+ENDOBJECT
+
+OBJECT SouthTriangle
+    MESHFILE Triangle_Medium.msh
+    MATERIAL Gold
+    ROTATED 180 ABOUT 0 0 1
+    DISPLACED 0 -0.025 0
+ENDOBJECT</code></pre>
+
+
+<p>With more complicated <code>.scuffgeo</code> files like this,
+before launching any calculations 
+it's generally a good idea to visualize the configuration
+as interpreted by <span class=SC>scuff-em</span>
+just to make sure you are getting the geometry you 
+want. This can be done by using the 
+<a href="http://homerreid.github.io/scuff-em-documentation/applications/scuff-analyze/scuff-analyze/"><code>scuff-analyze</code></a>
+utility with the <code>--WriteGMSHFiles</code> option:</p>
+<pre class="codehilite"><code class="linenums">mylaptop % scuff-analyze --WriteGMSHFiles --geometry TwoGoldTriangles_Medium.scuffgeo
+mylaptop % gmsh TwoGoldTriangles_Medium.pp</code></pre>
+
+
+<p><img alt="TwoTrianglesMesh" src="../Images/TwoTrianglesMesh.png" /></p>
+<h3 id="gold-coated-sio2-triangle">Gold-coated SiO2 triangle</h3>
+<p>The following <code>.scuffgeo</code> file describes the smaller of 
+the two triangle meshes created above lying fully <em>inside</em>
+the larger of the two triangles; the inner triangle is
+composed of SiO~2~, while the region between the inner and outer
+triangles is composed of gold.</p>
+<p><center> <em><code>GoldCoatedSiO2Triangle_Medium.scuffgeo</code></em></center></p>
+<pre class="codehilite"><code class="language-pre linenums">MATERIAL GOLD
+    wp = 1.37e16; 
+    gamma = 5.32e13;
+    Eps(w) = 1 - wp^2 / (w * (w + i*gamma));
+ENDMATERIAL
+
+MATERIAL SIO2
+  A1              = 8.2736e+13;
+  w01             = 8.54484e+13;
+  G1              = 8.46448e+12;
+  A2              = 1.58004e+14;
+  w02             = 2.029e+14;
+  G2              = 1.06449e+13;
+  A3              = 3.39786e+13;
+  w03             = 1.51198e+14;
+  G3              = 8.33205e+12;
+  EpsInf          = 2.03843;
+
+  Eps(w) = EpsInf + A1*A1/(w01*w01 - w*w - i*w*G1) + A2*A2/(w02*w02 - w*w - i*w*G2) + A3*A3/(w03*w03 - w*w - i*w*G3);
+
+ENDMATERIAL
+
+OBJECT Coating
+    MESHFILE Triangle_Medium.msh
+    MATERIAL Gold
+ENDOBJECT
+
+OBJECT Triangle
+    MESHFILE SmallTriangle_Medium.msh
+    MATERIAL SiO2
+    DISPLACED 0 0.025 0
+ENDOBJECT</code></pre>
+
+
+<p>Run <span class=SC>scuff-analyze</span> to visualize:</p>
+<pre class="codehilite"><code class="linenums">mylaptop % scuff-analyze --WriteGMSHFiles --geometry GoldCoatedSiO2Triangle.scuffgeo
+mylaptop % gmsh GoldCoatedSiO2Triangle.scuffgeo</code></pre>
+
+
+<p><img alt="NestedTrianglesMesh" src="../Images/GoldCoatedSiO2Triangle.png" /></p>
+<h2 id="calculating-absorbedscattered-power-force-and-torque-pft-vs-frequency">Calculating absorbed/scattered power, force, and torque (PFT) vs. frequency</h2>
+<p>The following script loops over all geometries (single triangle,
+two triangles, nested triangles) at both meshing
+resolutions (medium and fine), computing PFT vs. frequency
+at all frequencies in <code>OmegaFile</code> assuming
+a <script type="math/tex">z</script>-directed <script type="math/tex">x</script>-polarized incident plane wave:</p>
+<p><center><strong><code>RunScript</code></strong></center></p>
+<pre class="codehilite"><code class="language-bash linenums">#!/bin/bash
+
+BASEDIR=${HOME}/SCUFFTutorial/Nanoparticles
+
+export SCUFF_MESH_PATH=${BASEDIR}/mshFiles
+export SCUFF_GEO_PATH=${BASEDIR}/scuffgeoFiles
+
+for RES in Medium Fine
+do
+  for GEOM in GoldTriangle TwoGoldTriangles GoldCoatedSiO2Triangle
+  do
+    ARGS=&quot;
+    ARGS=&quot;${ARGS} --geometry ${GEOM}_${RES}.scuffgeo&quot;
+    ARGS=&quot;${ARGS} --OmegaFile ${BASEDIR}/OmegaFile&quot;
+    ARGS=&quot;${ARGS} --PWDirection 0 0 1&quot;
+    ARGS=&quot;${ARGS} --PWPolarization 1 0 0&quot;
+    ARGS=&quot;${ARGS} --PFTFile ${GEOM}_${RES}.PFT
+    scuff-scatter ${ARGS}
+  done
+done</code></pre>
+
+
+<p>Run the script:</p>
+<pre class="codehilite"><code class="linenums"> % chmod 755 RunScript
+ % RunScript</code></pre>
+
+
+<p>Plot power absorption vs. frequency:</p>
+<h2 id="advanced-running-the-calculation-for-multiple-incident-field-polarizations-and-tip-tip-separations-at-the-same-time">Advanced: Running the calculation for multiple incident-field polarizations and tip-tip separations at the same time</h2>
+<pre class="codehilite"><code class="linenums">% scuff-analyze --TransFile TransFile --geometry scuffgeoFiles/TwoGoldTriangles_Medium.scuffgeo
+% gmsh TwoGoldTriangles_Medium.transformed.pp </code></pre>
+
+
+<p>![TransformedTriangles][TransformedTriangles.png]</p>
               
             </div>
           </div>
@@ -234,10 +518,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../BowtieAntennas/" class="btn btn-neutral float-right" title="Field concentration at the hotspot of a bowtie antenna"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../BowtieAntennas/" class="btn btn-neutral float-right" title="LDOS and field concentration at the hotspot of a bowtie antenna"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../SCUFFonAWS/" class="btn btn-neutral" title="SCUFF-EM computations in the cloud"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../MieScattering/" class="btn btn-neutral" title="First calculation: Mie scattering"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -284,7 +568,7 @@
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../SCUFFonAWS/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../MieScattering/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../BowtieAntennas/" style="color: #fcfcfc">Next &raquo;</a></span>

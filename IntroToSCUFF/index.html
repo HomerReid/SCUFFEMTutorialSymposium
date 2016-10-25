@@ -98,14 +98,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
+        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
+        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
         
     </li>
 
@@ -127,14 +127,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../BowtieAntennas/">Field concentration at the hotspot of a bowtie antenna</a>
+        <a class="" href="../BowtieAntennas/">LDOS and field concentration at the hotspot of a bowtie antenna</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationSwitchedAntennas/">Polarization-switched antennas</a>
+        <a class="" href="../PolarizationSensitiveAntennas/">Polarization-sensitive antennas</a>
         
     </li>
 
@@ -156,14 +156,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SpiralArrays/">Diffraction patterns of periodic screens and particle arrays</a>
+        <a class="" href="../SpiralArrays/">Diffraction patterns of aperiodic particle arrays</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationRotator/">Polarization-rotated transmission through chiral metasurfaces</a>
+        <a class="" href="../ChiralMetasurface/">Polarization-rotated transmission through a chiral metasurface</a>
         
     </li>
 
@@ -179,6 +179,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../OpticalForceTorque/">Optical force and torque on asymmetric and chiral nanoparticles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SelfRotation/">Thermal self-rotation torque on warm chiral nanoparticle in cold background</a>
         
     </li>
 
@@ -226,8 +233,71 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="introduction-to-scuff-em-and-buff-em">Introduction to SCUFF-EM and BUFF-EM</h1>
-<p>![scuff-em icon][Images/scuffEMLarge.png]</p>
+                <h1 id="overview-of-scuff-em-and-buff-em">Overview of SCUFF-EM and BUFF-EM</h1>
+<p>View this document in PDF form: <a href="../SCUFFvsBUFF.pdf">SCUFFvsBUFF.pdf</a></p>
+<table border="1">
+<tr>
+ <td>
+ <td><a href="http://homerreid.github.io/scuff-em-documentation">
+         <img  src="/Images/scuffEMLarge.png">
+      </a>
+ <td><a href="http://homerreid.github.io/buff-em-documentation">
+         <img width=813 height=780 src="/Images/buffEMLogo.png">
+      </a>
+</tr>
+<!-----------------------------------------------------!>
+<tr>
+ <th>Geometries</th>
+ <td><ul>
+      <li> <a href="http://homerreid.github.io/scuff-em-documentation/examples/DielectricShell/DielectricShell/">Compact</a>
+      <li> <a href="http://homerreid.github.io/scuff-em-documentation/examples/SiliconBeams/SiliconBeams/">1D extended (Bloch-periodic)</a>
+      <li> <a href="http://homerreid.github.io/scuff-em-documentation/examples/SiliconSlabs/SiliconSlabs/">2D extended (Bloch-periodic)</a>
+     </ul>
+ <td><ul>
+      <li> <a href="http://homerreid.github.io/buff-em-documentation/examples/MieScattering/">Compact</a>
+</tr>
+<!-----------------------------------------------------!>
+<tr>
+ <th>Materials</th>
+ <td><ul>
+      <li> Linear, isotropic, piecewise-homogeneous
+           permittivity, permeability
+           &epsilon;(&omega;), &mu;(&mu;)
+      <li> Specify frequency dependence using
+           <b>functional forms</b> or <b>tabulated data</b>
+ <td><ul>
+      <li> Linear, <b>anisotropic</b>, <b>continuously spatially varying</b>
+           permittivity <b>&epsilon;</b>(&omega;,<b>x</b>)
+      <li> Specify frequency dependence using
+           <b>functional forms</b> or <b>tabulated data</b>
+ <td>
+</tr>
+<!-----------------------------------------------------!>
+<tr>
+ <th>Incident fields</th>
+ <td align="center" colspan=2>
+  <ul>
+      <li> Plane waves
+      <li> Point sources
+      <li> Gaussian beams
+      <li> Arbitrary <b>user-specified fields</b>
+           for API codes
+</tr>
+<!-----------------------------------------------------!>
+<!-----------------------------------------------------!>
+<tr>
+ <th>APIs</th>
+ <td>
+  <ul>
+      <li> C++
+      <li> Python
+  </ul>
+ <td>
+  <ul>
+      <li> C++
+  </ul>
+</tr>
+<!-----------------------------------------------------!>
               
             </div>
           </div>
@@ -235,7 +305,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../MieScattering/" class="btn btn-neutral float-right" title="First calculation: Mie scattering"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../SCUFFonAWS/" class="btn btn-neutral float-right" title="SCUFF-EM computations in the cloud"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../IntegralEquations/" class="btn btn-neutral" title="Integral-equation approaches to electromagnetic scattering"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -288,7 +358,7 @@
         <span><a href="../IntegralEquations/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../MieScattering/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../SCUFFonAWS/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

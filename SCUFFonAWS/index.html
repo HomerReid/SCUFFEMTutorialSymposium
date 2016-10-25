@@ -93,13 +93,6 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
-        
-    </li>
-
-        
-            
     <li class="toctree-l1 current">
         <a class="current" href="./">SCUFF-EM computations in the cloud</a>
         
@@ -111,7 +104,17 @@
                 <li class="toctree-l3"><a href="#upload-and-run-initialization-script-on-cloud-server">Upload and run initialization script on cloud server</a></li>
                 
             
+                <li class="toctree-l3"><a href="#special-instructions-for-bu-symposium-participants">Special instructions for BU symposium participants</a></li>
+                
+            
             </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
         
     </li>
 
@@ -133,14 +136,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../BowtieAntennas/">Field concentration at the hotspot of a bowtie antenna</a>
+        <a class="" href="../BowtieAntennas/">LDOS and field concentration at the hotspot of a bowtie antenna</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationSwitchedAntennas/">Polarization-switched antennas</a>
+        <a class="" href="../PolarizationSensitiveAntennas/">Polarization-sensitive antennas</a>
         
     </li>
 
@@ -162,14 +165,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SpiralArrays/">Diffraction patterns of periodic screens and particle arrays</a>
+        <a class="" href="../SpiralArrays/">Diffraction patterns of aperiodic particle arrays</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationRotator/">Polarization-rotated transmission through chiral metasurfaces</a>
+        <a class="" href="../ChiralMetasurface/">Polarization-rotated transmission through a chiral metasurface</a>
         
     </li>
 
@@ -185,6 +188,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../OpticalForceTorque/">Optical force and torque on asymmetric and chiral nanoparticles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SelfRotation/">Thermal self-rotation torque on warm chiral nanoparticle in cold background</a>
         
     </li>
 
@@ -325,10 +335,9 @@ significantly accelerating large-scale
 <p>Assuming you are logging in to your EC2 instance from a terminal
 on your Linux or Mac laptop, the process of uploading and 
 running the script looks like this. </p>
-<p>+1. Copy script from your local machine to the cloud server:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span> mylaptop% scp -i keypair.pem InitializeSCUFFonAWS.sh ubuntu@123.45.67.89:
-</pre></div>
-</td></tr></table>
+<p><strong>1. Copy script from your local machine to the cloud server</strong></p>
+<pre class="codehilite"><code class="language-bash linenums"> mylaptop% scp -i keypair.pem InitializeSCUFFonAWS.sh ubuntu@123.45.67.89:</code></pre>
+
 
 <p>Here <code>123.45.67.89</code> is the IP address of the server you launched,
 and <code>keypair.pem</code> is the SSH key-pair file you will have created
@@ -337,52 +346,25 @@ Note the colon (<code>:</code>) at the far right end of the command line!</p>
 <p>Of course, you could also use a GUI-based file-transfer tool like
 <a href="https://winscp.net/eng/index.php"><span class=SC>winscp</span></a>
 to upload the script from Windows without using a terminal.</p>
-<p>+2. Login to cloud server</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="hll">mylaptop % ssh -i keypair.pem ubuntu@123.45.67.89
-</span>
-<span class="hll">Welcome to Ubuntu 14.04.4 LTS <span class="o">(</span>GNU/Linux 3.13.0-91-generic x86_64<span class="o">)</span>
-</span>
+<p><strong>2. Login to cloud server</strong></p>
+<pre class="codehilite"><code class="language-bash linenums">mylaptop % ssh -i keypair.pem ubuntu@123.45.67.89
+
+Welcome to Ubuntu 14.04.4 LTS (GNU/Linux 3.13.0-91-generic x86_64)
+
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Wed Oct <span class="m">12</span> 01:30:34 UTC 2016
+  System information as of Wed Oct 12 01:30:34 UTC 2016
 
 ...
 ...
 Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
 applicable law.
 
-ubuntu@ip-172-31-0-191:~$ 
-</pre></div>
-</td></tr></table>
+ubuntu@ip-172-31-0-191:~$ </code></pre>
 
-<p>+3. Run initialization script on server:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ubuntu@ip-172-31-0-191:~$ . InitializeSCUFFOnAWS.sh
+
+<p><strong>3. Run initialization script on cloud server</strong></p>
+<pre class="codehilite"><code class="linenums">ubuntu@ip-172-31-0-191:~$ . InitializeSCUFFOnAWS.sh
 
 *
 * Building OpenBLAS...
@@ -390,14 +372,13 @@ ubuntu@ip-172-31-0-191:~$
 ...
 ...
 ...
-make[1]: Leaving directory `/home/ubuntu/scuff-em&#39;
+make[1]: Leaving directory `/home/ubuntu/scuff-em'
 
 *
 * SUCCESS building SCUFF-EM 
 *
-26 ip-172-31-0-191 /home/ubuntu/scuff-em &lt;&gt; 
-</pre></div>
-</td></tr></table>
+26 ip-172-31-0-191 /home/ubuntu/scuff-em &lt;&gt; </code></pre>
+
 
 <p>This script takes about 10 minutes to run (on a node with 16 CPU cores).
 Once it is finished, the <span class=SC>scuff-em</span> installation
@@ -414,6 +395,89 @@ will be present starting at your root filesystem, i.e.</p>
 <p>Also, the script adds <code>${HOME}/bin</code> to your path, so that you
 can run <span class=SC>scuff-em</span> commands from any directory
 without needing to specify the <code>${HOME}/bin</code> prefix.</p>
+<p>If you would like to run any of the <a class="wikilink" href="../scuff-em/">scuff-em</a> examples
+mentioned in this tutorial, you will want to execute the 
+following additional steps:</p>
+<p><strong>4. Download (to your laptop or desktop) the following archive file containing all meshes, geometry files,
+and other data needed to run the tutorial examples:</strong></p>
+<ul>
+<li><a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial.tar.bz2</code></a></li>
+</ul>
+<p><strong>5. From your laptop, upload this file to the cloud server: </strong></p>
+<pre class="codehilite"><code class="language-bash linenums"> mylaptop% scp -i keypair.pem SCUFFTutorial.tar.bz2 .sh ubuntu@123.45.67.89:</code></pre>
+
+
+<p><strong>6. Unpack this file on the cloud server: </strong></p>
+<pre class="codehilite"><code class="language-bash linenums">290 ip-172-31-3-53 /tmp &lt;&gt; bunzip2 -c SCUFFTutorial.tar.bz2 | tar xvf -
+SCUFFTutorial/
+SCUFFTutorial/SpiralArrays/
+SCUFFTutorial/SpiralArrays/ScreenTransformations
+SCUFFTutorial/SpiralArrays/MakeSpiralArray.jl
+...
+SCUFFTutorial/PolarizationSensitiveAntenna/geoFiles/MakeMeshes
+SCUFFTutorial/PolarizationSensitiveAntenna/geoFiles/Triangle.geo</code></pre>
+
+
+<p>Now the various subdirectories referenced by the discussions in this
+tutorial will be present on your cloud server in the <code>SCUFFTutorial</code>
+folder.</p>
+<h1 id="special-instructions-for-bu-symposium-participants">Special instructions for BU symposium participants</h1>
+<p>For today's symposium I've prepared several AWS machines
+on which the latest 
+<span class=SC>scuff-em</span>/<span class=SC>buff-em</span>/
+versions and the input files for today's tutorials
+are pre-installed. Here are instructions for how to
+access these machines:</p>
+<ol>
+<li>
+<p>Install <span class=SC>gmsh</span> on your laptop.</p>
+<ul>
+<li>
+<p>Windows/Mac users: Download installer from <a href="http://gmsh.info"><span class=SC>gmsh</span> website</a>.</p>
+</li>
+<li>
+<p>Ubuntu users: </p>
+</li>
+</ul>
+</li>
+</ol>
+<pre class="codehilite"><code class="language-bash linenums"> % apt-get install gmsh</code></pre>
+
+
+<ol>
+<li>
+<p>Windows users: Install SSH/SCP clients like
+   <a href="http://www.putty.org/">PuTTY</a> and
+   <a href="https://winscp.net/eng/index.php">WinSCP</a>.
+   You will also need the PuTTY key generator,
+   PuTTYgen.</p>
+</li>
+<li>
+<p>Download private key file for BU symposium AWS machines:</p>
+<ul>
+<li><a href="http://homerreid.com/seoul-keypair.pem"><code>seoul-keypair.pem</code></a></li>
+</ul>
+</li>
+</ol>
+<p>4a. Windows users: Use PuTTYgen
+    to convert <code>seoul-keypair.pem</code> to PuTTY format.
+    If you have trouble, here is some guidance: <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html">Connecting to your Linux Instance from Windows using PuTTY</a>.</p>
+<p>4b. Linux/Mac users:
+    Set correct access permissions for the private key file:</p>
+<pre class="codehilite"><code class="language-bash linenums"> % chmod 400 seoul-keypair.pem</code></pre>
+
+
+<ol>
+<li>Log on the cloud server using PuTTY (Windows users) or 
+   using <code>ssh</code> (Linux/Mac users):</li>
+</ol>
+<pre class="codehilite"><code class="language-bash linenums">mylaptop % ssh -Y -i seoul-keypair.pem ubuntu@XX.XX.XX.XX
+
+288 ip-172-31-3-53 /home/ubuntu</code></pre>
+
+
+<p>Here <code>XX.XX.XX.XX</code> is the IP address you were assigned
+for today's tutorial.</p>
               
             </div>
           </div>
@@ -421,10 +485,10 @@ without needing to specify the <code>${HOME}/bin</code> prefix.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Nanoparticle/" class="btn btn-neutral float-right" title="Scattering and absorption by plasmonic nanoparticles"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../MieScattering/" class="btn btn-neutral float-right" title="First calculation: Mie scattering"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../MieScattering/" class="btn btn-neutral" title="First calculation: Mie scattering"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../IntroToSCUFF/" class="btn btn-neutral" title="Introduction to SCUFF-EM"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -471,10 +535,10 @@ without needing to specify the <code>${HOME}/bin</code> prefix.</p>
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../MieScattering/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../IntroToSCUFF/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Nanoparticle/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../MieScattering/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

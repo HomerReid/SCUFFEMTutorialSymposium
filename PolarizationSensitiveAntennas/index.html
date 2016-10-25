@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Polarization-switched antennas - BU Symposium on Open-Source CAD Tools, 10/25/2016</title>
+  <title>Polarization-sensitive antennas - BU Symposium on Open-Source CAD Tools, 10/25/2016</title>
   
 
   <link rel="shortcut icon" href="../scuffEM.ico">
@@ -21,7 +21,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "PolarizationSwitchedAntennas"
+    var mkdocs_page_name = "PolarizationSensitiveAntennas"
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -94,14 +94,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
+        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
+        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
         
     </li>
 
@@ -123,16 +123,19 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../BowtieAntennas/">Field concentration at the hotspot of a bowtie antenna</a>
+        <a class="" href="../BowtieAntennas/">LDOS and field concentration at the hotspot of a bowtie antenna</a>
         
     </li>
 
         
             
     <li class="toctree-l1 current">
-        <a class="current" href="./">Polarization-switched antennas</a>
+        <a class="current" href="./">Polarization-sensitive antennas</a>
         
             <ul>
+            
+                <li class="toctree-l3"><a href="#gmsh-geometry-and-mesh">GMSH geometry and mesh</a></li>
+                
             
             </ul>
         
@@ -156,14 +159,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SpiralArrays/">Diffraction patterns of periodic screens and particle arrays</a>
+        <a class="" href="../SpiralArrays/">Diffraction patterns of aperiodic particle arrays</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../PolarizationRotator/">Polarization-rotated transmission through chiral metasurfaces</a>
+        <a class="" href="../ChiralMetasurface/">Polarization-rotated transmission through a chiral metasurface</a>
         
     </li>
 
@@ -179,6 +182,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../OpticalForceTorque/">Optical force and torque on asymmetric and chiral nanoparticles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SelfRotation/">Thermal self-rotation torque on warm chiral nanoparticle in cold background</a>
         
     </li>
 
@@ -212,7 +222,7 @@
         
       
     
-    <li>Polarization-switched antennas</li>
+    <li>Polarization-sensitive antennas</li>
     <li class="wy-breadcrumbs-aside">
       
         
@@ -226,7 +236,15 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="polarization-switched-antennas">Polarization-switched antennas</h1>
+                <h1 id="polarization-sensitive-bowtie-antennas">Polarization-sensitive bowtie antennas</h1>
+<p>For our next trick, we'll investigate the local density of states (LDOS)
+and field enhancement</p>
+<p>The files</p>
+<pre class="codehilite"><code class="language-bash linenums">% export SCUFF_MESH_PATH=${HOME}/SCUFFTutorial/Nanoparticles/mshFiles
+% export SCUFF_GEO_PATH=${HOME}/SCUFFTutorial/Nanoparticles/scuffgeoFiles</code></pre>
+
+
+<h2 id="gmsh-geometry-and-mesh">GMSH geometry and mesh</h2>
               
             </div>
           </div>
@@ -237,7 +255,7 @@
         <a href="../PeriodicDiffraction/" class="btn btn-neutral float-right" title="Diffraction patterns of periodic screens and particle arrays"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../BowtieAntennas/" class="btn btn-neutral" title="Field concentration at the hotspot of a bowtie antenna"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../BowtieAntennas/" class="btn btn-neutral" title="LDOS and field concentration at the hotspot of a bowtie antenna"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
