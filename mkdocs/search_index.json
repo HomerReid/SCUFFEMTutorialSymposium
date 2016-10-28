@@ -7,12 +7,12 @@
         }, 
         {
             "location": "/ImageGallery/", 
-            "text": "Image gallery", 
+            "text": "Image gallery\n\n\nGold-coated SiO2 nanotriangle\n\n\n\n\nCoarsely-meshed nanodisc\n\n\n\n\nVogel spiral of nanodiscs (type A1)\n\n\n\n\nVogel spiral of nanodiscs (type G)\n\n\n\n\nA1 spiral diffraction pattern\n\n\n\n\nG spiral diffraction pattern\n\n\n\n\nBowtie antenna\n\n\n\n\nField amplification at hotspot vs. incident polarization\n\n\n\n\nBowtie antenna surrounded by disc arrays with \n\\lambda_x\\ne \\lambda_y\n\n\n\n\nField amplification at hotspot vs. incident polarization\n\n\n\n\nAsymmetric split-ring resonator\n\n\n\n\n[\nPolarization-rotating chiral metasurface\n]\n\n\n\n\n[\nRotation of plane-wave polarization upon passage through metasurface\n]", 
             "title": "Image gallery"
         }, 
         {
             "location": "/IntegralEquations/", 
-            "text": "Integral-equation approaches to electromagnetic scattering", 
+            "text": "Integral-equation approaches to electromagnetic scattering\n\n\n\n\n\n\nTalk slides 1\n\n\n\n\n\n\nTalk slides 2", 
             "title": "Integral-equation approaches to electromagnetic scattering"
         }, 
         {
@@ -216,19 +216,44 @@
             "title": "Imaging diffraction patterns with scuff-scatter"
         }, 
         {
-            "location": "/ChiralMetasurface/", 
-            "text": "Polarization-rotated transmission through a chiral metasurface", 
+            "location": "/ChiralMetasurfaceRotator/", 
+            "text": "Polarization-rotated transmission through a chiral metasurface\n\n\nIn this example we study the phenomenon reported in this paper:\n\n\n\n\nYi-Ju Chiang and Ta-Jen Yan, \"A composite-metamaterial-based terahertz-wave polarization rotator with an ultrathin thickness, an excellent conversion ratio, and enhanced transmission\", \nApplied Physics Letters\n \n102\n 011129 (2013). \nDOI: http://dx.doi.org/10.1063/1.4774300\n\n\n\n\nThe idea is to construct a chiral metasurface consisting of an \ninfinite planar array of scatterers with definite handedness,\nwith the scatterers here consisting of thin metal strips in\nspecific patterns. Over a certain range of wavelengths, shining \n\nx\n-polarized light on the structure from below preferentially\nyields a flux of \ny\n-polarized light into the upper half-space.\n\n\nThe files for this example may be found in the\n\nChiralMetasurfaceRotator\n subdirectory\nof the \nSCUFFTutorial\n archive\n.\n\n\nGMSH geometries and meshes for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)\n\n\nThe actual structure described in the paper of Chiang and Yan\nconsists of finite (200 nm)-thickness copper traces on\neither side of a 50 \n\\mu\nm-thick dielectric substrate.\nFor this demonstration we will slightly idealize this geometry\nby \n(a)\n taking the traces to be infinitely thin and\nperfectly conducting, \n(b)\n taking the dielectric\nconstant of the substrate to be unity. That is,\nour geometry will consist of infinitesimally thin PEC\nsheets suspended in vacuum. \n\n\nGMSH Geometry and mesh files for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)\n\n\nASRR.geo\n\n\nDefineConstant[ A = 30 ];\nDefineConstant[ B = 7  ];\nDefineConstant[ C = 2  ];\nDefineConstant[ G = 4  ];\nDefineConstant[ W = 4  ];\n\nDefineConstant[ L = 1  ];\n\n\nPoint(1)  = { C,     B,         0, L  };\nPoint(2)  = { C+A,   B,         0, L  };\nPoint(3)  = { C+A,   B+A,       0, L  };\nPoint(4)  = { C,     B+A,       0, L  };\nPoint(5)  = { C,     B+A-W,     0, L  };\nPoint(6)  = { C+A-W, B+A-W,     0, L  };\nPoint(7)  = { C+A-W, B+W,       0, L  };\nPoint(8)  = { C+W,   B+W,       0, L  };\nPoint(9)  = { C+W,   B+A-W-G,   0, L  };\nPoint(10) = { C,     B+A-W-G,   0, L  };\n\nLine(1) =  {1,2};\nLine(2) =  {2,3};\nLine(3) =  {3,4};\nLine(4) =  {4,5};\nLine(5) =  {5,6};\nLine(6) =  {6,7};\nLine(7) =  {7,8};\nLine(8) =  {8,9};\nLine(9) =  {9,10};\nLine(10) = {10,1};\n\nLine Loop(1)={1,2,3,4,5,6,7,8,9,10};\nRuled Surface(1)={1};\n\n\n\n\n\n\nSR.geo\n\n\nDefineConstant [ T = 2 ];\nDefineConstant [ W = 4 ];\nDefineConstant [ Q = 14 ];\nDefineConstant [ P = 22 ];\nDefineConstant [ R = 24 ];\nDefineConstant [ S = 22 ];\nDefineConstant [ L = 1 ];\n\nPoint(1) = { S,   T,   0, L };\nPoint(2) = { S+R, T,   0, L };\nPoint(3) = { S+R, T+W, 0, L };\nPoint(4) = { S+W, T+W, 0, L };\nPoint(5) = { S+W, T+P-W, 0, L };\nPoint(6) = { S+R, T+P-W, 0, L };\nPoint(7) = { S+R, T+P+Q, 0, L };\nPoint(8) = { S,   T+P+Q, 0, L };\nPoint(9) = { S,   T+P+Q-W, 0, L };\nPoint(10) = { S+R-W,   T+P+Q-W, 0, L };\nPoint(11) = { S+R-W,   T+P, 0, L };\nPoint(12) = { S,   T+P, 0, L };\n\nLine(1) = {1,2};\nLine(2) = {2,3};\nLine(3) = {3,4};\nLine(4) = {4,5};\nLine(5) = {5,6};\nLine(6) = {6,7};\nLine(7) = {7,8};\nLine(8) = {8,9};\nLine(9) = {9,10};\nLine(10) = {10,11};\nLine(11) = {11,12};\nLine(12) = {12,1};\n\nLine Loop(1) = {1,2,3,4,5,6,7,8,9,10,11,12};\nRuled Surface(1) = {1};\n\n\n\n\n\n\nCreate mesh files:\n\n\n % gmsh -2 ASRR.geo -o ASRR.msh\n % gmsh -2 SR.geo -o SR.msh\n\n\n\n\nASRR.msh\n\n\n\n\nSR.msh\n\n\n\n\nSCUFF-EM geometry for periodic lattice of ASRRs / SRs\n\n\nCMRFine.scuffgeo\n\n\nLATTICE\n    VECTOR 68.0 0.0\n    VECTOR 0.0  44.0\nENDLATTICE\n\nOBJECT LeftASRR\n    MESHFILE ASRR_1444.msh\n    DISPLACED 0 0 -25\nENDOBJECT\n\nOBJECT RightASRR\n    MESHFILE ASRR_1444.msh\n    DISPLACED -17.0 -22.0 0.0\n    ROTATED 180 ABOUT 0.0 0.0 1.0\n    DISPLACED  17.0  22.0 0.0\n    DISPLACED 34.0 0.0 -25\nENDOBJECT\n\nOBJECT SR\n    MESHFILE SR_1424.msh\n    DISPLACED 0.0 0.0 25\nENDOBJECT\n\n\n\n\nUse SCUFF-ANALYZE to obtain a visual image of the innermost several cells of the lattice\n\n\n % scuff-analyze --geometry CMRMedium.scuffgeo --WriteGMSHFiles --Neighbors 3\n % Thank you for your support.\n\n\n\n\n\n\nUse SCUFF-TRANSMISSION to compute transmission coefficients\n\n\n mylaptop% scuff-transmission --geometry CMRFine.scuffgeo --OmegaFile OmegaFile --ZAbove 25.0 --ZBelow -25.0\n\n\n\n\nPlot TE-\nTE and TE-\nTM transmission coefficients versus frequency in THz:\n\n\n gnuplot\n THZ(w)=3e14*w/(2*pi*1e12)\n gnuplot\n plot 'CMRFine.transmission' u (THZ($1)):23 w lp pt 7 ps 1 t 'EX-EX',\n               '' u (THZ($1)):25 w lp pt 6 ps 1.5 t 'EX-EY',", 
             "title": "Polarization-rotated transmission through a chiral metasurface"
         }, 
         {
-            "location": "/OpticalForceTorque/", 
-            "text": "Optical force and torque on asymmetric and chiral nanoparticles", 
-            "title": "Optical force and torque on asymmetric and chiral nanoparticles"
+            "location": "/ChiralMetasurfaceRotator/#gmsh-geometries-and-meshes-for-asymmetric-split-ring-resonator-asrr-and-s-shaped-resonator-sr", 
+            "text": "The actual structure described in the paper of Chiang and Yan\nconsists of finite (200 nm)-thickness copper traces on\neither side of a 50  \\mu m-thick dielectric substrate.\nFor this demonstration we will slightly idealize this geometry\nby  (a)  taking the traces to be infinitely thin and\nperfectly conducting,  (b)  taking the dielectric\nconstant of the substrate to be unity. That is,\nour geometry will consist of infinitesimally thin PEC\nsheets suspended in vacuum.", 
+            "title": "GMSH geometries and meshes for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)"
         }, 
         {
-            "location": "/SelfRotation/", 
-            "text": "Thermal self-rotation torque on warm chiral nanoparticle in cold background", 
-            "title": "Thermal self-rotation torque on warm chiral nanoparticle in cold background"
+            "location": "/ChiralMetasurfaceRotator/#gmsh-geometry-and-mesh-files-for-asymmetric-split-ring-resonator-asrr-and-s-shaped-resonator-sr", 
+            "text": "ASRR.geo  DefineConstant[ A = 30 ];\nDefineConstant[ B = 7  ];\nDefineConstant[ C = 2  ];\nDefineConstant[ G = 4  ];\nDefineConstant[ W = 4  ];\n\nDefineConstant[ L = 1  ];\n\n\nPoint(1)  = { C,     B,         0, L  };\nPoint(2)  = { C+A,   B,         0, L  };\nPoint(3)  = { C+A,   B+A,       0, L  };\nPoint(4)  = { C,     B+A,       0, L  };\nPoint(5)  = { C,     B+A-W,     0, L  };\nPoint(6)  = { C+A-W, B+A-W,     0, L  };\nPoint(7)  = { C+A-W, B+W,       0, L  };\nPoint(8)  = { C+W,   B+W,       0, L  };\nPoint(9)  = { C+W,   B+A-W-G,   0, L  };\nPoint(10) = { C,     B+A-W-G,   0, L  };\n\nLine(1) =  {1,2};\nLine(2) =  {2,3};\nLine(3) =  {3,4};\nLine(4) =  {4,5};\nLine(5) =  {5,6};\nLine(6) =  {6,7};\nLine(7) =  {7,8};\nLine(8) =  {8,9};\nLine(9) =  {9,10};\nLine(10) = {10,1};\n\nLine Loop(1)={1,2,3,4,5,6,7,8,9,10};\nRuled Surface(1)={1};   SR.geo  DefineConstant [ T = 2 ];\nDefineConstant [ W = 4 ];\nDefineConstant [ Q = 14 ];\nDefineConstant [ P = 22 ];\nDefineConstant [ R = 24 ];\nDefineConstant [ S = 22 ];\nDefineConstant [ L = 1 ];\n\nPoint(1) = { S,   T,   0, L };\nPoint(2) = { S+R, T,   0, L };\nPoint(3) = { S+R, T+W, 0, L };\nPoint(4) = { S+W, T+W, 0, L };\nPoint(5) = { S+W, T+P-W, 0, L };\nPoint(6) = { S+R, T+P-W, 0, L };\nPoint(7) = { S+R, T+P+Q, 0, L };\nPoint(8) = { S,   T+P+Q, 0, L };\nPoint(9) = { S,   T+P+Q-W, 0, L };\nPoint(10) = { S+R-W,   T+P+Q-W, 0, L };\nPoint(11) = { S+R-W,   T+P, 0, L };\nPoint(12) = { S,   T+P, 0, L };\n\nLine(1) = {1,2};\nLine(2) = {2,3};\nLine(3) = {3,4};\nLine(4) = {4,5};\nLine(5) = {5,6};\nLine(6) = {6,7};\nLine(7) = {7,8};\nLine(8) = {8,9};\nLine(9) = {9,10};\nLine(10) = {10,11};\nLine(11) = {11,12};\nLine(12) = {12,1};\n\nLine Loop(1) = {1,2,3,4,5,6,7,8,9,10,11,12};\nRuled Surface(1) = {1};", 
+            "title": "GMSH Geometry and mesh files for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)"
+        }, 
+        {
+            "location": "/ChiralMetasurfaceRotator/#create-mesh-files", 
+            "text": "% gmsh -2 ASRR.geo -o ASRR.msh\n % gmsh -2 SR.geo -o SR.msh  ASRR.msh   SR.msh", 
+            "title": "Create mesh files:"
+        }, 
+        {
+            "location": "/ChiralMetasurfaceRotator/#scuff-em-geometry-for-periodic-lattice-of-asrrs-srs", 
+            "text": "CMRFine.scuffgeo  LATTICE\n    VECTOR 68.0 0.0\n    VECTOR 0.0  44.0\nENDLATTICE\n\nOBJECT LeftASRR\n    MESHFILE ASRR_1444.msh\n    DISPLACED 0 0 -25\nENDOBJECT\n\nOBJECT RightASRR\n    MESHFILE ASRR_1444.msh\n    DISPLACED -17.0 -22.0 0.0\n    ROTATED 180 ABOUT 0.0 0.0 1.0\n    DISPLACED  17.0  22.0 0.0\n    DISPLACED 34.0 0.0 -25\nENDOBJECT\n\nOBJECT SR\n    MESHFILE SR_1424.msh\n    DISPLACED 0.0 0.0 25\nENDOBJECT", 
+            "title": "SCUFF-EM geometry for periodic lattice of ASRRs / SRs"
+        }, 
+        {
+            "location": "/ChiralMetasurfaceRotator/#use-scuff-analyze-to-obtain-a-visual-image-of-the-innermost-several-cells-of-the-lattice", 
+            "text": "% scuff-analyze --geometry CMRMedium.scuffgeo --WriteGMSHFiles --Neighbors 3\n % Thank you for your support.", 
+            "title": "Use SCUFF-ANALYZE to obtain a visual image of the innermost several cells of the lattice"
+        }, 
+        {
+            "location": "/ChiralMetasurfaceRotator/#use-scuff-transmission-to-compute-transmission-coefficients", 
+            "text": "mylaptop% scuff-transmission --geometry CMRFine.scuffgeo --OmegaFile OmegaFile --ZAbove 25.0 --ZBelow -25.0", 
+            "title": "Use SCUFF-TRANSMISSION to compute transmission coefficients"
+        }, 
+        {
+            "location": "/ChiralMetasurfaceRotator/#plot-te-te-and-te-tm-transmission-coefficients-versus-frequency-in-thz", 
+            "text": "gnuplot  THZ(w)=3e14*w/(2*pi*1e12)\n gnuplot  plot 'CMRFine.transmission' u (THZ($1)):23 w lp pt 7 ps 1 t 'EX-EX',\n               '' u (THZ($1)):25 w lp pt 6 ps 1.5 t 'EX-EY',", 
+            "title": "Plot TE-&gt;TE and TE-&gt;TM transmission coefficients versus frequency in THz:"
         }
     ]
 }

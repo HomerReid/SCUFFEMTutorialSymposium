@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Polarization-rotated transmission through a chiral metasurface - BU Symposium on Open-Source CAD Tools, 10/25/2016</title>
+  
+
+  <link rel="shortcut icon" href="../scuffEM.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ChiralMetasurfaceRotator"
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="../mathjaxhelper.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+
+      <p align="center"
+      <a href="..">
+         <img align="center" height="auto" width="100%"  
+              src="../img/HeaderMedium.png"
+      </a>
+
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> BU Symposium on Open-Source CAD Tools, 10/25/2016</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Outline and Agenda</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ImageGallery/">Image gallery</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview of Integral-Equation Methods and Introduction to SCUFF-EM</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../IntegralEquations/">Integral-equation approaches to electromagnetic scattering</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../IntroToSCUFF/">Introduction to SCUFF-EM</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SCUFFonAWS/">SCUFF-EM computations in the cloud</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MieScattering/">First calculation: Mie scattering</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorial walkthrough 1 Plasmonics and nanoantennas</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Nanoparticle/">Scattering and absorption by plasmonic nanoparticles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../BowtieAntennas/">LDOS and field concentration at the hotspot of a bowtie antenna</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PolarizationSensitiveAntennas/">Polarization-sensitive antennas</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorial walkthrough 2 Diffraction and transmission</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PeriodicDiffraction/">Diffraction patterns of periodic screens and particle arrays</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../SpiralArrays/">Diffraction patterns of aperiodic particle arrays</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Polarization-rotated transmission through a chiral metasurface</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#gmsh-geometries-and-meshes-for-asymmetric-split-ring-resonator-asrr-and-s-shaped-resonator-sr">GMSH geometries and meshes for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#gmsh-geometry-and-mesh-files-for-asymmetric-split-ring-resonator-asrr-and-s-shaped-resonator-sr">GMSH Geometry and mesh files for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-mesh-files">Create mesh files:</a></li>
+                
+                    <li><a class="toctree-l4" href="#scuff-em-geometry-for-periodic-lattice-of-asrrs-srs">SCUFF-EM geometry for periodic lattice of ASRRs / SRs</a></li>
+                
+                    <li><a class="toctree-l4" href="#use-scuff-analyze-to-obtain-a-visual-image-of-the-innermost-several-cells-of-the-lattice">Use SCUFF-ANALYZE to obtain a visual image of the innermost several cells of the lattice</a></li>
+                
+                    <li><a class="toctree-l4" href="#use-scuff-transmission-to-compute-transmission-coefficients">Use SCUFF-TRANSMISSION to compute transmission coefficients</a></li>
+                
+                    <li><a class="toctree-l4" href="#plot-te-te-and-te-tm-transmission-coefficients-versus-frequency-in-thz">Plot TE-&gt;TE and TE-&gt;TM transmission coefficients versus frequency in THz:</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">BU Symposium on Open-Source CAD Tools, 10/25/2016</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".."><span class="SmallCaps">scuff-em</span> for photonics</a> &raquo;</li>
+    
+      
+        
+          <li>Tutorial walkthrough 2 Diffraction and transmission &raquo;</li>
+        
+      
+    
+    <li>Polarization-rotated transmission through a chiral metasurface</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/homerreid/scuff-em/" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="polarization-rotated-transmission-through-a-chiral-metasurface">Polarization-rotated transmission through a chiral metasurface</h1>
+<p>In this example we study the phenomenon reported in this paper:</p>
+<ul>
+<li>Yi-Ju Chiang and Ta-Jen Yan, "A composite-metamaterial-based terahertz-wave polarization rotator with an ultrathin thickness, an excellent conversion ratio, and enhanced transmission", <em>Applied Physics Letters</em> <strong>102</strong> 011129 (2013). <a href="http://dx.doi.org/10.1063/1.4774300">DOI: http://dx.doi.org/10.1063/1.4774300</a></li>
+</ul>
+<p>The idea is to construct a chiral metasurface consisting of an 
+infinite planar array of scatterers with definite handedness,
+with the scatterers here consisting of thin metal strips in
+specific patterns. Over a certain range of wavelengths, shining 
+<strong>x</strong>-polarized light on the structure from below preferentially
+yields a flux of <strong>y</strong>-polarized light into the upper half-space.</p>
+<p>The files for this example may be found in the
+<code>ChiralMetasurfaceRotator</code> subdirectory
+of the <a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial</code> archive</a>.</p>
+<h3 id="gmsh-geometries-and-meshes-for-asymmetric-split-ring-resonator-asrr-and-s-shaped-resonator-sr">GMSH geometries and meshes for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)</h3>
+<p>The actual structure described in the paper of Chiang and Yan
+consists of finite (200 nm)-thickness copper traces on
+either side of a 50 <script type="math/tex">\mu</script>m-thick dielectric substrate.
+For this demonstration we will slightly idealize this geometry
+by <strong>(a)</strong> taking the traces to be infinitely thin and
+perfectly conducting, <strong>(b)</strong> taking the dielectric
+constant of the substrate to be unity. That is,
+our geometry will consist of infinitesimally thin PEC
+sheets suspended in vacuum. </p>
+<h2 id="gmsh-geometry-and-mesh-files-for-asymmetric-split-ring-resonator-asrr-and-s-shaped-resonator-sr">GMSH Geometry and mesh files for asymmetric split-ring resonator (ASRR) and S-shaped resonator (SR)</h2>
+<p><center><a href="../ASRR.geo"><strong><code>ASRR.geo</code></strong></a></center></p>
+<pre class="codehilite"><code class="language-gmsh linenums">DefineConstant[ A = 30 ];
+DefineConstant[ B = 7  ];
+DefineConstant[ C = 2  ];
+DefineConstant[ G = 4  ];
+DefineConstant[ W = 4  ];
+
+DefineConstant[ L = 1  ];
+
+
+Point(1)  = { C,     B,         0, L  };
+Point(2)  = { C+A,   B,         0, L  };
+Point(3)  = { C+A,   B+A,       0, L  };
+Point(4)  = { C,     B+A,       0, L  };
+Point(5)  = { C,     B+A-W,     0, L  };
+Point(6)  = { C+A-W, B+A-W,     0, L  };
+Point(7)  = { C+A-W, B+W,       0, L  };
+Point(8)  = { C+W,   B+W,       0, L  };
+Point(9)  = { C+W,   B+A-W-G,   0, L  };
+Point(10) = { C,     B+A-W-G,   0, L  };
+
+Line(1) =  {1,2};
+Line(2) =  {2,3};
+Line(3) =  {3,4};
+Line(4) =  {4,5};
+Line(5) =  {5,6};
+Line(6) =  {6,7};
+Line(7) =  {7,8};
+Line(8) =  {8,9};
+Line(9) =  {9,10};
+Line(10) = {10,1};
+
+Line Loop(1)={1,2,3,4,5,6,7,8,9,10};
+Ruled Surface(1)={1};</code></pre>
+
+
+<p><img alt="GMSH geometry for ASRR" src="../Images/ASRRGeometry.png" /></p>
+<p><center><a href="../SR.geo"><strong><code>SR.geo</code></strong></a></center></p>
+<pre class="codehilite"><code class="language-gmsh linenums">DefineConstant [ T = 2 ];
+DefineConstant [ W = 4 ];
+DefineConstant [ Q = 14 ];
+DefineConstant [ P = 22 ];
+DefineConstant [ R = 24 ];
+DefineConstant [ S = 22 ];
+DefineConstant [ L = 1 ];
+
+Point(1) = { S,   T,   0, L };
+Point(2) = { S+R, T,   0, L };
+Point(3) = { S+R, T+W, 0, L };
+Point(4) = { S+W, T+W, 0, L };
+Point(5) = { S+W, T+P-W, 0, L };
+Point(6) = { S+R, T+P-W, 0, L };
+Point(7) = { S+R, T+P+Q, 0, L };
+Point(8) = { S,   T+P+Q, 0, L };
+Point(9) = { S,   T+P+Q-W, 0, L };
+Point(10) = { S+R-W,   T+P+Q-W, 0, L };
+Point(11) = { S+R-W,   T+P, 0, L };
+Point(12) = { S,   T+P, 0, L };
+
+Line(1) = {1,2};
+Line(2) = {2,3};
+Line(3) = {3,4};
+Line(4) = {4,5};
+Line(5) = {5,6};
+Line(6) = {6,7};
+Line(7) = {7,8};
+Line(8) = {8,9};
+Line(9) = {9,10};
+Line(10) = {10,11};
+Line(11) = {11,12};
+Line(12) = {12,1};
+
+Line Loop(1) = {1,2,3,4,5,6,7,8,9,10,11,12};
+Ruled Surface(1) = {1};</code></pre>
+
+
+<p><img alt="GMSH geometry for SR" src="../Images/SRGeometry.png" /></p>
+<h3 id="create-mesh-files">Create mesh files:</h3>
+<pre class="codehilite"><code class="language-bash linenums"> % gmsh -2 ASRR.geo -o ASRR.msh
+ % gmsh -2 SR.geo -o SR.msh</code></pre>
+
+
+<p><center><strong><code>ASRR.msh</code></strong></center>
+<img alt="GMSH mesh for ASRR" src="../Images/ASRRMesh.png" /></p>
+<p><center><strong><code>SR.msh</code></strong></center>
+<img alt="GMSH mesh for SR" src="../Images/SRMesh.png" /></p>
+<h3 id="scuff-em-geometry-for-periodic-lattice-of-asrrs-srs">SCUFF-EM geometry for periodic lattice of ASRRs / SRs</h3>
+<p><center><a href="../CMRFine.scuffgeo"><code>CMRFine.scuffgeo</code></a></center></p>
+<pre class="codehilite"><code class="language-pre linenums">LATTICE
+    VECTOR 68.0 0.0
+    VECTOR 0.0  44.0
+ENDLATTICE
+
+OBJECT LeftASRR
+    MESHFILE ASRR_1444.msh
+    DISPLACED 0 0 -25
+ENDOBJECT
+
+OBJECT RightASRR
+    MESHFILE ASRR_1444.msh
+    DISPLACED -17.0 -22.0 0.0
+    ROTATED 180 ABOUT 0.0 0.0 1.0
+    DISPLACED  17.0  22.0 0.0
+    DISPLACED 34.0 0.0 -25
+ENDOBJECT
+
+OBJECT SR
+    MESHFILE SR_1424.msh
+    DISPLACED 0.0 0.0 25
+ENDOBJECT</code></pre>
+
+
+<h3 id="use-scuff-analyze-to-obtain-a-visual-image-of-the-innermost-several-cells-of-the-lattice">Use SCUFF-ANALYZE to obtain a visual image of the innermost several cells of the lattice</h3>
+<pre class="codehilite"><code class="language-bash linenums"> % scuff-analyze --geometry CMRMedium.scuffgeo --WriteGMSHFiles --Neighbors 3
+ % Thank you for your support.</code></pre>
+
+
+<p><img alt="CMRLatticeMesh.png" src="../Images/CMRLatticeMesh.png" /></p>
+<h3 id="use-scuff-transmission-to-compute-transmission-coefficients">Use SCUFF-TRANSMISSION to compute transmission coefficients</h3>
+<pre class="codehilite"><code class="language-bash linenums"> mylaptop% scuff-transmission --geometry CMRFine.scuffgeo --OmegaFile OmegaFile --ZAbove 25.0 --ZBelow -25.0</code></pre>
+
+
+<h3 id="plot-te-te-and-te-tm-transmission-coefficients-versus-frequency-in-thz">Plot TE-&gt;TE and TE-&gt;TM transmission coefficients versus frequency in THz:</h3>
+<pre class="codehilite"><code class="linenums"> gnuplot&gt; THZ(w)=3e14*w/(2*pi*1e12)
+ gnuplot&gt; plot 'CMRFine.transmission' u (THZ($1)):23 w lp pt 7 ps 1 t 'EX-EX',
+               '' u (THZ($1)):25 w lp pt 6 ps 1.5 t 'EX-EY', </code></pre>
+
+
+<p><img alt="MMRUnitCellData.png" src="../Images/MMRUnitCellData.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../SpiralArrays/" class="btn btn-neutral" title="Diffraction patterns of aperiodic particle arrays"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  <a href="http://homerreid.github.io/scuff-em-documentation"> 
+    <span class="SmallCaps">scuff-em</span>
+  </a> /
+  <a href="http://homerreid.github.io/buff-em-documentation"> 
+    <span class="SmallCaps">buff-em</span>
+  </a>:
+  Open-source tools for photonics CAD,
+  by
+  <a href="http://homerreid.com">Homer Reid</a>
+
+  <p>
+  <font size=-1>
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> 
+  using a customized theme modeled 
+  after the 
+  <a href="https://github.com/snide/sphinx_rtd_theme">theme</a>
+  provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  </font>
+
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../SpiralArrays/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>

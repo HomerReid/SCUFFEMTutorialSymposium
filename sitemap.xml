@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>None/ImageGallery/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,25 +21,25 @@
         
     <url>
      <loc>None/IntegralEquations/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/IntroToSCUFF/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/SCUFFonAWS/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MieScattering/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -49,19 +49,19 @@
         
     <url>
      <loc>None/Nanoparticle/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/BowtieAntennas/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/PolarizationSensitiveAntennas/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -71,35 +71,19 @@
         
     <url>
      <loc>None/PeriodicDiffraction/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/SpiralArrays/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/ChiralMetasurface/</loc>
-     <lastmod>2016-10-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/OpticalForceTorque/</loc>
-     <lastmod>2016-10-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/SelfRotation/</loc>
-     <lastmod>2016-10-25</lastmod>
+     <loc>None/ChiralMetasurfaceRotator/</loc>
+     <lastmod>2016-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
