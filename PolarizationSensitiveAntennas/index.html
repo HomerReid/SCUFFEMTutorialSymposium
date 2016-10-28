@@ -226,14 +226,21 @@
               
                 <h1 id="polarization-dependent-field-amplification-by-bowtie-antennas">Polarization-dependent field amplification by bowtie antennas</h1>
 <p>For our next trick, we'll surround the 4-triangle bowtie
-antennas of the previous exercise</p>
-<p>take a page from the following paper 
-of Trevino <em>et. al</em>:</p>
+antennas of the previous exercise with 1D arrays of 
+nanodiscs with different spacings in the <script type="math/tex">x</script> and <script type="math/tex">y</script>
+directions, breaking the 4-fold rotational symmetry
+of the bare bowties and allowing polarization-sensitive
+behavior. This idea and the structures we will consider 
+come from the following paper of Trevino <em>et. al</em>:</p>
+<ul>
+<li>J. Trevino <em>et al.</em>, "Photonic–plasmonic-coupled nanoantennas for polarization-controlled multispectral nanofocusing." <em>Optics Letters</em> <strong>38</strong> 4861 (2013). <a href="http://dx.doi.org/10.1364/OL.38.004861">DOI:</a></li>
+</ul>
 <p>The files for this example are in the <code>PolarizationSensitiveAntennas</code>
-subfolder of the
-<a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial</code> archive</a>.</p>
-<pre class="codehilite"><code class="language-bash linenums">% export SCUFF_MESH_PATH=${HOME}/SCUFFTutorial/Nanoparticles/mshFiles
-% export SCUFF_GEO_PATH=${HOME}/SCUFFTutorial/Nanoparticles/scuffgeoFiles</code></pre>
+subfolder of the <a href="../SCUFFTutorial.tar.bz2"><code>SCUFFTutorial</code> archive</a>. 
+To avoid having to re-type a lot of lengthy file paths, it's convenient
+to set the following environment variables:</p>
+<pre class="codehilite"><code class="language-bash linenums">% export SCUFF_MESH_PATH=${HOME}/SCUFFTutorial/PolarizationSensitiveAntennas/mshFiles
+% export SCUFF_GEO_PATH=${HOME}/SCUFFTutorial/PolarizationSensitiveAntennas/scuffgeoFiles</code></pre>
 
 
 <h2 id="gmsh-geometry-and-mesh-files">GMSH geometry and mesh files</h2>
